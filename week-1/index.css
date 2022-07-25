@@ -2,8 +2,8 @@
  https://stackoverflow.com/a/13550716 */
 .fixednav {
   display: flex;
-  flex-direction: row;
   align-items: center; /* aligns links vertically */
+  flex-direction: row;
   position: fixed;
   top: 0;
   left: 0;
@@ -115,5 +115,6 @@ a {
 }
 
 div {
+  margin: -10px;
   /* border: 1px dotted crimson; */
 }
