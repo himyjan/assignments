@@ -1,6 +1,6 @@
 /* @Media min-width & max-width
  https://stackoverflow.com/a/13550716 */
-.fixednav {
+.fixed-nav {
   display: flex;
   align-items: center; /* aligns links vertically */
   flex-direction: row;
@@ -13,7 +13,7 @@
   background-color: LightGray;
 }
 
-.leftnav {
+.left-nav {
   flex-grow: 1; /* this is the important bit */
 }
 
@@ -30,13 +30,13 @@
 }
 
 @media only screen and (min-width: 500px) and (max-width: 799px) {
-  .rightnav {
+  .right-nav {
     display: none;
   }
 }
 
 @media only screen and (max-width: 499px) {
-  .rightnav {
+  .right-nav {
     display: none;
   }
 }
@@ -51,12 +51,13 @@
   background-color: LightBlue;
 }
 
+/* CSS Flex & Grid 排版詳解（下）：Oh My Grid! https://nicolakacha.coderbridge.io/2020/09/22/css-flex-grid-2/ */
 @media only screen and (min-width: 500px) {
   .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    margin: 0px 60px;
     max-width: 1200px;
+    padding: 0% 20% 0% 20%;
   }
 }
 
@@ -64,16 +65,16 @@
   .content {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-    margin: 0px 60px;
     max-width: 1200px;
+    padding: 0% 20% 0% 20%;
   }
 }
 
-.content h3 {
+.title {
   display: flex;
   justify-content: center;
-  grid-column: 1 / -1;
   width: 100%;
+  z-index: 9999;
 }
 
 .content .content-box {
@@ -82,7 +83,7 @@
   align-items: top;
   width: 98%;
   height: 20vh;
-  margin: 0.5vh;
+  margin: 1vh 0vh 0vh 0vh;
   background-color: LightSlateGray;
 }
 
@@ -98,14 +99,18 @@
   align-items: center;
   width: 100px;
   height: 30px;
-  margin: 10px 0px 0px 0px;
   border: none;
   color: black;
+  margin-top: 1vh;
   background-color: LightBlue;
 }
 
 /* the rest is just for looks */
 /* How do I remove the default link color of the html hyperlink 'a' tag? https://stackoverflow.com/a/6722667 */
+body {
+  margin: 0px;
+}
+
 a {
   padding: 1em;
   margin: 1em;
@@ -114,7 +119,6 @@ a {
   font-size: 0.7;
 }
 
-div {
-  margin: -10px;
+/* div { */
   /* border: 1px dotted crimson; */
-}
+/* } */
