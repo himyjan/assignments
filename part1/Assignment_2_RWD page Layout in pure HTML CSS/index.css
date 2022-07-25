@@ -1,30 +1,119 @@
-.header {
-  display: flex;
-  width: 100vw;
-  padding: 0;
-  margin: 0;
-}
-
+/* @Media min-width & max-width
+ https://stackoverflow.com/a/13550716 */
 .fixednav {
   display: flex;
   flex-direction: row;
+  align-items: center; /* aligns links vertically */
   position: fixed;
   top: 0;
   left: 0;
   z-index: 9999;
   width: 100%;
   height: 60px;
-  background-color: #ffffff;
+  background-color: LightGray;
 }
 
 .leftnav {
-  position: absolute;
-  flex-direction: row;
-  justify-content: flex-start;
+  flex-grow: 1; /* this is the important bit */
 }
 
-.rightnav {
-  position: absolute;
-  justify-content: flex-end;
-  flex-direction: row-reverse;
+@media only screen and (min-width: 1200px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .rightnav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .rightnav {
+    display: none;
+  }
+}
+
+/* https://www.freecodecamp.org/news/text-align-in-css-how-to-align-text-in-center-with-html/ */
+.head-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  height: 200px;
+  background-color: LightBlue;
+}
+
+@media only screen and (min-width: 500px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    margin: 0px 60px;
+    max-width: 1200px;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    margin: 0px 60px;
+    max-width: 1200px;
+  }
+}
+
+.content h3 {
+  display: flex;
+  justify-content: center;
+  grid-column: 1 / -1;
+  width: 100%;
+}
+
+.content .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  width: 98%;
+  height: 20vh;
+  margin: 0.5vh;
+  background-color: LightSlateGray;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  margin: 10px 0px 0px 0px;
+  border: none;
+  color: black;
+  background-color: LightBlue;
+}
+
+/* the rest is just for looks */
+/* How do I remove the default link color of the html hyperlink 'a' tag? https://stackoverflow.com/a/6722667 */
+a {
+  padding: 1em;
+  margin: 1em;
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.7;
+}
+
+div {
+  /* border: 1px dotted crimson; */
 }
