@@ -1,0 +1,30 @@
+.header {
+  display: flex;
+  width: 100vw;
+  padding: 0;
+  margin: 0;
+}
+
+.fixednav {
+  display: flex;
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+}
+
+.leftnav {
+  position: absolute;
+  flex-direction: row;
+  justify-content: flex-start;
+}
+
+.rightnav {
+  position: absolute;
+  justify-content: flex-end;
+  flex-direction: row-reverse;
+}
