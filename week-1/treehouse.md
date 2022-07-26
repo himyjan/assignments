@@ -352,6 +352,512 @@ git status
 
 ---
 
+HTML Basics
+
+Getting Stßarted with HTML
+
+Headings and Paragraphs Challenge
+
+Challenge Task 1 of 3
+
+#Set the main headline to a heading level 1 element. Then, place the line of text below the main headline inside opening and closing paragraph tags.
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>Headings and Paragraphs</title>
+  </head>
+  <body>
+    This is the Main Headline!
+    Oat cake chocolate bar jelly. Tootsie roll cheesecake sweet gummies candy cookie pudding cotton candy carrot cake. Souffl&eacute; caramels brownie oat cake cheesecake.
+
+    Level 2 Heading
+    Ice cream candy canes muffin icing pudding muffin jelly topping carrot cake. I love gingerbread dessert jujubes bonbon cupcake tootsie roll I love. Oat cake topping caramels I love cupcake oat cake chocolate topping donut.
+
+    Level 3 Heading
+    Cotton candy topping halvah sugar plum gummies souffl&eacute;. Ice cream danish donut sugar plum. Macaroon carrot cake gummies. Caramels oat cake chocolate cake.
+  </body>
+</html>
+```
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>Headings and Paragraphs</title>
+  </head>
+  <body>
+    <h1>his is the Main Headline!</h1>
+    <p>TOat cake chocolate bar jelly. Tootsie roll cheesecake sweet gummies candy cookie pudding cotton candy carrot cake. Souffl&eacute; caramels brownie oat cake cheesecake.</p>
+
+    Level 2 Heading
+    Ice cream candy canes muffin icing pudding muffin jelly topping carrot cake. I love gingerbread dessert jujubes bonbon cupcake tootsie roll I love. Oat cake topping caramels I love cupcake oat cake chocolate topping donut.
+
+    Level 3 Heading
+    Cotton candy topping halvah sugar plum gummies souffl&eacute;. Ice cream danish donut sugar plum. Macaroon carrot cake gummies. Caramels oat cake chocolate cake.
+  </body>
+</html>
+```
+
+#Next, set the subheading to a heading level 2 element and the line of text below it to a paragraph element.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>Headings and Paragraphs</title>
+  </head>
+  <body>
+    <h1>his is the Main Headline!</h1>
+    <p>TOat cake chocolate bar jelly. Tootsie roll cheesecake sweet gummies candy cookie pudding cotton candy carrot cake. Souffl&eacute; caramels brownie oat cake cheesecake.</p>
+
+    <h2>Level 2 Heading</h2>
+    <p>Ice cream candy canes muffin icing pudding muffin jelly topping carrot cake. I love gingerbread dessert jujubes bonbon cupcake tootsie roll I love. Oat cake topping caramels I love cupcake oat cake chocolate topping donut.</p>
+
+    Level 3 Heading
+    Cotton candy topping halvah sugar plum gummies souffl&eacute;. Ice cream danish donut sugar plum. Macaroon carrot cake gummies. Caramels oat cake chocolate cake.
+  </body>
+</html>
+```
+
+#Finally, set the third heading to a heading level 3 element and the text below it to a paragraph.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>Headings and Paragraphs</title>
+  </head>
+  <body>
+    <h1>his is the Main Headline!</h1>
+    <p>TOat cake chocolate bar jelly. Tootsie roll cheesecake sweet gummies candy cookie pudding cotton candy carrot cake. Souffl&eacute; caramels brownie oat cake cheesecake.</p>
+
+    <h2>Level 2 Heading</h2>
+    <p>Ice cream candy canes muffin icing pudding muffin jelly topping carrot cake. I love gingerbread dessert jujubes bonbon cupcake tootsie roll I love. Oat cake topping caramels I love cupcake oat cake chocolate topping donut.</p>
+
+    <h3>Level 3 Heading</h3>
+    <p>Cotton candy topping halvah sugar plum gummies souffl&eacute;. Ice cream danish donut sugar plum. Macaroon carrot cake gummies. Caramels oat cake chocolate cake.</p>
+  </body>
+</html>
+```
+
+---
+
+List and Link Challenge
+
+#Convert the text inside the <body> tags into an unordered list.
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lists and Links</title>
+  </head>
+  <body>
+
+  Cakes
+  Pies
+  Candy
+
+  </body>
+</html>
+```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lists and Links</title>
+  </head>
+  <body>
+
+  <ul>
+    <li>Cakes</li>
+    <li>Pies</li>
+    <li>Candy</li>
+  </ul>
+
+  </body>
+</html>
+```
+
+#Make the text inside each list item a link. The first item should link to cakes.html, the second to pies.html and the third to candy.html.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Lists and Links</title>
+  </head>
+  <body>
+
+  <ul>
+    <li><a href="cakes.html">Cakes</a></li>
+    <li><a href="pies.html">Pies</a></li>
+    <li><a href="candy.html">Candy</a></li>
+  </ul>
+
+  </body>
+</html>
+```
+
+---
+
+Structuring Your Content
+
+Structuring Content Challenge
+
+#Place the ul, h1 and p elements at the top of the page inside an element that represents a group of introductory content.
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <h1>My Web Design &amp; Development Portfolio!</h1>
+    <p>A site featuring my latest work.</p>
+
+    <h2>Welcome</h2>
+    <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget feugiat ante faucibus.</p>
+    <ul>
+      <li><a href="#">Recent project #1</a></li>
+      <li><a href="#">Recent project #2</a></li>
+      <li><a href="#">Recent project #3</a></li>
+    </ul>
+
+    <p>&copy; 2017 My Portfolio</p>
+    <p>Follow me on <a href="#">Twitter</a>, <a href="#">Instagram</a> and <a href="#">Dribbble</a></p>
+  </body>
+</html>
+```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <h1>My Web Design &amp; Development Portfolio!</h1>
+    <p>A site featuring my latest work.</p>
+
+    <h2>Welcome</h2>
+    <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget feugiat ante faucibus.</p>
+    <ul>
+      <li><a href="#">Recent project #1</a></li>
+      <li><a href="#">Recent project #2</a></li>
+      <li><a href="#">Recent project #3</a></li>
+    </ul>
+
+    <p>&copy; 2017 My Portfolio</p>
+    <p>Follow me on <a href="#">Twitter</a>, <a href="#">Instagram</a> and <a href="#">Dribbble</a></p>
+  </body>
+</html>
+```
+
+---
+
+Grouping Content Challenge
+
+#Group each set of h3 and p elements using an element that describes self-contained pieces of content.
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Web Design &amp; Development Blog!</h1>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Recent Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>The Main Articles</h2>
+
+    <h3>My Favorite HTML Courses</h3>
+    <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget <a href="#">feugiat ante faucibus</a>.</p>
+
+    <h3>10 Handy CSS Features</h3>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci lßuctus et <a href="#">ultrices posuere</a>.</p>
+
+    <h3>Follow Me on Social Media:</h3>
+    <ul>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2017 My Blog</p>
+    </footer>
+  </body>
+</html>
+```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Blog</title>
+  </head>
+  <body>
+    <header>
+      <h1>My Web Design &amp; Development Blog!</h1>
+      <nav>
+        <ul>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Articles</a></li>
+          <li><a href="#">Recent Work</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <h2>The Main Articles</h2>
+
+    <h3>My Favorite HTML Courses</h3>
+    <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget <a href="#">feugiat ante faucibus</a>.</p>
+
+    <h3>10 Handy CSS Features</h3>
+    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et <a href="#">ultrices posuere</a>.</p>
+
+    <h3>Follow Me on Social Media:</h3>
+    <ul>
+      <li><a href="#">Twitter</a></li>
+      <li><a href="#">Facebook</a></li>
+      <li><a href="#">LinkedIn</a></li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2017 My Blog</p>
+    </footer>
+  </body>
+</html>
+```
+
+---
+
+Structuring Your Content Review
+
+#The first element inside a <section> should be:
+
+a heading  (<h1>-<h6>) that indicates what the section is about
+
+#Please fill in the correct answer in each blank provided below.
+https://teamtreehouse.com/community/the-element-contains-content-thats-indirectly-related-to-the-main-content-of-the-page-3
+
+The _(aside)_ element contains content that's indirectly related to the main content of the page.
+
+#Which element should be used only when no other semantic element (like <article> or <aside>) is appropriate?
+
+<div>
+
+#Introductory content like the site logo, navigation and main heading should be placed inside which element?
+
+<header>
+
+#Markup that describes the meaning of content rather than define its presentation is:
+
+semantic
+
+#The content of a _____ element should be unique to the document; therefore, you should use it only once per page.
+
+<main>
+
+#Which element describes a self-contained piece of content, like a blog entry?
+
+<article>
+
+---
+
+Images, Text and Links
+
+Images and FilePaths Challenge
+
+#Inside the <body>, display the image moon.jpg located inside a folder named img.
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Moon</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Moon</title>
+  </head>
+  <body>
+    <img src="img/moon.jpg" />
+  </body>
+</html>
+```
+
+#Next, provide the browser alternative text describing the image.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Moon</title>
+  </head>
+  <body>
+    <img src="img/moon.jpg" alt="text" />
+  </body>
+</html>
+```
+
+#Finally, add a caption that describes the image.
+https://www.w3schools.com/tags/tag_figcaption.asp
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>The Moon</title>
+  </head>
+  <body>
+    <figure>
+      <img src="img/moon.jpg" alt="text"  />
+      <figcaption>Fig.1 - Trulli, Puglia, Italy.</figcaption>
+    </figure>
+  </body>
+</html>
+```
+
+
+---
+
+Text Level Elements Challenge
+
+#Add line breaks to the address in the second paragraph.
+```ß
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Text</title>
+  </head>
+  <body>
+    <p>Mike's favorite course is HTML Basics</p>
+    <p>
+      Mike T. Frog
+      100 Lilypad Way
+      Portland, OR 97227
+    </p>
+  </body>
+</html>
+```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Text</title>
+  </head>
+  <body>
+    <p>Mike's favorite course is HTML Basics</p>
+    <p>
+      Mike T. Frog</br>
+      100 Lilypad Way</br>
+      Portland, OR 97227</br>
+    </p>
+  </body>
+</html>
+```
+
+#Give the text "Mike T. Frog" strong importance, using the element that displays text in bold.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Text</title>
+  </head>
+  <body>
+    <p>Mike's favorite course is HTML Basics</p>
+    <p>
+      <strong>Mike T. Frog</strong></br>
+      100 Lilypad Way</br>
+      Portland, OR 97227</br>
+    </p>
+  </body>
+</html>
+```
+
+#Use the element that displays text in italic to add emphasis to the words "HTML Basics".
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>HTML Text</title>
+  </head>
+  <body>
+    <p>Mike's favorite course is <em>HTML Basics</em></p>
+    <p>
+      <strong>Mike T. Frog</strong></br>
+      100 Lilypad Way</br>
+      Portland, OR 97227</br>
+    </p>
+  </body>
+</html>
+```
+
+---
+
+Going Further with HTML
+
+Links and Paths Challenge
+
+---
+
+Email Links and Entities Challenge
+
+---
+
+Going Further with HTML Review
+
+#Which of the following is an example of an HTML comment?
+
+#What type of file path is the following link using?
+<a href="../pets/doggos.html">
+
+#The ___ attribute gives an element a unique identifier that can be used to navigate to a specific section of a page.
+
+#Which paths work only when a website is uploaded to a web server or when you have a local web server running on your computer?
+
+Root-relative
+
+#Which characters are reserved for use in HTML code only?
+
+#You can target any HTML element and change its appearance (like size, color and position) with:
+
+---
+
 Responsive Layouts
 https://teamtreehouse.com/library/responsive-layouts
 
