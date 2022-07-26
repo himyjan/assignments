@@ -1,3 +1,105 @@
+Introduction to Git
+
+First Commits
+
+Git Concepts
+
+#What is a "commit" in Git?
+
+A version of your project's files that you've stored in the repository.
+
+#What does it mean when we say a version control system is "distributed"?
+
+Every copy of the repository stores all the old versions of the files; they're not just stored on one central server.
+
+#What do all git commands start with?
+
+git
+
+#How do you specify command line options to Git?
+
+A single dash ("-") followed by a letter, or a double-dash ("--") followed by a word.
+
+#What does a version control system do?
+
+It keeps old versions of your files.
+
+#What is the value of a distributed version control system, as opposed to a centralized system?
+
+If something happens to the version history on one repository, the history on any other copy of the repository can be used to restore it.
+
+---
+
+First Commits
+
+Challenge Task 1 of 4
+
+#We're working on our first novel, and we want to track our changes in Git. But first, we need to change into the directory where our text files are. Using this shell prompt, change into the novel directory.
+https://teamtreehouse.com/community/1st-code-challenge-for-introduction-to-git
+
+cd novel
+
+#Initialize a new Git repo here in the current directory.
+https://teamtreehouse.com/community/initialize-a-new-git-repo-here-in-the-current-directory
+
+git init
+
+#Add the file chapter1.txt to the staging area for committing.
+https://teamtreehouse.com/community/bummer-you-dont-need-to-pass-any-commandline-options
+
+git add chapter1.txt
+
+#Finally, commit the staged file, with a message of "Add chapter 1". Rather than letting Git launch an editor, specify your commit message on the command line: use the -m command line option, and specify your message between "quotation marks".
+https://teamtreehouse.com/community/bummer-you-dont-need-to-pass-any-commandline-options
+
+git commit -m "Add chapter1.txt"
+
+#In the command line below, we're still inside the "novel" repo. We've added a dramatic plot twist to chapter1.txt. Add the modified file to the staging area for committing.
+https://teamtreehouse.com/community/in-the-command-line-below-were-still-inside-the-novel-repo-weve-added-a-dramatic-plot-twist-to-chapter1txt-add
+
+git add chapter1.txt
+
+#Commit the staged changes, with the message "Add plot twist". Use the -m option instead of the editor.
+https://teamtreehouse.com/community/hey-guys-im-stuck-on-this-git-introduction-challenge
+
+git commit -m "Add plot twist"
+
+---
+
+File Status
+
+#We've updated one file in the repo, and created another file. Run the git command that will show you the status of the repo's files.
+
+git status
+
+#Stage chapter1.txt.
+
+git add chapter1.txt
+
+#Now stage chapter2.txt.
+
+git add chapter2.txt
+
+#Run the "git diff" command again, but this time add the option that will show you the staged changes. (When you have the command right, changes to both the file that was previously tracked and the file that was previously untracked will be shown.)
+
+git diff
+
+#Now run the git command that will show you the changes made within the files. (Changes to the tracked file will be shown, but not the untracked file.)
+
+git diff --cached
+
+#Finally, commit all the staged files. Use the -m flag, with any commit message you like.
+
+git commit -m "This commit"
+
+---
+
+Managing Committed Files
+
+Removing Files
+#We've committed an appendix.txt file to the repo, but we decided we don't want it any more. Run the git command to remove the file.
+
+---
 
 Responsive Layouts
 https://teamtreehouse.com/library/responsive-layouts
