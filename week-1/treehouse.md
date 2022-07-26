@@ -510,6 +510,7 @@ Structuring Your Content
 Structuring Content Challenge
 
 #Place the ul, h1 and p elements at the top of the page inside an element that represents a group of introductory content.
+https://teamtreehouse.com/community/headerhtml
 ```
 <!DOCTYPE html>
 <html>
@@ -547,6 +548,7 @@ Structuring Content Challenge
     <title>My Portfolio</title>
   </head>
   <body>
+    <header>
     <ul>
       <li><a href="#">About</a></li>
       <li><a href="#">Work</a></li>
@@ -554,7 +556,7 @@ Structuring Content Challenge
     </ul>
     <h1>My Web Design &amp; Development Portfolio!</h1>
     <p>A site featuring my latest work.</p>
-
+    </header>
     <h2>Welcome</h2>
     <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget feugiat ante faucibus.</p>
     <ul>
@@ -565,6 +567,117 @@ Structuring Content Challenge
 
     <p>&copy; 2017 My Portfolio</p>
     <p>Follow me on <a href="#">Twitter</a>, <a href="#">Instagram</a> and <a href="#">Dribbble</a></p>
+  </body>
+</html>
+```
+
+#Next, place the paragraphs at the bottom of the page inside an element that typically contains information about the site, copyright data or related links.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <h1>My Web Design &amp; Development Portfolio!</h1>
+    <p>A site featuring my latest work.</p>
+    </header>
+    <h2>Welcome</h2>
+    <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget feugiat ante faucibus.</p>
+    <ul>
+      <li><a href="#">Recent project #1</a></li>
+      <li><a href="#">Recent project #2</a></li>
+      <li><a href="#">Recent project #3</a></li>
+    </ul>
+
+    <footer>
+      <p>&copy; 2017 My Portfolio</p>
+      <p>Follow me on <a href="#">Twitter</a>, <a href="#">Instagram</a> and <a href="#">Dribbble</a></p>
+    </footer>
+  </body>
+</html>
+```
+
+#Place the content between the header and footer (h2, p and ul) inside an element that represents standalone sections of content.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+    <ul>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Work</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+    <h1>My Web Design &amp; Development Portfolio!</h1>
+    <p>A site featuring my latest work.</p>
+    </header>
+    <section>
+      <h2>Welcome</h2>
+      <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget feugiat ante faucibus.</p>
+      <ul>
+        <li><a href="#">Recent project #1</a></li>
+        <li><a href="#">Recent project #2</a></li>
+        <li><a href="#">Recent project #3</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2017 My Portfolio</p>
+      <p>Follow me on <a href="#">Twitter</a>, <a href="#">Instagram</a> and <a href="#">Dribbble</a></p>
+    </footer>
+  </body>
+</html>
+```
+
+#Finally, place the top <ul> inside an element that represents a major section of navigation.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="styles.css" rel="stylesheet">
+    <title>My Portfolio</title>
+  </head>
+  <body>
+    <header>
+    <nav>
+      <ul>
+        <li><a href="#">About</a></li>
+        <li><a href="#">Work</a></li>
+        <li><a href="#">Contact</a></li>
+      </ul>
+    </nav>
+    <h1>My Web Design &amp; Development Portfolio!</h1>
+    <p>A site featuring my latest work.</p>
+    </header>
+    <section>
+      <h2>Welcome</h2>
+      <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget feugiat ante faucibus.</p>
+      <ul>
+        <li><a href="#">Recent project #1</a></li>
+        <li><a href="#">Recent project #2</a></li>
+        <li><a href="#">Recent project #3</a></li>
+      </ul>
+    </section>
+
+    <footer>
+      <p>&copy; 2017 My Portfolio</p>
+      <p>Follow me on <a href="#">Twitter</a>, <a href="#">Instagram</a> and <a href="#">Dribbble</a></p>
+    </footer>
   </body>
 </html>
 ```
@@ -574,6 +687,11 @@ Structuring Content Challenge
 Grouping Content Challenge
 
 #Group each set of h3 and p elements using an element that describes self-contained pieces of content.
+https://teamtreehouse.com/community/group-each-set-of-h3-and-p-elements-using-an-element-that-describes-selfcontained-pieces-of-content-27
+
+#Next, place the "social media" heading and list of links inside an element that represents a section of content that's indirectly related to the main content of the page.
+
+#Finally, place the h2 and articles inside an element that represents the main content of the <body> of the page.
 ```
 <!DOCTYPE html>
 <html>
@@ -633,20 +751,27 @@ Grouping Content Challenge
       </nav>
     </header>
 
-    <h2>The Main Articles</h2>
+    <main>
+      <h2>The Main Articles</h2>
 
-    <h3>My Favorite HTML Courses</h3>
-    <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget <a href="#">feugiat ante faucibus</a>.</p>
+      <article>
+        <h3>My Favorite HTML Courses</h3>
+        <p>Fusce semper id ipsum sed scelerisque. Etiam nec elementum massa. Pellentesque tristique ex ac ipsum hendrerit, eget <a href="#">feugiat ante faucibus</a>.</p>
+      </article>
+      <article>
+        <h3>10 Handy CSS Features</h3>
+        <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et <a href="#">ultrices posuere</a>.</p>
+      </article>
+    </main>
 
-    <h3>10 Handy CSS Features</h3>
-    <p>Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Vestibulum ante ipsum primis in faucibus orci luctus et <a href="#">ultrices posuere</a>.</p>
-
-    <h3>Follow Me on Social Media:</h3>
-    <ul>
-      <li><a href="#">Twitter</a></li>
-      <li><a href="#">Facebook</a></li>
-      <li><a href="#">LinkedIn</a></li>
-    </ul>
+    <aside>
+      <h3>Follow Me on Social Media:</h3>
+      <ul>
+        <li><a href="#">Twitter</a></li>
+        <li><a href="#">Facebook</a></li>
+        <li><a href="#">LinkedIn</a></li>
+      </ul>
+    </aside>
 
     <footer>
       <p>&copy; 2017 My Blog</p>
@@ -833,20 +958,144 @@ Going Further with HTML
 
 Links and Paths Challenge
 
+#Set the <img> element's src attribute to a path that goes one level out of the current folder and inside a folder named img.
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Page</title>
+  </head>
+  <body>
+    <img src="logo.png" alt="Site logo">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Portfolio</a></li>
+    </ul>
+    <h1 id="portfolio">My Portfolio</h1>
+  </body>
+</html>
+```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Page</title>
+  </head>
+  <body>
+    <img src="../img/logo.png" alt="Site logo">
+    <ul>
+      <li><a href="">Home</a></li>
+      <li><a href="">Portfolio</a></li>
+    </ul>
+    <h1 id="portfolio">My Portfolio</h1>
+  </body>
+</html>
+```
+
+#Set the "Home" link to a root-relative path that navigates to index.html.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Page</title>
+  </head>
+  <body>
+    <img src="../img/logo.png" alt="Site logo">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="">Portfolio</a></li>
+    </ul>
+    <h1 id="portfolio">My Portfolio</h1>
+  </body>
+</html>
+```
+
+#Set the "Portfolio" link to navigate to the section of the page with the id portfolio.
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Portfolio Page</title>
+  </head>
+  <body>
+    <img src="../img/logo.png" alt="Site logo">
+    <ul>
+      <li><a href="/index.html">Home</a></li>
+      <li><a href="#portfolio">Portfolio</a></li>
+    </ul>
+    <h1 id="portfolio">My Portfolio</h1>
+  </body>
+</html>
+```
+
 ---
 
 Email Links and Entities Challenge
+
+#Set the "contact" link to begin composing an email in the user's default email program when clicked. You may use any email address, as long as it's formatted correctly.
+https://teamtreehouse.com/community/this-is-the-question-set-the-contact-link-to-begin-composing-an-email-in-the-users-default-email-program-when-click
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h3>Design & Development</h3>
+    <p>Contact me at <a href="">this email</a>.</p>
+    <p>© 2017</p>
+  </body>
+</html>
+```
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h3>Design & Development</h3>
+    <p>Contact me at <a href="mailto:jessgreen629@gmail.com">jessgreen629@gmail.com</a></p
+    <p>© 2017</p>
+  </body>
+</html>
+```
+
+#Replace the ampersand and copyright symbol with an HTML character entity.
+https://teamtreehouse.com/community/replace-the-ampersand-and-copyright-symbol-with-an-html-character-entity-8
+
+```
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>My Page</title>
+  </head>
+  <body>
+    <h3>Design &amp; Development</h3>
+    <p>Contact me at <a href="mailto:jessgreen629@gmail.com">jessgreen629@gmail.com</a></p
+    <p>&copy; 2017</p>
+  </body>
+</html>
+```
 
 ---
 
 Going Further with HTML Review
 
 #Which of the following is an example of an HTML comment?
-
+```
+<!-- start of main content -->
+```
 #What type of file path is the following link using?
 <a href="../pets/doggos.html">
 
+Relative
+
 #The ___ attribute gives an element a unique identifier that can be used to navigate to a specific section of a page.
+
+id
 
 #Which paths work only when a website is uploaded to a web server or when you have a local web server running on your computer?
 
@@ -854,7 +1103,11 @@ Root-relative
 
 #Which characters are reserved for use in HTML code only?
 
+&, <, >
+
 #You can target any HTML element and change its appearance (like size, color and position) with:
+
+CSS (Cascading Style Sheets)
 
 ---
 
