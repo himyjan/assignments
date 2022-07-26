@@ -1164,6 +1164,61 @@ False
 
 ---
 
+CSS Basics
+
+Getting Started with CSS
+
+Quiz: Intro to CSS
+
+---
+
+Quiz: Keeping Up with CSS
+
+
+---
+
+Basic Selectors
+
+Type Selectors
+
+---
+
+ID and Class Selectors
+
+---
+
+Descendant Selectors
+
+---
+
+Pseudo-classes
+
+---
+
+Quiz: Basic Selectors
+
+---
+
+Understanding Values and Units
+
+Pixels and Percentages
+
+---
+
+Em and Rem Units
+
+---
+
+Quiz: Values and Units
+
+---
+
+Fundamental Concepts
+
+Quiz: Fundamental Concepts
+
+---
+
 Media Queries
 
 #What are media queries?
