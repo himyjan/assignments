@@ -97,7 +97,144 @@ git commit -m "This commit"
 Managing Committed Files
 
 Removing Files
+
 #We've committed an appendix.txt file to the repo, but we decided we don't want it any more. Run the git command to remove the file.
+https://teamtreehouse.com/community/help-with-git
+
+git rm appendix.txt
+
+#Run the command to display the status of the repo's files.
+
+git status
+
+#Commit the file removal. Use the -m flag, with any commit message you like.
+
+git commit -m "appendix.txt"
+
+---
+
+Moving files
+
+#We accidentally committed a file with the wrong file name extension. Run the git command to move the "chapter3.text" file to the name "chapter3.txt".
+https://teamtreehouse.com/community/git-mv-command-challenge-1-of-3-getting-error-need-to-specify-the-file-to-move
+
+git mv chapter3.text chapter3.txt
+
+#Run the command to display the status of the repo's files.
+
+git status
+
+#Commit the file renaming. Use the -m flag, with any commit message you like.
+
+git commit -m "chapter3.txt"
+
+---
+
+UnStaging Files
+
+#We staged a change to a file, but we've decided it wasn't a good idea. Run "git status" to display the staged file names.
+
+git status
+
+Running git status gave the following output:
+```
+On branch master Changes to be committed:
+  (use "git reset HEAD <file>..." to unstage)
+
+        modified:   chapter3.txt
+```
+Let's run the command it suggests to unstage the file.
+
+git reset HEAD chapter3.txt
+
+---
+
+Discarding File Changes
+
+#We've unstaged chapter3.txt, but the file is still modified in the working directory. Run "git status" to display its status.
+
+git status
+
+#Running git status gave the following output:
+```
+On branch master
+Changes not staged for commit:
+  (use "git add <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        modified:   chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+Let's run the command it suggests to discard the changes to chapter3.txt.
+
+git checkout -- chapter3.txt
+
+---
+
+Recovering Deleted Files
+
+#Oops! We accidentally deleted some files from the working directory! Run "git status" to see which ones.
+
+git status
+
+#Running git status gave the following output:
+```
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    chapter2.txt
+        deleted:    chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+We want to bring chapter2.txt back, and we can do so by "discarding the change" to the file. ("Discarding" the deletion will bring the file back.) Run the command suggested in the output to discard changes to chapter2.txt.
+
+git checkout -- chapter2.txt
+
+#Now git status gives this output:
+```
+On branch master
+Changes not staged for commit:
+  (use "git add/rm <file>..." to update what will be committed)
+  (use "git checkout -- <file>..." to discard changes in working directory)
+
+        deleted:    chapter3.txt
+
+no changes added to commit (use "git add" and/or "git commit -a")
+```
+We want to bring chapter3.txt back as well. Run the necessary command.
+
+git checkout -- chapter3.txt
+
+---
+
+Undoing Commits
+
+#We've decided we need to get back the appendix.txt file that we deleted before. First, we need to find the commit where we removed it. Run the command that will show the log of all prior commits.
+
+git log
+
+#Running git log gave the following output:
+```
+commit 70692324faa22f3eaeeb4d80e0958f349f4155bc
+Author: Treehouse Student <me@example.com>
+Date:   Fri Jan 19 13:13:30 2018 -0700
+
+    Fix file name
+
+commit 962f0e9138bab1ebb5b3e21d18a747fe18236714
+Author: Treehouse Student <me@example.com>
+Date:   Fri Jan 19 12:57:04 2018 -0700
+
+    Remove appendix
+...
+```
+We want to bring appendix.txt back, which we can do by reverting the commit with the message "Remove appendix". Find the SHA checksum for that commit, and use it in the appropriate command. (This command triggers a new commit, so normally, an editor would pop up to allow you to edit that new commit's message. For this challenge, though, we just want you to run the command.)
+
+git revert 962f
 
 ---
 
