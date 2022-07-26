@@ -1170,10 +1170,39 @@ Getting Started with CSS
 
 Quiz: Intro to CSS
 
+#We can write inline styles directly inside an element's tag, using which of the following attributes?
+
+#CSS stands for
+
+#CSS is what handles the __ layer of a web page.
+
+#Select all that apply: What is a downside to using internal styles on large projects?
+
+#Was HTML meant to be a presentational language?
+
+No. It's impractical to create websites where the content of each HTML page isn't separate from the presentation.
+
 ---
 
 Quiz: Keeping Up with CSS
 
+#Are we required to memorize every CSS selector, property, and value available?
+
+No. A solid understanding of the concepts and reliable references is all we need.
+
+#With an __ style sheet, we can change the look of an entire website with one file.
+
+external
+
+#Mozilla Developer Network, CSS Tricks, and W3C are helpful CSS resources.
+
+True. These resources always have important, up-to-date information on a given CSS topic.
+
+#What attribute specifies the relationship between the current HTML document and the linked document?
+
+#What file extension do we need to use when creating a style sheet?
+
+.css
 
 ---
 
@@ -1197,6 +1226,30 @@ Pseudo-classes
 
 Quiz: Basic Selectors
 
+#Please fill in the correct answer in each blank provided below.
+Fill in the blank: An element can only have __ ID, and a page can only have __ element with the same ID name.
+https://teamtreehouse.com/community/i-need-to-fill-those-blanks
+
+one one
+
+#The :focus pseudo-class targets an interactive HTML element
+
+#Which of the following is a valid CSS comment?
+
+/* this is a comment */
+
+#How do we target an element with a type selector?
+
+#A descendant selector consists of:
+
+#Please fill in the correct answer in each blank provided below.
+Fill in the blank: You create a class selector with a __ character.
+https://teamtreehouse.com/community/fill-in-the-blank-you-create-a-class-selector-with-a-character
+
+dot
+
+#Which selector targets every element on the page at once and applies the styles we set?
+
 ---
 
 Understanding Values and Units
@@ -1211,11 +1264,97 @@ Em and Rem Units
 
 Quiz: Values and Units
 
+#Which of the following is an absolute CSS measurement?
+
+Pixels
+
+#Which of the following length units can be used to adjust an element relative to the size of the element's parent?
+
+Percent
+
+#Please fill in the correct answer in each blank provided below.
+
+#Fill in the blank: We can abbreviate the hex value #cc7733 to #.__
+https://teamtreehouse.com/community/-we-abbreviate-the-hex-value-cc7733-to
+
+C73
+
+#Which of the following is a valid CSS declaration for black text?
+
+All of the above are valid(color: #000; , color: #000000; , color: black; , color: rgb(0, 0, 0);)
+
+#What is the difference between the rem and em measurement?
+
+Em considers parent elements when calculating font size. Rem is only relative to the root html font-size.
+
 ---
 
 Fundamental Concepts
 
 Quiz: Fundamental Concepts
+
+#Considering the following CSS:
+```
+h1 {
+  color: steelblue;
+}
+h1 {
+  color: tomato;
+}
+```
+Assuming the origin and selector specificity are the same, what color will the h1 be?
+
+tomato, because the CSS rule that comes last is given more weight by the cascade.
+
+#Which of the following has the most weight in the CSS cascade?
+
+Origin and Importance
+
+#Consider the following:
+```
+<div>Click to visit <a href="https://teamtreehouse.com/">Treehouse</a> to learn more.</div>
+
+div {
+  border: 3px solid red;
+}
+```
+Will the <a> element have a separate red border around it?
+
+No, because border is a non-inherited property.
+
+#Consider the following:
+```
+<p>Hello <em>friend</em>, how are you?</p>
+
+p {
+  color: green;
+}
+```
+Will the <em> element have green text?
+
+Yes, because color is an inherited property.
+
+#Consider the following code:
+```
+<div class="colorful" id="colorful">Hello world</div>
+
+.colorful {
+  background-color: pink;
+}
+#colorful {
+  background-color: orange;
+}
+div {
+  background-color: gold;
+}
+```
+Assuming the origin of the CSS is the same, what background color will this <div> have?
+
+orange, because (id)#colorful is the most specific selector.
+
+#Which of the following are acceptable ways to use the CSS Validator?
+
+All of the above.(Paste in the URL of a CSS file that's already on a web server. , Upload a local CSS file to the validator. , Copy the text of a CSS file and paste into the validator.)
 
 ---
 
