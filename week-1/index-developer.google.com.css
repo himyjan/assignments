@@ -1,0 +1,124 @@
+/* @Media min-width & max-width
+ https://stackoverflow.com/a/13550716 */
+.fixed-nav {
+  display: flex;
+  align-items: center; /* aligns links vertically */
+  flex-direction: row;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 9999;
+  width: 100%;
+  height: 60px;
+  background-color: LightGray;
+}
+
+.left-nav {
+  flex-grow: 1; /* this is the important bit */
+}
+
+@media only screen and (min-width: 1200px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 800px) and (max-width: 1199px) {
+  .icon {
+    display: none;
+  }
+}
+
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .right-nav {
+    display: none;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .right-nav {
+    display: none;
+  }
+}
+
+/* https://www.freecodecamp.org/news/text-align-in-css-how-to-align-text-in-center-with-html/ */
+.head-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0px;
+  height: 200px;
+  background-color: LightBlue;
+}
+
+/* CSS Flex & Grid 排版詳解（下）：Oh My Grid! https://nicolakacha.coderbridge.io/2020/09/22/css-flex-grid-2/ */
+@media only screen and (min-width: 500px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    max-width: 1200px;
+    padding: 0% 20% 0% 20%;
+  }
+}
+
+@media only screen and (max-width: 499px) {
+  .content {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    max-width: 1200px;
+    padding: 0% 20% 0% 20%;
+  }
+}
+
+.title {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  z-index: 9999;
+}
+
+.content .content-box {
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  width: 98%;
+  height: 20vh;
+  margin: 1vh 0vh 0vh 0vh;
+  background-color: LightSlateGray;
+}
+
+.btn-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.btn-action {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100px;
+  height: 30px;
+  border: none;
+  color: black;
+  margin-top: 1vh;
+  background-color: LightBlue;
+}
+
+/* the rest is just for looks */
+/* How do I remove the default link color of the html hyperlink 'a' tag? https://stackoverflow.com/a/6722667 */
+body {
+  margin: 0px;
+}
+
+a {
+  padding: 1em;
+  margin: 1em;
+  color: inherit;
+  text-decoration: none;
+  font-size: 0.7;
+}
+
+/* div { */
+  /* border: 1px dotted crimson; */
+/* } */
