@@ -238,6 +238,120 @@ git revert 962f
 
 ---
 
+GitHub and Other Remote Repositories
+
+Cloning Repositories
+
+#Let's try cloning a Git repository. But this time, instead of cloning a local repo, we'll clone one from the Internet.
+
+Here's a terminal on a different computer. Run the "git clone" command. Instead of a local directory name to clone from, give it a URL of "https://github.com/treehouse-courses/novel.git". By default, this will clone to a local directory named novel, but you can specify a different directory name after the URL, if you want.
+
+git clone https://github.com/treehouse-courses/novel.git
+
+---
+
+Pulling Commits
+
+#We're here in our local clone of the https://github.com/treehouse-courses/novel.git repo. Before we begin work, we want to make sure we have any changes that have been committed to the remote repo.
+
+To ensure the remote repo is set up, run the git remote command.
+
+git remote
+
+#The git remote command returned the following output:
+```
+origin
+```
+It looks like the remote repo is set up. Run the git command to pull changes from it.
+
+git pull
+
+---
+
+Adding Remotes
+
+#We've created a local repo to hold our fan fiction, and now we'd like to push it to GitHub. We've created a repo on GitHub as well, with the URL https://github.com/treehouse-courses/fan-fiction.git.
+
+GitHub is recommending we run this command to add the remote repo:
+```
+git remote add origin https://github.com/treehouse-courses/fan-fiction.git
+```
+Run that command now.
+
+git remote add origin https://github.com/treehouse-courses/fan-fiction.git
+
+#Next, GitHub recommends that you push your existing commits to the remote repo. They suggest running the command:
+```
+git push -u origin master
+```
+That will push to the new origin remote from the master branch. The -u option will set up the git push command to push to the given remote from the given branch by default. Run the suggested command now.
+
+git push -u origin master
+
+---
+
+Introduction to Git Review
+
+#What command will give you a list of available remote repositories?
+
+git remote
+
+#Which command will show you the lines of an unstaged file that have been changed since the previous commit?
+
+git diff
+
+#Let's say you want to unstage a file, but you don't remember the command to do it. What command will give you a hint for what you should type?
+
+#Which of these Git subcommands can set up a new repository?
+
+git init
+
+#Which command will show you the lines of an unstaged file that have been changed since the previous commit?
+
+git diff
+
+#Which command will show you lines that have changed since the last commit in staged files?
+
+git diff --staged
+
+#Why is Git referred to as a "distributed" version control system?
+
+There is no "central" repository, at least not at an architectural level. Every clone of a repo has a full copy of the version history.
+
+#What command retrieves commits from a remote repo?
+
+git pull
+
+#What command sends commits to a remote repository?
+
+git push
+
+#What type of software is Git?
+
+A version control system
+
+#What are Git commits?
+
+They represent a version, or snapshot, of your files as they appeared at one point in time
+
+#What is a Git repository?
+
+The collection of all the versions of your project's files
+
+#Which subcommand stages files that are already being tracked by Git?
+
+git add
+
+#What are the 40-character strings of letters and numbers that appear in "git log" called?
+
+Commit SHAs
+
+#When you want to discard changes to a modified file, but don't remember the command to do so, what command can you run to get a hint for what to type?
+
+git status
+
+---
+
 Responsive Layouts
 https://teamtreehouse.com/library/responsive-layouts
 
