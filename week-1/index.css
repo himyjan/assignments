@@ -23,13 +23,14 @@
   justify-content: center;
   align-items: center;
   margin: 0;
-  height: 200px;
+  height: 280px;
   background-color: #ccddee;
 }
 
 .title {
   display: flex;
   justify-content: center;
+  align-items: center;
   width: 100%;
 }
 
@@ -37,7 +38,8 @@
   display: flex;
   justify-content: center;
   align-items: top;
-  margin: 0.5em 0.25em 0em 0.25em;
+  margin: 0.5em 0.25em 0 0.25em;
+  padding: 1em 0 0 0;
   width: 80vw;
   height: 213px;
   background: #8899aa;
@@ -61,11 +63,12 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  width: 100px;
-  height: 30px;
+  width: 120px;
+  height: 45px;
   border: none;
-  margin-top: 10px;
+  margin-top: 30px;
   background-color: #ddeeff;
+  font-size: 15px;
 }
 
 /* CSS Flex & Grid 排版詳解（下）：Oh My Grid! https://nicolakacha.coderbridge.io/2020/09/22/css-flex-grid-2/ */
