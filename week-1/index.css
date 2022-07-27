@@ -21,7 +21,7 @@
   background: #8899aa;
   margin: 0.5em;
   width: 80vw;
-  height: 30vh;
+  height: 213px;
   /*     align-items: flex-start; */
   display: inline-flex;
   align-items: flex-start;
@@ -46,14 +46,12 @@
 @media only screen and (min-width: 500px) and (max-width: 799px) {
   .box {
     width: 40vw;
-    height: 213px;
   }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1199px) {
   .box {
     width: 40vw;
-    height: 213px;
   }
 
   .icon {
@@ -64,7 +62,6 @@
 @media only screen and (min-width: 1200px) {
   .box {
     width: 480px;
-    height: 213px;
   }
 
   .box-list {
