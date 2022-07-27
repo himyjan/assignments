@@ -52,12 +52,14 @@
 }
 
 /* CSS Flex & Grid 排版詳解（下）：Oh My Grid! https://nicolakacha.coderbridge.io/2020/09/22/css-flex-grid-2/ */
+/* css grid center https://stackoverflow.com/a/45542799 */
 @media only screen and (min-width: 500px) {
   .content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     max-width: 1200px;
     padding: 0% 20% 0% 20%;
+    place-self: center;
   }
 }
 
@@ -67,6 +69,7 @@
     grid-template-columns: repeat(1, 1fr);
     max-width: 1200px;
     padding: 0% 20% 0% 20%;
+    place-self: center;
   }
 }
 
@@ -120,5 +123,5 @@ a {
 }
 
 /* div { */
-  /* border: 1px dotted crimson; */
+/* border: 1px dotted crimson; */
 /* } */

@@ -1172,11 +1172,19 @@ Quiz: Intro to CSS
 
 #We can write inline styles directly inside an element's tag, using which of the following attributes?
 
+style
+
 #CSS stands for
+
+Cascading Style Sheets
 
 #CSS is what handles the __ layer of a web page.
 
+presentation
+
 #Select all that apply: What is a downside to using internal styles on large projects?
+
+We're duplicating many styles across multiple pages.
 
 #Was HTML meant to be a presentational language?
 
@@ -1200,6 +1208,8 @@ True. These resources always have important, up-to-date information on a given C
 
 #What attribute specifies the relationship between the current HTML document and the linked document?
 
+rel
+
 #What file extension do we need to use when creating a style sheet?
 
 .css
@@ -1209,6 +1219,68 @@ True. These resources always have important, up-to-date information on a given C
 Basic Selectors
 
 Type Selectors
+
+#First, create a type selector that targets the body element. Then, add the text-align property and set the value to center.
+
+```
+body {
+  display: flex;
+  text-align: center
+}
+```
+
+#Create a new type selector that targets the paragraph elements. Add a color property and set the value to midnightblue.
+
+```
+body {
+  display: flex;
+  text-align: center
+}
+
+p {
+  color: midnightblue;
+}
+```
+
+#Next, create a new type selector that targets the header element. Set the background color to orange and the text color to white.
+
+```
+body {
+  display: flex;
+  text-align: center
+}
+
+p {
+  color: midnightblue;
+}
+
+header {
+  background-color: orange;
+  color: white;
+}
+```
+
+#Finally, create a new type selector that targets the div element. Add a background-color property and set the value to lightblue.
+
+```
+body {
+  display: flex;
+  text-align: center
+}
+
+p {
+  color: midnightblue;
+}
+
+header {
+  background-color: orange;
+  color: white;
+}
+
+div {
+  background-color: lightblue;
+}
+```
 
 ---
 
