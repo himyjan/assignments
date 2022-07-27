@@ -17,26 +17,63 @@
   flex-grow: 1; /* this is the important bit */
 }
 
-@media only screen and (min-width: 1200px) {
-  .icon {
-    display: none;
+.box {
+  background: Gray;
+  margin: 0.5em;
+  width: 80vw;
+  height: 30vh;
+  /*     align-items: flex-start; */
+  display: inline-flex;
+  align-items: flex-start;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.right-nav {
+  display: none;
+}
+
+.box-list {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+
+/* CSS Flex & Grid 排版詳解（下）：Oh My Grid! https://nicolakacha.coderbridge.io/2020/09/22/css-flex-grid-2/ */
+/* css grid center https://stackoverflow.com/a/45542799 */
+@media only screen and (min-width: 500px) and (max-width: 799px) {
+  .box {
+    width: 40vw;
+    height: 20vh;
   }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1199px) {
+  .box {
+    width: 40vw;
+    height: 30vh;
+  }
+
   .icon {
     display: none;
   }
 }
 
-@media only screen and (min-width: 500px) and (max-width: 799px) {
-  .right-nav {
-    display: none;
+@media only screen and (min-width: 1200px) {
+  .box {
+    width: 480px;
+    height: 189px;
   }
-}
 
-@media only screen and (max-width: 499px) {
-  .right-nav {
+  .box-list {
+    max-height: 410px;
+    max-width: 1200px;
+    margin: auto;
+  }
+
+  .icon {
     display: none;
   }
 }
@@ -51,42 +88,11 @@
   background-color: LightBlue;
 }
 
-/* CSS Flex & Grid 排版詳解（下）：Oh My Grid! https://nicolakacha.coderbridge.io/2020/09/22/css-flex-grid-2/ */
-/* css grid center https://stackoverflow.com/a/45542799 */
-@media only screen and (min-width: 500px) {
-  .content {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    place-self: center;
-  }
-}
-
-@media only screen and (max-width: 499px) {
-  .content {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    place-self: center;
-  }
-}
-
 .title {
   display: flex;
   justify-content: center;
   width: 100%;
   z-index: 9999;
-}
-
-.content-wrap {
-  padding: 0% 20% 0% 20%;
-}
-
-.content-box {
-  display: flex;
-  justify-content: center;
-  align-items: top;
-  max-width: 1200px;
-  height: 20vh;
-  background-color: LightSlateGray;
 }
 
 .btn-box {
