@@ -10,7 +10,7 @@
   z-index: 9999;
   width: 100%;
   height: 60px;
-  background-color: LightGray;
+  background-color: #eeeeee;
 }
 
 .left-nav {
@@ -18,7 +18,7 @@
 }
 
 .box {
-  background: Gray;
+  background: #8899aa;
   margin: 0.5em;
   width: 80vw;
   height: 30vh;
@@ -85,7 +85,7 @@
   align-items: center;
   margin: none;
   height: 200px;
-  background-color: LightBlue;
+  background-color: #ccddee;
 }
 
 .title {
@@ -108,9 +108,8 @@
   width: 100px;
   height: 30px;
   border: none;
-  color: black;
   margin-top: 1vh;
-  background-color: LightBlue;
+  background-color: #ddeeff;
 }
 
 /* the rest is just for looks */
