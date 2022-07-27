@@ -1286,13 +1286,439 @@ div {
 
 ID and Class Selectors
 
+#Give the header element a class attribute. Then, set the class value to main-header.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Diane: Resume</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header>
+      <div>
+        <h1>Developer Diane: Resume</h1>
+        <address>
+          <p>website: developerdiane.com</p>
+          <p>email: diane@developerdiane.com</p>
+        </address>
+        <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
+      </div>
+    </header>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Super Web Design Shop</h3>
+          <p>Junior Developer</p>
+          <p class="date special">February 2020-present</p>
+        </li>
+        <li>
+          <h3>Pretty Good Websites, Inc.</h3>
+          <p>Web Development Intern</p>
+          <p>July 2019-January 2020</p>
+        </li>
+      </ul>
+    </section>
+    <footer>©2020 Developer Diane.</footer>
+  </main>
+</body>
+</html>
+```
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Diane: Resume</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="main-header">
+      <div>
+        <h1>Developer Diane: Resume</h1>
+        <address>
+          <p>website: developerdiane.com</p>
+          <p>email: diane@developerdiane.com</p>
+        </address>
+        <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
+      </div>
+    </header>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Super Web Design Shop</h3>
+          <p>Junior Developer</p>
+          <p class="date special">February 2020-present</p>
+        </li>
+        <li>
+          <h3>Pretty Good Websites, Inc.</h3>
+          <p>Web Development Intern</p>
+          <p>July 2019-January 2020</p>
+        </li>
+      </ul>
+    </section>
+    <footer>©2020 Developer Diane.</footer>
+  </main>
+</body>
+</html>
+```
+
+#In the style sheet, target main-header with a class selector. Then, add a background-color property and set the value to orange.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Diane: Resume</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="main-header">
+      <div>
+        <h1>Developer Diane: Resume</h1>
+        <address>
+          <p>website: developerdiane.com</p>
+          <p>email: diane@developerdiane.com</p>
+        </address>
+        <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
+      </div>
+    </header>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Super Web Design Shop</h3>
+          <p>Junior Developer</p>
+          <p class="date special">February 2020-present</p>
+        </li>
+        <li>
+          <h3>Pretty Good Websites, Inc.</h3>
+          <p>Web Development Intern</p>
+          <p>July 2019-January 2020</p>
+        </li>
+      </ul>
+    </section>
+    <footer>©2020 Developer Diane.</footer>
+  </main>
+</body>
+</html>
+```
+```
+.main-header {
+  background-color: orange;
+}
+```
+
+#In the HTML file, give the h1 element the class main-heading.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Diane: Resume</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="main-header">
+      <div>
+        <h1 class="main-heading">Developer Diane: Resume</h1>
+        <address>
+          <p>website: developerdiane.com</p>
+          <p>email: diane@developerdiane.com</p>
+        </address>
+        <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
+      </div>
+    </header>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Super Web Design Shop</h3>
+          <p>Junior Developer</p>
+          <p class="date special">February 2020-present</p>
+        </li>
+        <li>
+          <h3>Pretty Good Websites, Inc.</h3>
+          <p>Web Development Intern</p>
+          <p>July 2019-January 2020</p>
+        </li>
+      </ul>
+    </section>
+    <footer>©2020 Developer Diane.</footer>
+  </main>
+</body>
+</html>
+```
+```
+.main-header {
+  background-color: orange;
+}
+```
+
+#Next, target the class main-heading. Give the heading a font-size property and set the value to 72px.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Diane: Resume</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="main-header">
+      <div>
+        <h1 class="main-heading">Developer Diane: Resume</h1>
+        <address>
+          <p>website: developerdiane.com</p>
+          <p>email: diane@developerdiane.com</p>
+        </address>
+        <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
+      </div>
+    </header>
+    <section>
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Super Web Design Shop</h3>
+          <p>Junior Developer</p>
+          <p class="date special">February 2020-present</p>
+        </li>
+        <li>
+          <h3>Pretty Good Websites, Inc.</h3>
+          <p>Web Development Intern</p>
+          <p>July 2019-January 2020</p>
+        </li>
+      </ul>
+    </section>
+    <footer>©2020 Developer Diane.</footer>
+  </main>
+</body>
+</html>
+```
+```
+.main-header {
+  background-color: orange;
+}
+
+.main-heading {
+  font-size: 72px;
+}
+```
+
+#In the HTML file, give the section element an ID name of experience.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Diane: Resume</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="main-header">
+      <div>
+        <h1 class="main-heading">Developer Diane: Resume</h1>
+        <address>
+          <p>website: developerdiane.com</p>
+          <p>email: diane@developerdiane.com</p>
+        </address>
+        <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
+      </div>
+    </header>
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Super Web Design Shop</h3>
+          <p>Junior Developer</p>
+          <p class="date special">February 2020-present</p>
+        </li>
+        <li>
+          <h3>Pretty Good Websites, Inc.</h3>
+          <p>Web Development Intern</p>
+          <p>July 2019-January 2020</p>
+        </li>
+      </ul>
+    </section>
+    <footer>©2020 Developer Diane.</footer>
+  </main>
+</body>
+</html>
+```
+```
+.main-header {
+  background-color: orange;
+}
+
+.main-heading {
+  font-size: 72px;
+}
+```
+
+#Finally, target experience with an ID selector. Add a background-color property and set the value to lightsteelblue.
+
+```
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Developer Diane: Resume</title>
+  <link rel="stylesheet" href="page.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main>
+    <header class="main-header">
+      <div>
+        <h1 class="main-heading">Developer Diane: Resume</h1>
+        <address>
+          <p>website: developerdiane.com</p>
+          <p>email: diane@developerdiane.com</p>
+        </address>
+        <img src="developer-diane.jpg" alt="Developer Diane coding on her laptop.">
+      </div>
+    </header>
+    <section id="experience">
+      <h2>Experience</h2>
+      <ul>
+        <li>
+          <h3>Super Web Design Shop</h3>
+          <p>Junior Developer</p>
+          <p class="date special">February 2020-present</p>
+        </li>
+        <li>
+          <h3>Pretty Good Websites, Inc.</h3>
+          <p>Web Development Intern</p>
+          <p>July 2019-January 2020</p>
+        </li>
+      </ul>
+    </section>
+    <footer>©2020 Developer Diane.</footer>
+  </main>
+</body>
+</html>
+```
+```
+.main-header {
+  background-color: orange;
+}
+
+.main-heading {
+  font-size: 72px;
+}
+
+#experience {
+  background-color: lightsteelblue;
+}
+```
+
 ---
 
 Descendant Selectors
 
+#Create a descendant selector that targets the span inside the header element. Add a font-size property and set the value to 26px.
+
+```
+header span {
+  font-size: 26px;
+}
+```
+
+#Next, target the unordered list that is a descendant of the main-content class. Add a background-color property and set the value to papayawhip.
+
+```
+header span {
+  font-size: 26px;
+}
+
+.main-content ul {
+  background-color: papayawhip;
+}
+```
+
+#Finally, target the paragraph that is a descendant of the footer element. Add a color property and set the value to slategrey.
+
+```
+header span {
+  font-size: 26px;
+}
+
+.main-content ul {
+  background-color: papayawhip;
+}
+
+footer p {
+  color: slategrey;
+}
+```
+
 ---
 
 Pseudo-classes
+
+#Use the pseudo-class selector that targets default, unvisited links. Set their color value to orange.
+https://teamtreehouse.com/community/use-the-pseudoclass-selector-that-targets-default-unvisited-links-set-their-color-value-to-orange-2
+
+```
+a:link {
+  color: orange;
+}
+```
+
+#Next, create a pseudo-class selector that targets all visited links. Add a color property and set the value to steelblue
+
+```
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: steelblue;
+}
+```
+
+#Finally, add a new pseudo-class selector that targets all links on hover. Add a color property and set the value to tomato.
+
+```
+a:link {
+  color: orange;
+}
+
+a:visited {
+  color: steelblue;
+}
+
+a:hover {
+  color: tomato;
+}
+```
 
 ---
 
@@ -1306,13 +1732,19 @@ one one
 
 #The :focus pseudo-class targets an interactive HTML element
 
+When the user tabs to it using a keyboard
+
 #Which of the following is a valid CSS comment?
 
 /* this is a comment */
 
 #How do we target an element with a type selector?
 
+Using the element’s HTML tag name
+
 #A descendant selector consists of:
+
+two or more selectors separated by whitespace
 
 #Please fill in the correct answer in each blank provided below.
 Fill in the blank: You create a class selector with a __ character.
@@ -1322,15 +1754,115 @@ dot
 
 #Which selector targets every element on the page at once and applies the styles we set?
 
+universal selector
+
 ---
 
 Understanding Values and Units
 
 Pixels and Percentages
 
+#Let's make the <h1> element with the class "heading" larger. Increase its font size to 48 pixels.
+
+```
+.heading {
+  font-size: 48px;
+}
+```
+
+#Next, increase the font size of the h2 element to 32 pixels.
+
+```
+.heading {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+```
+
+#Finally, let's reduce the width of the header element. Give it a width value that takes up 80 percent of its container's width.
+
+```
+.heading {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 32px;
+}
+
+header {
+  width: 80%;
+}
+```
+
 ---
 
 Em and Rem Units
+
+#The em-based font-size value for .heading is relative to its parent header's font-size value. This causes a compounding issue that makes the font-size value larger than the desired value.
+
+Replace the em units of .heading with a unit that is relative to the root element of the page.
+
+```
+html {
+  font-size: 16px;
+}
+
+header {
+  font-size: 1.5em;
+}
+
+.heading {
+  font-size: 5rem;
+}
+```
+
+#Create a new rule that targets the h2. The parent element of the h2 has a font-size value of 16px. Use an em unit to give the h2 a font-size value equivalent to 48px.
+
+```
+html {
+  font-size: 16px;
+}
+
+header {
+  font-size: 1.5em;
+}
+
+.heading {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3em;
+}
+```
+
+#Finally, create a new rule that targets the h3. Using the same parent font-size context, give the h3 a font-size value in ems equivalent to 20px.
+
+```
+html {
+  font-size: 16px;
+}
+
+header {
+  font-size: 1.5em;
+}
+
+.heading {
+  font-size: 5rem;
+}
+
+h2 {
+  font-size: 3em;
+}
+
+h3 {
+  font-size: 1.25em;
+}
+```
 
 ---
 
@@ -1370,6 +1902,7 @@ Quiz: Fundamental Concepts
 h1 {
   color: steelblue;
 }
+
 h1 {
   color: tomato;
 }
@@ -1427,6 +1960,341 @@ orange, because (id)#colorful is the most specific selector.
 #Which of the following are acceptable ways to use the CSS Validator?
 
 All of the above.(Paste in the URL of a CSS file that's already on a web server. , Upload a local CSS file to the validator. , Copy the text of a CSS file and paste into the validator.)
+
+---
+
+CSS Layout
+
+The CSS Box Model
+
+Quiz: The Box Model
+
+#When we use the margin value __, the browser automatically calculates the margins for each side.
+
+auto
+
+#What is the order of values in the following shorthand property?
+padding: 12px 16px 8px 4px;
+
+top 12px, right 16px, bottom 8px, left 4px
+
+#In the CSS box model, what is the innermost area of a "box"?
+
+content
+
+#The browser’s element __ allows you to view the box model of any HTML element.
+
+Inspector
+
+#Please fill in the correct answer in each blank provided below.
+Fill in the blank: The __ area creates space inside the box, while the __ area creates space outside and around the box.
+https://teamtreehouse.com/community/the-area-creates-spaces-inside-the-box-while-the-area-creates-space-outside-and-around-the-box
+
+padding margin
+
+#Which CSS property does NOT affect the size of a CSS box?
+
+margin
+
+---
+
+Padding,Border, and Margins
+
+#Let's style parts of a web page using padding, borders, and margins. First, target the header element. Set the top padding to 20 pixels and the bottom padding to 25 pixels.
+
+```
+header {
+  padding: 20px 0 25px 0;
+}
+```
+
+#Next, give the header a solid, orange bottom border that's 10px wide.
+
+```
+header {
+  padding: 20px 0 25px 0;
+  border-bottom: 10px solid orange;
+}
+```
+
+#Target the section element with the class intro. Set the padding on all 4 sides to 1rem.
+
+```
+header {
+  padding: 20px 0 25px 0;
+  border-bottom: 10px solid orange;
+}
+
+.intro {
+  padding: 1rem;
+}
+```
+
+#Let's separate the footer element from the content above it. Target the footer element and apply a top margin of 50 pixels.
+
+```
+header {
+  padding: 20px 0 25px 0;
+  border-bottom: 10px solid orange;
+}
+
+.intro {
+  padding: 1rem;
+}
+
+footer {
+  margin-top: 50px;
+}
+```
+
+#Finally, give the element with the class .featured a dotted, lightgrey top border that's 2px wide.
+
+```
+header {
+  padding: 20px 0 25px 0;
+  border-bottom: 10px solid orange;
+}
+
+.intro {
+  padding: 1rem;
+}
+
+footer {
+  margin-top: 50px;
+}
+
+.featured {
+  border-top: 2px dotted lightgrey;
+}
+```
+
+---
+
+Box Model Concepts
+
+Viewport Units
+
+#Select the header element and set its height value to 25% of the viewport's height.
+
+```
+header {
+  height: 25vh;
+}
+```
+
+#Next, select the section element with the class .intro. Set its width value to 75% of the overall viewport width.
+
+```
+header {
+  height: 25vh;
+}
+
+.intro {
+  width: 75vw;
+}
+```
+
+---
+
+Quiz: Box Model Concepts
+
+#Which of the following declarations asks the browser to include padding and border when calculating box sizes?
+
+box-sizing: border-box;
+
+#When applying the same style to multiple selectors, the names of each selector should be separated by
+
+a comma
+
+#Consider the following CSS rule:
+```
+img {
+  width: 100%;
+  max-width: 600px;
+  height: auto;
+}
+```
+When the viewport is 720 pixels wide, how wide will our images be?
+
+600 pixels
+
+#Which of the following declarations will set an element’s height to at least the height of the viewport?
+
+min-height: 100vh;
+
+#Please fill in the correct answer in each blank provided below.
+Fill in the blank: When developing, the DRY principle means Don’t __ Yourself.
+
+repeat
+
+---
+
+CSS Layout Techniques
+
+Display
+
+#The paragraph with a class called .more should be hidden. Use the display value that will hide the paragraph.
+
+```
+.more {
+  display: none;
+}
+```
+
+#By default list items are placed on individual lines. Write a selector to target the list items with a class of .nav-btn, and apply a display value that will place these list items side-by-side. Change the width value of these list items to 120px.
+
+
+```
+.more {
+  display: none;
+}
+
+.nav-btn {
+  display: inline-block;
+  width: 120px;
+}
+```
+---
+
+Position Elements
+
+#Select the class logo and give it absolute positioning.
+
+```
+.logo {
+  position: absolute;
+}
+```
+
+#Next, give .logo a top offset of -45px and a left offset of 20px.
+
+```
+.logo {
+  position: absolute;
+  top: -45px;
+  left: 20px;
+}
+```
+
+#The logo's absolute position is relative to the browser viewport. Make .card the new positioning context for .logo.
+
+```
+.logo {
+  position: absolute;
+  top: -45px;
+  left: 20px;
+}
+
+.card {
+  position: relative;
+}
+```
+
+#Finally, select the div with the class 'banner'. Use the position and top properties to 'stick' the banner to the top of the viewport when scrolling down the page.
+
+```
+.logo {
+  position: absolute;
+  top: -45px;
+  left: 20px;
+}
+
+.card {
+  position: relative;
+}
+
+.banner {
+  position: sticky;
+  top: 0;
+}
+```
+
+---
+
+Float
+
+#Create a new rule that targets the img element. Add the property and value that takes the image out of the normal page flow and wraps text around its right side.
+
+```
+img {
+  position: relative;
+  float: left;
+}
+```
+
+#Select the p element with the class .clear. Add the property and value that forces the paragraph not to wrap next to the floated image.
+
+```
+img {
+  position: relative;
+  float: left;
+}
+
+.clear {
+  clear: both;
+}
+```
+
+---
+
+Quiz: CSS Layout Techniques
+
+---
+
+CSS Media Queries
+
+Media Queries
+
+#Create a media query that targets all devices when the viewport width is 421px or wider. Inside the media query, select the header element. Set the background color to #294969 and the text color to ghostwhite.
+https://teamtreehouse.com/community/create-a-media-query-that-targets-all-devices-when-the-viewpoint-is-769px-or-wider-inside-the-media-query-target-the
+
+```
+@media screen and (min-width:421px) {
+  header {
+    background-color: #294969;
+    color: ghostwhite;
+  }
+}
+```
+
+#Next, create a new media query that targets all devices when the viewport width is 769px or wider. Inside the media query, target the div with the ID logo and set the font-size to 1.4rem. Finally, target the h1 element and set its font-size to 4rem.
+
+```
+@media screen and (min-width:421px) {
+  header {
+    background-color: #294969;
+    color: ghostwhite;
+  }
+}
+
+@media screen and (min-width:769px) {
+  #logo {
+    font-size: 1.4rem;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+}
+```
+
+---
+
+Complex Media Queries
+
+#Create a media query that changes the background color of the header element to orchid only when the viewport is between 768 and 1024 pixels.
+
+```
+@media screen and (min-width: 768px) and (max-width: 1024px) {
+  header {
+    background-color: orchid;
+  }
+}
+```
+
+---
+
+Quiz: Media Queries
 
 ---
 
