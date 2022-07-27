@@ -46,14 +46,14 @@
 @media only screen and (min-width: 500px) and (max-width: 799px) {
   .box {
     width: 40vw;
-    height: 20vh;
+    height: 213px;
   }
 }
 
 @media only screen and (min-width: 800px) and (max-width: 1199px) {
   .box {
     width: 40vw;
-    height: 30vh;
+    height: 213px;
   }
 
   .icon {
@@ -64,7 +64,7 @@
 @media only screen and (min-width: 1200px) {
   .box {
     width: 480px;
-    height: 189px;
+    height: 213px;
   }
 
   .box-list {
