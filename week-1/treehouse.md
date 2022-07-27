@@ -1730,7 +1730,7 @@ https://teamtreehouse.com/community/i-need-to-fill-those-blanks
 
 one one
 
-#The :focus pseudo-class targets an interactive HTML element
+#The focus pseudo-class targets an interactive HTML element
 
 When the user tabs to it using a keyboard
 
@@ -1762,7 +1762,7 @@ Understanding Values and Units
 
 Pixels and Percentages
 
-#Let's make the <h1> element with the class "heading" larger. Increase its font size to 48 pixels.
+#Let's make the ```<h1>``` element with the class "heading" larger. Increase its font size to 48 pixels.
 
 ```
 .heading {
@@ -2239,6 +2239,30 @@ img {
 
 Quiz: CSS Layout Techniques
 
+#What type of elements take up the full width available based on the width of their parent element?
+
+block
+
+#Which type of elements only take up as much width as they need?
+
+inline
+
+#Which of the following will hide an element so it won't display in the browser?
+
+display: none
+
+#Which of the following does NOT remove an element from the normal document flow?
+
+position: relative
+
+#Which of the following properties and values will take an element out of the normal page flow and place it along the left side of its container?
+
+float: left
+
+#z-index refers to
+
+The stacking order of CSS boxes
+
 ---
 
 CSS Media Queries
@@ -2295,6 +2319,38 @@ Complex Media Queries
 ---
 
 Quiz: Media Queries
+
+#How do we type the “or” logical operator in a CSS Media Query?
+
+,
+
+#How do we type the “and” logical operator in a CSS Media Query?
+
+and
+
+#Are CSS Media Queries used only to target device screens?
+
+No. CSS media queries can target the printed page as well.
+
+#Explain the effects of the following media query on the element with an ID of banner:
+```
+@media screen and (min-width: 720px) {
+  #banner {
+    display: none;
+  }
+}
+```
+
+banner will be hidden once the viewport measures 720 pixels or wider.
+
+#What is the purpose of the meta viewport declaration?
+
+It prevents mobile browsers from zooming out automatically.
+
+#Are CSS Media Queries used only to target device screens?
+
+No. CSS media queries can target the printed page as well.
+
 
 ---
 
@@ -2433,6 +2489,248 @@ True
 #When do vertical margins collapse?
 
 When there is no border, padding or content area to interrupt two touching margins.
+
+---
+
+CSS Flexbox Layout
+
+Understanding Flexbox
+
+Flexbox Basics Review
+
+#The first step in any flexbox layout is to create a:
+
+flex container
+
+#Flexbox is a CSS property.
+
+False. Flexbox is a set of CSS properties that provide a flexible way to lay out content.
+
+#Every direct child of a flex container is called a:
+
+flex item
+
+#Which of the following is an example of what you can do with flexbox?
+
+You can evenly distribute column space inside a row and rearrange their order.
+
+#Which axis defines the primary direction of flex items inside a flex container?
+
+Main axis
+
+#Flexbox follows two axes that determine the layout direction of flex items. Everything in a flexbox layout is relative to the:
+
+Main axis and Cross axis
+
+---
+
+Flex Container Challenge
+
+#The first step to using flexbox is creating a flex container. Target .main-nav and make it a flex container.
+
+```
+.main-nav {
+  display: flex;
+}
+```
+
+---
+
+Flexbox properties
+
+WrappingItems and Distributing Space
+
+#First, make .row a flex container.
+```
+.row {
+  display: flex;
+}
+```
+
+#Next, give .row the flexbox property and value that will make it a multi-line flex container.
+
+```
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+```
+
+#Finally, let's distribute the available space inside .row. Give .row the flexbox property and value that will place the first and last items along its edges, then equally distribute the space between the other items.
+
+```
+.row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+```
+
+---
+
+Growing and Aligning Flex items
+
+#Select the class .column and use the flex item property and value that will expand the columns to fill the space of the row
+https://teamtreehouse.com/community/select-the-class-column-and-use-the-flex-item-property-and-value-that-will-expand-the-columns-to-fill-the-space-of-the
+
+```
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-grow: 1;
+}
+```
+
+#Next, target .primary and assign it twice as much free space as the other flex items.
+
+```
+.row {
+  display: flex;
+}
+
+.column {
+  display: flex;
+  flex-grow: 1;
+}
+
+.primary {
+  display: flex;
+  flex-grow: 2;
+}
+```
+
+#Finally, align the columns to the vertical center of .row. Use the flex container property that controls alignment on the cross axis.
+
+```
+.row {
+  display: flex;
+  align-items: center;
+}
+
+.column {
+  display: flex;
+  flex-grow: 1;
+}
+
+.primary {
+  display: flex;
+  flex-grow: 2;
+}
+```
+
+---
+
+Flexbox Properties Review
+
+https://uploads.teamtreehouse.com/production/quiz-assets/59222/web_flexbox-4.png
+#Which of the following rules will display the layout shown in the image?
+
+.col {
+  flex: 1;
+}
+
+#Which of the following declarations changes a flexbox layout from horizontal to vertical?
+
+flex-direction: column;
+
+#Which of the following aligns the first and last flex items to the edges of the flex container, then equally distributes the space between the remaining flex items?
+
+justify-content: space-between
+
+https://uploads.teamtreehouse.com/production/quiz-assets/59192/web_flexbox-1b.png
+#Given the example image above, which of the following declarations will adjust the layout by breaking into multiple lines?
+
+flex-wrap: wrap;
+
+https://uploads.teamtreehouse.com/production/quiz-assets/59202/web_flexbox-2.png
+#Which of the following will place "Item D" before "Item A"?
+
+order: -1;
+
+https://uploads.teamtreehouse.com/production/quiz-assets/59212/web_flexbox-3.png
+#Given the image above, which of the following declarations assigns equal space to the three columns?
+
+flex-grow: 1;
+
+---
+
+Building a Layout with flexbox
+
+Building a Layout with flexbox
+
+#Can an element be both a flex item and a flex container?
+
+Yes. A flex item will accept flex container properties when it's displayed 'flex' or 'inline-flex'.
+
+https://uploads.teamtreehouse.com/production/quiz-assets/59242/web_flexbox-6.png
+#Which of the following rules aligns the buttons with the bottom edge of a column, regardless of the amount of content inside the column?
+```
+.botton {
+  margin-top: auto;
+}
+```
+
+#Given the following code snippet:
+```
+.nav__item {
+ flex: 1;
+}
+.nav__item--home {
+ flex: 3;
+}
+```
+How will .nav__item--home appear in the browser?
+
+'.nav__item--home' gets three times the amount of space as the other nav items.
+
+#The flex property is the shorthand for:
+
+flex-grow, flex-shrink, and flex-basis
+
+#Given the following code snippet:
+```
+body {
+ display: flex;
+}
+```
+How will the child elements of body appear in the browser?
+
+They will be laid out horizontally on a single line.
+
+---
+
+Flexbox Columns Challenge
+
+#Let's display equal -- but flexible -- widths for the columns. Create a new rule that targets the columns. Then, set the columns to evenly expand and display on one line, with an initial width of 300px.
+https://teamtreehouse.com/community/lets-display-equal-but-flexible-widths-for-the-columns-create-a-new-rule-that-targets-the-columns-then-set-the
+
+```
+.row {
+  display: flex;
+}
+
+.column {
+  flex-grow:1;
+  flex-basis:300px;
+}
+```
+
+#The columns should break to multiple lines when they're narrower than 300px. Give .row the flexbox property and value that will make it a multi-line flex container.
+
+```
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.column {
+  flex-grow:1;
+  flex-basis:300px;
+}
+```
 
 ---
 
@@ -2682,3 +2980,5 @@ class Clock extends React.Component {
   }
 }
 ```
+
+---
