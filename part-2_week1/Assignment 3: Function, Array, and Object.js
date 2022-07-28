@@ -3,11 +3,11 @@ Complete the function below to calculate the total price of all products after a
 
 function calculate(data) {
   // your code here
-  let total_price = 0;
+  let totalPrice = 0;
   for (let i = 0; i < data.products.length; i++) {
-    total_price += data.products[i].price;
+    totalPrice += data.products[i].price;
   }
-  return total_price * data.discount;
+  return totalPrice * data.discount;
 }
 
 const discountedPrice = calculate({

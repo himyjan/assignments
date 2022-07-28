@@ -4,13 +4,17 @@ Reminder: you can't use built-in Math.max() or sort() to complete this assignmen
 
 function max(numbers) {
   // your code here
-  let maxNumber = 0;
-  numbers.forEach((number) => {
-    if (number > maxNumber) {
-      maxNumber = number;
-    }
-  });
-  return maxNumber;
+  if (numbers.length > 0) {
+    let maxNumber = numbers[0];
+    numbers.forEach((number) => {
+      if (number > maxNumber) {
+        maxNumber = number;
+      }
+    });
+    return maxNumber;
+  } else {
+    return "no numbers in array";
+  }
 }
 
 console.log("Assignment 1: Function and Array");
