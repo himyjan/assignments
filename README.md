@@ -4,5 +4,8 @@
 [assignments](https://himyjan.github.io/assignments/)
 =
 
-[Week-1](https://himyjan.github.io/assignments/week-1/index.html)
+[part-1_week1](https://himyjan.github.io/assignments/part-1_week1/index.html)
+=
+
+[part-2_week-1](https://himyjan.github.io/assignments/part-2_week1/index.html)
 =
