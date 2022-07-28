@@ -6,18 +6,20 @@
 
 function practice_3(input) {
   // your code here
-  // let keyAuniqueKeyObjectArray = input.filter((input) => input.key === "a");
-  // let valueAuniqueKeyObjectArray = [];
+
+  // result a b c version
+  // const keyAuniqueKeyObjectArray = input.filter((input) => input.key === "a");
+  // const valueAuniqueKeyObjectArray = [];
   // keyAuniqueKeyObjectArray.forEach((element) => {
   //   valueAuniqueKeyObjectArray.push(element.value);
   // });
-  // let keyBuniqueKeyObjectArray = input.filter((input) => input.key === "b");
-  // let valueBuniqueKeyObjectArray = [];
+  // const keyBuniqueKeyObjectArray = input.filter((input) => input.key === "b");
+  // const valueBuniqueKeyObjectArray = [];
   // keyBuniqueKeyObjectArray.forEach((element) => {
   //   valueBuniqueKeyObjectArray.push(element.value);
   // });
-  // let keyCuniqueKeyObjectArray = input.filter((input) => input.key === "c");
-  // let valueCuniqueKeyObjectArray = [];
+  // const keyCuniqueKeyObjectArray = input.filter((input) => input.key === "c");
+  // const valueCuniqueKeyObjectArray = [];
   // keyCuniqueKeyObjectArray.forEach((element) => {
   //   valueCuniqueKeyObjectArray.push(element.value);
   // });
@@ -27,29 +29,32 @@ function practice_3(input) {
   //   c: valueCuniqueKeyObjectArray,
   // };
 
+  // dynimanic version
   // https://stackoverflow.com/a/51537887
-  const resArr = []; // ["a", "b", "c"]
-  input.filter(function (item) {
-    let i = resArr.findIndex((x) => x.key == item.key);
-    if (i <= -1) {
-      resArr.push(item);
+  const uniqueElementArray = []; // ["a", "b", "c"]
+  input.filter(function (element) {
+    const index = uniqueElementArray.findIndex((x) => x.key == element.key);
+    if (index <= -1) {
+      uniqueElementArray.push(element);
     }
     return null;
   });
+
   const uniqueKeyObjectArray = []; // [ { key: "c", value: 2 }, { key: "c", value: 5 } ]
-  resArr.forEach((element) => {
+  uniqueElementArray.forEach((element) => {
     uniqueKeyObjectArray.push(element.key);
   });
-  const resultObject = {};
+
+  const resultObject = {}; // {'a': [3,3], 'b': [1], 'c': [2,5]}
   for (let i = 0; i < uniqueKeyObjectArray.length; i++) {
     const uniqueKeyArray = []; // [ 2, 5 ]
-    let sameKeyObjectArray = input.filter(
+    const sameKeyObjectArray = input.filter(
       (input) => input.key === uniqueKeyObjectArray[i]
     );
     sameKeyObjectArray.forEach((element) => {
       uniqueKeyArray.push(element.value);
     });
-    resultObject[uniqueKeyObjectArray[i]] = uniqueKeyArray;
+    resultObject[uniqueKeyObjectArray[i]] = uniqueKeyArray; // https://stackoverflow.com/a/14234701
   }
   return resultObject;
 }
@@ -62,4 +67,7 @@ const input3 = [
   { key: "c", value: 5 },
 ];
 
+console.log(
+  "Advanced Practice 3: group by the same key and add the value to a list"
+);
 console.log(practice_3(input3)); // expected output: {'a': [3,3], 'b': [1], 'c': [2,5]}
