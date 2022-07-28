@@ -6,26 +6,52 @@
 
 function practice_3(input) {
   // your code here
-  let keyAResult = input.filter((input) => input.key === "a");
-  let valueAResult = [];
-  keyAResult.forEach((element) => {
-    valueAResult.push(element.value);
+  // let keyAuniqueKeyObjectArray = input.filter((input) => input.key === "a");
+  // let valueAuniqueKeyObjectArray = [];
+  // keyAuniqueKeyObjectArray.forEach((element) => {
+  //   valueAuniqueKeyObjectArray.push(element.value);
+  // });
+  // let keyBuniqueKeyObjectArray = input.filter((input) => input.key === "b");
+  // let valueBuniqueKeyObjectArray = [];
+  // keyBuniqueKeyObjectArray.forEach((element) => {
+  //   valueBuniqueKeyObjectArray.push(element.value);
+  // });
+  // let keyCuniqueKeyObjectArray = input.filter((input) => input.key === "c");
+  // let valueCuniqueKeyObjectArray = [];
+  // keyCuniqueKeyObjectArray.forEach((element) => {
+  //   valueCuniqueKeyObjectArray.push(element.value);
+  // });
+  // return {
+  //   a: valueAuniqueKeyObjectArray,
+  //   b: valueBuniqueKeyObjectArray,
+  //   c: valueCuniqueKeyObjectArray,
+  // };
+
+  // https://stackoverflow.com/a/51537887
+  const resArr = []; // ["a", "b", "c"]
+  input.filter(function (item) {
+    let i = resArr.findIndex((x) => x.key == item.key);
+    if (i <= -1) {
+      resArr.push(item);
+    }
+    return null;
   });
-  let keyBResult = input.filter((input) => input.key === "b");
-  let valueBResult = [];
-  keyBResult.forEach((element) => {
-    valueBResult.push(element.value);
+  const uniqueKeyObjectArray = []; // [ { key: "c", value: 2 }, { key: "c", value: 5 } ]
+  resArr.forEach((element) => {
+    uniqueKeyObjectArray.push(element.key);
   });
-  let keyCResult = input.filter((input) => input.key === "c");
-  let valueCResult = [];
-  keyCResult.forEach((element) => {
-    valueCResult.push(element.value);
-  });
-  return {
-    a: valueAResult,
-    b: valueBResult,
-    c: valueCResult,
-  };
+  const resultObject = {};
+  for (let i = 0; i < uniqueKeyObjectArray.length; i++) {
+    const uniqueKeyArray = []; // [ 2, 5 ]
+    let sameKeyObjectArray = input.filter(
+      (input) => input.key === uniqueKeyObjectArray[i]
+    );
+    sameKeyObjectArray.forEach((element) => {
+      uniqueKeyArray.push(element.value);
+    });
+    resultObject[uniqueKeyObjectArray[i]] = uniqueKeyArray;
+  }
+  return resultObject;
 }
 
 const input3 = [
