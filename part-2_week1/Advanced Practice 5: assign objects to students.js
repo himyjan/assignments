@@ -7,8 +7,8 @@
 function practice_5(students, student_objects) {
   // your code here
 
-  for (var i = 0; i < student_objects.length; i++) {
-    for (var j = 0; j < students.length; j++) {
+  for (let i = 0; i < student_objects.length; i++) {
+    for (let j = 0; j < students.length; j++) {
       if (students[j].student_id == student_objects[i].student_id) {
         Array.isArray(students[j]["Object"])
           ? students[j]["Object"].push(student_objects[i].Object)
