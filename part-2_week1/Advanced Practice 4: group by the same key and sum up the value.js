@@ -6,6 +6,11 @@
 
 function practice_4(input) {
   // your code here
+  return {
+    a: input.filter((x) => x === "a").length,
+    b: input.filter((x) => x === "b").length,
+    c: input.filter((x) => x === "c").length,
+  };
 }
 
 const input3 = [
@@ -15,4 +20,5 @@ const input3 = [
   { key: "a", value: 3 },
   { key: "c", value: 5 },
 ];
+
 console.log(practice_3(input4)); // expected output: {'a': 6, 'b': 1, 'c': 7}
