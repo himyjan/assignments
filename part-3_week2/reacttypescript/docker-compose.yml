@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  reacttypescript:
+    container_name: reacttypescript
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app
+      - ./shared:/shared
+      - /usr/src/app/node_modules
+    working_dir: /usr/src/app
+    command: sh -c "npm rebuild esbuild && yarn dev"
+    env_file:
+      - "./.env"
+    ports:
+      - 8084:3000
