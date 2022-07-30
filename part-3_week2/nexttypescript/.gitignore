@@ -10,14 +10,13 @@
 
 # database
 /prisma/db.sqlite
-/prisma/db.sqlite-journal
 
 # next.js
 /.next/
 /out/
 
 # production
-# /build
+/build
 
 # misc
 .DS_Store
