@@ -9,3 +9,6 @@
 
 [part-2_week-1](https://himyjan.github.io/assignments/part-2_week1/index.html)
 =
+
+[react typescript](https://reacttypescript-cfgejd60n-himyjan.vercel.app/)
+=
