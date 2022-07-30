@@ -16,4 +16,7 @@
 [react typescript](https://reacttypescript-cfgejd60n-himyjan.vercel.app/)
 =
 
+[next typescript](https://nexttypescript-dt3way1ue-himyjan.vercel.app/)
+=
+
 ![image](https://user-images.githubusercontent.com/51815522/181876347-644d8b96-d098-41ba-a438-eb949fc737c2.png)
