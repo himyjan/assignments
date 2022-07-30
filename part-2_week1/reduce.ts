@@ -11,20 +11,24 @@
 // 'accumulator' acc 累加器 類似 int sum 變數 負責類似 Array.forEach((value) => sum += value；);
 // 'currentValue' val 陣列元素帶入參數
 // reduce currentValue 可搭配 解構 (...Array) = 去掉[]的Array ,使用...currentValue
+// 累加器在沒有額外設定初始值的情況下其值會預設為陣列索引0位置的數值
 
 // With JavaScript
 let array = [0, 1, 2, 3];
 function sum(acc, val) {
   return acc + val;
 } // => can change to (acc,val)=>acc+val
-function forReduce() {
+function forReduce(array) {
   let acc = 0;
   for (let val of array) {
     acc += val;
   }
 } // => can change to (acc,val)=>
-let answer = array.reduce(sum); // answer is 6
+let answer;
+answer = forReduce(array); // answer is 6
+answer = array.reduce(sum); // answer is 6
 
+//---
 const array2 = [0, 1, 2, 3].reduce(
   (accumulator, currentValue) => accumulator + currentValue
 );

@@ -25,6 +25,8 @@ dist-ssr
 
 # production
 /build
+!.part-3_week2/react/build
+!.part-3_week2/reacttypescript/build
 
 # misc
 .DS_Store
