@@ -1,0 +1,211 @@
+* {
+  box-sizing: border-box;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* nav bar */
+nav {
+  background-color: #eee;
+}
+
+.header-wrapper {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  padding-left: 50px;
+  font-size: 1.35em;
+  line-height: 50px;
+}
+
+input {
+  display: none;
+}
+
+label {
+  line-height: 50px;
+  cursor: pointer;
+  z-index: 1;
+  position: absolute;
+  right: 50px;
+}
+/* menu button */
+.menu-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 50px;
+  height: 50px;
+}
+
+.menu-btn-item,
+.menu-btn-item::before,
+.menu-btn-item::after {
+  width: 30px;
+  height: 3px;
+  background-color: grey;
+  border-radius: 5px;
+  box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
+}
+
+.menu-btn-item::before,
+.menu-btn-item::after {
+  position: absolute;
+  content: "";
+}
+
+.menu-btn-item::before {
+  transform: translateY(-10px);
+}
+
+.menu-btn-item::after {
+  transform: translateY(10px);
+}
+
+/* animation */
+.menu-btn.open .menu-btn-item {
+  transition: 0.5s ease-out;
+  background: transparent;
+  box-shadow: none;
+}
+
+.menu-btn.open .menu-btn-item::before {
+  transform: rotate(45deg);
+}
+
+.menu-btn.open .menu-btn-item::after {
+  transform: rotate(-45deg);
+}
+
+.menu-btn-item,
+.menu-btn-item::before,
+.menu-btn-item::after,
+.menu-btn.open .menu-btn-item::before,
+.menu-btn.open .menu-btn-item::after {
+  transition: 0.3s ease-out;
+}
+
+input:checked ~ .menu {
+  transform: translateX(0);
+}
+
+/* menu */
+.menu {
+  background: #fff;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 250px;
+  height: 100vh;
+  overflow: hidden;
+  transition: 0.2s;
+  transform: translateX(250px);
+}
+.menu li {
+  text-align: left;
+  border-bottom: 1px solid #efefef;
+}
+.menu li a {
+  display: block;
+  line-height: 50px;
+  font-size: 18px;
+  padding-left: 1em;
+  color: #5d5d5d;
+}
+.menu li a:hover {
+  background: #5d5d5d;
+  color: #fff;
+}
+
+/* section greeting */
+.greeting {
+  display: flex;
+  background-color: rgb(199, 223, 241);
+  height: 230px;
+}
+
+section h1 {
+  margin: auto;
+}
+
+section h1,
+section h2 {
+  font-size: 2em;
+}
+
+section h2 {
+  margin: 0.7em auto;
+}
+
+/* section title */
+.title {
+  text-align: center;
+}
+
+.content-box {
+  margin: 0 auto;
+  width: 90%;
+}
+
+.box {
+  padding-top: 1em;
+  height: 150px;
+  background-color: rgb(134, 136, 137);
+  margin: 5px;
+}
+
+/* bottom button */
+button {
+  margin: 2em;
+  padding: 0.7em;
+  outline: none;
+  border: solid 1px transparent;
+  background-color: rgb(199, 223, 241);
+  font-size: 1em;
+}
+/* media query */
+@media screen and (min-width: 500px) {
+  .content-box {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .box {
+    flex-grow: 1;
+    flex-basis: 45%;
+  }
+}
+
+@media screen and (min-width: 800px) {
+  label {
+    display: none;
+  }
+
+  .menu {
+    position: absolute;
+    width: auto;
+    right: 50px;
+    max-height: 50px;
+    background: #eee;
+    transform: translateX(0);
+  }
+  .menu li {
+    display: inline-block;
+    border-bottom: 0;
+  }
+  .menu li a {
+    padding: 0 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .content-box {
+    width: 100%;
+    max-width: 1200px;
+  }
+}
