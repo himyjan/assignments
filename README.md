@@ -19,4 +19,11 @@
 [next typescript](https://nexttypescript-dt3way1ue-himyjan.vercel.app/)
 =
 
+```
+npm install --save styled-components tailwindcss postcss autoprefixer @tanstack/react-table @tanstack/react-query @tanstack/react-virtual@beta zustand react-redux @reduxjs/toolkit;npx tailwindcss init
+```
+```
+npm install @mui/material @emotion/react @emotion/styled @formkit/auto-animate --force;npm audit fix --force
+```
+
 ![image](https://user-images.githubusercontent.com/51815522/181876347-644d8b96-d098-41ba-a438-eb949fc737c2.png)
