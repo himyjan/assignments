@@ -1,0 +1,10 @@
+Advanced Assignment 1: Google Developers Page (Advanced Optional)
+Imitating a web page in the real world is a good way to improve your skills. Your work is to create a web page, looking like Google Developers, as possible as you can!
+Reminders:
+
+1.	Ensure you can handle assignment.
+2.	Before you start coding, look and play the target page carefully, especially on the layout changes among different screen resolutions.
+3.	If you can, take care of all the details: sizes, spaces, colors, dimensions, etc. That’s what you can really stand out from others.
+
+clone google developers web UI layout using html and css.
+https://developers.google.com/

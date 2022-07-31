@@ -1,2 +1,0 @@
-clone google developers web UI using html and css.
-https://developers.google.com/
