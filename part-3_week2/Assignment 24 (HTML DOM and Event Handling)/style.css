@@ -23,7 +23,7 @@ nav {
   line-height: 50px;
 }
 
-input {
+.switch {
   display: none;
 }
 
@@ -156,6 +156,7 @@ section h2 {
 .content-box2 {
   margin: 0 auto;
   width: 90%;
+  display: none;
 }
 
 .box {
