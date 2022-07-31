@@ -786,7 +786,7 @@ Structuring Your Content Review
 
 #The first element inside a <section> should be:
 
-a heading  (<h1>-<h6>) that indicates what the section is about
+a heading  (```<h1>-<h6>```) that indicates what the section is about
 
 #Please fill in the correct answer in each blank provided below.
 https://teamtreehouse.com/community/the-element-contains-content-thats-indirectly-related-to-the-main-content-of-the-page-3

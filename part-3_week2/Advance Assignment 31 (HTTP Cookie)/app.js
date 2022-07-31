@@ -15,16 +15,17 @@
 
 //----------------------------------------------------------------
 // https://nodejs.org/api/process.html#process_process_exit_code
+// How can I set cookie in node js using express framework? https://stackoverflow.com/a/40135050 https://stackoverflow.com/a/44894355
 const http = require("http");
 const express = require("express");
 const cookieParser = require("cookie-parser");
 
 const app = express();
+
 app.use(cookieParser());
 
-app.get("/", (req, res) => {
-  res.send("Hello, My Server!");
-});
+// let static middleware do its job
+app.use(express.static("./"));
 
 app.get("/myName", (req, res) => {
   // Cookies that have not been signed
@@ -32,6 +33,13 @@ app.get("/myName", (req, res) => {
 
   // Cookies that have been signed
   console.log("Signed Cookies: ", req.signedCookies);
+
+  res.cookies["myName"] != undefined
+    ? res.send(res.cookies["myName"])
+    : res.redirect("http://localhost:3000/sum.html");
+  // Set cookie
+  res.cookie("cookieName", "cookieValue", options); // options is optional
+  res.send("");
 });
 
 const server = http.createServer(app);
@@ -46,4 +54,4 @@ setTimeout(() => {
 
 // opens the url in the default browser
 const open = require("open");
-open("http://localhost:3000/");
+open("http://localhost:3000/myName");
