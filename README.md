@@ -10,13 +10,13 @@
 [part-2_week-1](https://himyjan.github.io/assignments/part-2_week1/index.html)
 =
 
-[react](https://react-h9x3cp018-himyjan.vercel.app/)
+[react](https://react-d94x1do5t-himyjan.vercel.app/)
 =
 
 [react typescript](https://reacttypescript-cfgejd60n-himyjan.vercel.app/)
 =
 
-[next typescript](https://nexttypescript-dt3way1ue-himyjan.vercel.app/)
+[next typescript](https://nexttypescript-87wrva4e9-himyjan.vercel.app/)
 =
 
 ```
