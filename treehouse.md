@@ -2734,6 +2734,736 @@ https://teamtreehouse.com/community/lets-display-equal-but-flexible-widths-for-t
 
 ---
 
+JavaScript Basics
+
+Hello, JavaScript!
+
+JavaScript Everywhere Review
+
+---
+
+Adding Scripts and JavaScript Commands Review
+
+---
+
+Write JavaScript Statements
+
+---
+
+Storing and Tracking Information with Variables
+
+Create a Variable
+
+---
+
+Creating and Naming Variables Review
+
+---
+
+Update the Value of a Variable
+
+---
+
+Variables Review
+
+---
+
+Working with strings
+
+Introducing Strings Review
+
+---
+
+Combine and Manipulate Strings
+
+---
+
+Combine Strings and Template Literals Review
+
+---
+
+Write a Template Literal
+
+---
+
+Write JavaScript Statements
+
+Conditional Statements and Operators Review
+
+---
+
+Use Comparison Operators
+
+---
+
+Booleans and Else If Review
+
+---
+
+Write an 'if' Statement
+
+---
+
+Add an 'else if' Clause
+
+---
+
+Add a Final 'else'Clause
+
+---
+
+Multiple Conditions and JavaScript Comments Review
+
+---
+
+Use Multiple Conditions
+
+
+---
+
+JavaScript Functions
+
+Create Reusable Code with Functions
+
+Introducing Functions in Javascript
+
+---
+
+Ruturn a Value from a Function
+
+---
+
+Function ReturnValues Review
+
+---
+
+Pass Information Into Functions
+
+Pass an Argument to a a Function
+
+---
+
+Paramrters and Arguments Review
+
+---
+
+Create a max() Function
+
+---
+
+Scope and Function Expressions Review
+
+---
+
+Arrow Functions
+
+Areow Functions Review
+
+---
+
+Create an Arrow Function
+
+---
+
+JavaScript Functions reviewed
+
+---
+
+JavaScript Loops
+
+Pass Information Into Functions
+
+Review Loops
+
+---
+
+Create a while Loop
+
+---
+
+Create a do...while loop
+
+---
+
+Review while,do...while and Loop Conditions
+
+---
+
+Working with 'for'
+Loops
+
+
+Create a for Loop
+
+---
+
+Terminate a Loop
+
+---
+
+Review for Loops and Exiting Loops
+
+---
+
+Refactor Codewith a Loop
+
+---
+
+JavaScript Arrays
+
+Store Multiple Values in an Array
+
+Create an Arrays
+
+---
+
+Access Array Elements by index
+
+
+---
+
+Review Array Basics
+
+---
+
+Add Elements to an Array
+
+---
+
+Remove Elements from an Array
+
+---
+
+Review Adding, Removing, and Copying Array Elements
+
+---
+
+Loop Through Arrays
+
+Loop Through an Arrays
+
+---
+
+Array Methods
+
+---
+
+Review Array Methods and Iterating
+
+---
+
+Multidimensional Arrays
+
+Create a Multidimensional Array
+
+---
+
+Review JavaScript Arrays
+
+---
+
+JavaScript Objects
+
+Object Basics
+
+Create an Object
+
+---
+
+Access and Set Object Properties
+
+---
+
+Review Object Basics
+
+---
+
+Loop Through Objects
+
+Loop Through an Object's Properties
+
+---
+
+Create an Array of Objects
+
+---
+
+Review 'for in' and Array of Objects
+
+---
+
+Object-Oriented JavaScript
+
+Introduction to Object-Oriented JavaScript
+
+Reviewing Intriduction to Object-Oriented JavaScript
+
+---
+
+Object Basics
+
+Creating Object Literals
+
+---
+
+Filing Out the Play Methods
+
+---
+
+Changing and Adding Properties
+
+---
+
+Reviewing Object Basic
+
+---
+
+Working with Classes in JavaScript
+
+Creating a new class
+
+---
+
+Instantiating an Object
+
+---
+
+Adding methods to classes
+
+---
+
+Review Working with Clases in JavaScript
+
+---
+
+Getters and Setters
+
+Creating Setter methods
+
+---
+
+Reviewing Getters and Setters
+
+---
+
+Callback Functions in JavaScript
+
+Introduction to Callback Functions
+
+Identifying Callbacks
+
+---
+
+Using a Functions as a Callback
+
+---
+
+Creating an Anonymous Callback Function
+
+---
+
+Callbacks with Timers
+
+Review: Timers
+
+---
+
+Triggering an Animation
+
+---
+
+Callbacks and the DOM
+
+Callback with DOM Elements
+
+---
+
+Review: Callbacks
+
+---
+
+JavaScript Array Iteration Methods
+
+Array Iteration
+
+Arrays Review
+
+---
+
+Practice forEach()
+
+---
+
+Array Manipulation
+
+Practice filter()
+
+---
+
+Practice map()
+
+---
+
+Practice reduce()
+
+---
+
+Combining Array Methods
+
+Method Changing
+
+---
+
+Working with Objects
+
+---
+
+Combining filter() and map()
+
+---
+
+Combining filter() and reduce()
+
+---
+
+Array Flattening
+
+---
+
+Nested Data
+
+---
+
+JavaScript and the DOM
+
+The Browser Environment
+
+The Browser Environment Review
+
+---
+
+Getting a Handle on the DOM
+
+select by ID
+
+---
+
+Select by Tag name
+
+---
+
+Selection Review
+
+---
+
+Getting a Handle on the DOM Review
+
+---
+
+Return Elements Using CSS Selectors
+
+---
+
+Making Changes to the DOM
+
+Modifying Elements
+
+---
+
+Review Attribute and Element Creation
+
+---
+
+DOM Manipulation Review
+
+---
+
+Review Appending and Removing Nodes
+
+---
+
+Interacting with the DOM
+
+Responding to Events
+
+Events and Function as Parameters Reviewing
+
+---
+
+Adding an Event Listener
+
+---
+
+Event Listening
+
+---
+
+Traversing the DOM
+
+Event Delegation
+
+---
+
+DOM review
+
+---
+
+Traversal Review
+
+---
+
+AJAX Basics
+
+AJAX Concepts
+
+Review: AJAX Basics
+
+---
+
+Review: How AJAX Works
+
+---
+
+Create an XMLHttpRequest Object
+
+---
+
+Finish the AJAX Request
+
+---
+
+Review AJAX Responses Formats
+
+---
+
+Create an XML File
+
+---
+
+Finish the XML Document
+
+---
+
+Review AJAX Security Limitions
+
+---
+
+Programming AJAX
+
+Review AJAX Callbacks
+
+---
+
+Create a callback
+
+---
+
+Check forthe correct ready state
+
+---
+
+Review JSON
+
+---
+
+Create a JSON file
+
+---
+
+Finish the JSON File
+
+---
+
+Review Parsing JSON
+
+---
+
+Asynchronous Programming with JavaScript
+
+What is Asynchronous Programming?
+
+Asynchronous Programming Review
+
+---
+
+Asynchronous JavaScript with Callbacks
+
+Callback Functions Review
+
+---
+
+Understanding Promises
+
+Create a Promise Review
+
+---
+
+JavaScript Promise Review
+
+---
+
+Exploring Async/Await
+
+Async/Await Review
+
+---
+
+Working with the Fetch API
+
+---
+
+Node.js Basics
+
+Introduction to Node.js
+
+Review Introduction to Node
+
+---
+
+Building a Command Line Application
+
+Getting the responses body
+
+---
+
+Parsing JSON
+
+---
+
+Command Line Arguments
+
+---
+
+Handling Errors in Node
+
+Error Review
+
+---
+
+Building a Dictionary App
+
+Node.js Basics Review
+
+---
+
+npm Basics
+
+Introduction to npm
+
+npm and Packages Review
+
+---
+
+Managing Packages with NPM
+
+Installing Local Packages
+
+---
+
+Installing Global Packages
+
+---
+
+Review
+
+---
+
+Handling package.json with npm
+
+---
+
+Express Basics
+
+Getting Started with Express
+
+Review Installing Express
+
+---
+
+Review: Installing Express
+
+---
+
+Review: Your First Express App
+
+---
+
+Setting Up a Basic Express App
+
+---
+
+Using Templates with Express
+
+Review: What is Template Rendering
+
+---
+
+Review: Pug Basics
+
+---
+
+Review Response.render
+
+---
+
+Review: Pug Inheritance & Logic
+
+---
+
+Deeper into Routing with Express
+
+Review: The Request Object
+
+---
+
+Review Adding Multiple Routes
+
+---
+
+Review: Statelessness
+
+---
+
+Review: Redirects
+
+---
+
+Middleware
+
+---
+
+Review: Middleware Sequence and Routing
+
+---
+
+Review: 'next' and Handling Errors
+
+---
+
+Review: Error Handling and 404s
+
+---
+
+Parameters, Query Strings, and Modularizing Routes
+
+Review: Modular Routes and Route Parameters
+
+---
+
+Review: Card Template and links
+
+---
+
+Review
+
+---
+
+Serving Static Files in Express
+
+Course Review
+
+---
+
 React Basics
 
 First Steps in React
@@ -2771,7 +3501,6 @@ const header = (
 #Elements written in JSX get transpiled to:
 
 React.createElement() functions
-
 
 #What tool do we use to translate JSX into standard JavaScript?
 
@@ -2980,5 +3709,273 @@ class Clock extends React.Component {
   }
 }
 ```
+
+---
+
+Node.js Basics 2017
+
+Introduction to Node.js
+
+The Console
+
+---
+
+Review Introduction to Node.js
+
+---
+
+Building a Command Line Application
+
+Making a GET Request with https
+
+---
+
+Getting the Response body
+
+---
+
+Parsing JSON
+
+---
+
+Command Line Argument
+
+---
+
+Handling Errors in Node
+
+Handling Errors in Node
+
+---
+
+Using try and catch
+
+---
+
+Handling Parsing and Status Code Errors
+
+---
+
+Organizing Your Code with require
+
+---
+
+Create a Command Line Weather Application
+
+Node.js Basics Review
+
+---
+
+Practice Classes in JavaScript
+
+Practicing Classes
+
+Practice Creating a Class
+
+---
+
+Practice Writing a Constructor Methods
+
+---
+
+Practice Instantiating an Object
+
+---
+
+Practice Adding Methods
+
+---
+
+React by Example
+
+Setting up With Create React App
+
+Setting up With Create React App Review
+
+---
+
+Building the Application
+
+Creating Components Review
+
+---
+
+Filtering and Changing State Review
+
+---
+
+Building the Application Review
+
+---
+
+Refining the App
+
+---
+
+Refining the App Review
+
+---
+
+SQL Basics
+
+Data, Databases and SQL
+
+Data, Databases and SQL Review
+
+---
+
+Getting Data from a Database
+
+Selecting All Information From a Table
+
+---
+
+Retrieving Sepecific Columns of Information
+
+---
+
+Categorizing Your Output with 'AS'
+
+---
+
+Getting Data From a Database Review
+
+---
+
+Finding the Data You Want
+
+Searching Tables with 'WHERE'
+
+---
+
+Filtering by Comparing Values
+
+---
+
+Filtering on More than One Condition
+
+---
+
+Filtering by Dates
+
+---
+
+Searching Within a Set of Values
+
+---
+
+Searching Within a Range of Values
+
+---
+
+Finding Data that Matches a Pattern
+
+---
+
+Filtering Outor Find Missing Information
+
+---
+
+Finding the Data You want Review
+
+---
+
+React Components
+
+Build Modular Interfaces with Components
+
+Modules Review
+
+---
+
+Managing State and Data Flow
+
+Managing State Review
+
+---
+
+Stateful Components and Lifecycle Methods
+
+Stateful Components and Lifecycle Methods Review
+
+---
+
+React Component Patterns
+
+React Component Patterns Review
+
+---
+
+React Router 4 Basics
+
+Getting Started with React Router
+
+Routing Review
+
+---
+
+Declaring Routes Review
+
+---
+
+Navigating, Nesting and Redirecting Routes
+
+Navigating and Nesting Routes Review
+
+---
+
+Going Further with Routing
+
+Going Further with Routing Review
+
+---
+
+React Authentication
+
+Introducing the Authentication Project
+
+Introducing Authentication Review
+
+---
+
+Implementing Basic Authentication
+
+Implementing Basic Authentication Review
+
+---
+
+React Router and Authentication
+
+React Router and Authentication Review
+
+---
+
+Vue.js Basics
+
+Introducing Vue
+
+Introducing Vue Quiz
+
+---
+
+What a Beautiful Vue!
+
+What a Beautiful Vue Quiz 1
+
+What a Beautiful Vue Quiz 2
+
+---
+
+Sweeping Vues: Loops, Methods, Directives
+
+Sweeping Vues Quiz 1
+
+Sweeping Vues Quiz 2
+
+---
+
+Building a Flashcard App
+
+Building a Flashcard App Quiz
 
 ---
