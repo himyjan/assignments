@@ -2818,7 +2818,6 @@ Multiple Conditions and JavaScript Comments Review
 
 Use Multiple Conditions
 
-
 ---
 
 JavaScript Functions
@@ -2892,7 +2891,6 @@ Review while,do...while and Loop Conditions
 Working with 'for'
 Loops
 
-
 Create a for Loop
 
 ---
@@ -2918,7 +2916,6 @@ Create an Arrays
 ---
 
 Access Array Elements by index
-
 
 ---
 
@@ -3709,6 +3706,96 @@ class Clock extends React.Component {
   }
 }
 ```
+
+---
+
+Git Branches and Merging
+
+Branches
+
+Branch Basic
+
+---
+
+Topic Branches
+
+---
+
+Branches Behind the Scenes
+
+---
+
+Merging
+
+Merging
+
+---
+
+Remote Branches
+
+Remote Branches
+
+---
+
+Local Tracking Branches
+
+---
+
+Updating Remote Branches
+
+---
+
+Branches on Git Hosting Services
+
+Remote Branches on a Hosting Services
+
+---
+
+GitHub Basics
+
+Hello, GitHub!
+
+Social Coding Review
+
+---
+
+GitHub Icons Review
+
+---
+
+Working By Yourself
+
+Push to GitHub Test
+
+---
+
+Create a branch Test
+
+---
+
+Working By Yourself Review
+
+---
+
+Working on a Team
+
+Creating a Repositories Review
+
+---
+
+Working on a Team Review
+
+---
+
+Create a Web Presence on GitHub
+
+GitHub Pages Review
+
+---
+
+Get Involved in Open Source
+
+GitHub Basics: Review
 
 ---
 
