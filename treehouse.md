@@ -2740,13 +2740,152 @@ Hello, JavaScript!
 
 JavaScript Everywhere Review
 
+#JavaScript is used to build complex web applications, like Gmail, Google Docs, and Google Maps.
+
+True
+
+#JavaScript lets you add interactive components to a site like photo galleries, tabbed panels, or form validation.
+
+True
+
+#A quick way to run JavaScript is in the web browser's developer tools, using a tool called:
+
+the JavaScript console
+
+#Can you use JavaScript on a web server?
+
+Yes, using Node.js.
+
+#What does "syntax" mean?
+
+Syntax is like the vocabulary and grammar of a programming language.it's a language's words and command as well as the instructions for putting them together to create a program.
+
 ---
 
 Adding Scripts and JavaScript Commands Review
 
+#When a browser "executes" a JavaScript program, what is the browser doing?
+
+The browser reads and acts on the JavaScript programming. This is also called "running" the program.
+
+#Please fill in the correct answer in each blank provided below.
+
+Complete the following code so that the message "Program complete" writes to the browser's JavaScript console:
+```
+console.__("Program complete");
+```
+
+log
+
+#Which of the following JavaScript commands instructs a browser to open a dialog box with a message?
+
+alert()
+
+#What is a "syntax error"?
+
+A "grammatical" mistake like mistyping a JavaScript command or forgetting a closing parentheses or quote mark.
+
+#What is one benefit of putting your JavaScript code just before the closing ```</body>``` tag on a web page?
+
+Users view the contents of the web page before the JavaScript program runs.
+
+#When adding JavaScript to a web page, where can you put your JavaScript code?
+
+Inside ```<script>``` tags placed just before the closing ```</body>``` of a web page.
+
+Inside ```<script>``` tags placed in the ```<head>``` of a web page.
+
+In a separate file, that ends in .js.
+
 ---
 
 Write JavaScript Statements
+
+#There are two files: index.html and app.js. To run the programming in app.js, you first need to load it into index.html. Add the required HTML to load the external JavaScript file into the web page. Make sure to add your code inside the ```<body>``` element.
+```
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics</title>
+  </head>
+  <body>
+
+  </body>
+</html>
+```
+
+```
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics</title>
+  </head>
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>
+```
+```
+```
+
+#Next, in the app.js file, add the code required to print "Begin program" to the browser's JavaScript console.
+
+```
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics</title>
+  </head>
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>
+```
+```
+console.log("Begin program");
+```
+
+#Next, write the code for an alert dialog with the message "I am Programming!".
+
+```
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics</title>
+  </head>
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>
+```
+```
+console.log("Begin program");
+alert("I am Programming!");
+```
+
+#At the end of the script (after ```alert()```), add the code required to print 'End program' to the browser's JavaScript console.
+
+```
+<!DOCTYPE HTML>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>JavaScript Basics</title>
+  </head>
+  <body>
+    <script src="app.js"></script>
+  </body>
+</html>
+```
+```
+console.log("Begin program");
+alert("I am Programming!");
+console.log("End program");
+```
 
 ---
 
@@ -2754,17 +2893,126 @@ Storing and Tracking Information with Variables
 
 Create a Variable
 
+#Create a variable named ```myName```. Assign it your name between quotes (a string value).
+```
+var myName = "";
+```
+
 ---
 
 Creating and Naming Variables Review
+
+#Please fill in the correct answer in each blank provided below.
+
+Add the code that logs the value stored in the ```greeting``` variable to the console:
+```
+var greeting = "Good morning";
+console.log(__);
+```
+
+greeting
+
+#Which of the following is a valid variable name in JavaScript?
+
+$perPound
+
+#Please fill in the correct answer in each blank provided below.
+
+Finish the code below to create a variable named shipsLeft containing the number 10.
+```
+__shipsLeft = 10;
+```
+
+const
+
+var
+
+let
+
+#Which of the following creates a variable named ```playerName``` and stores the name "Reggie" in it?
+
+var playerName = "Reggie";
+
+#Which of the following is NOT a valid variable name in JavaScript?
+
+var
+
+#All of the variable names below are OK to use in a JavaScript program. However, which one is the best choice?
+
+var message
 
 ---
 
 Update the Value of a Variable
 
+#Evaluate the code in ```app.js```. The code currently produces a ```TypeError```. Adjust the code so that the ```points``` variable holds the expected value.
+```
+const points = 100;
+const bonusPts = 50;
+
+points += bonusPts;
+console.log(points);
+```
+
+```
+let points = 100;
+const bonusPts = 50;
+
+points += bonusPts;
+console.log(points);
+```
+
 ---
 
 Variables Review
+
+#Consider the following code:
+```
+let correct = 0;
+correct = correct + 1;
+```
+How can you re-write the variable reassignment using a shorthand syntax?
+
+```
+let correct = 0;
+correct += 1;
+```
+
+#It's best not to use the const keyword in which of the following variable declarations:
+
+a variable used to track a player's score
+
+#Which of the following statements is invalid JavaScript?
+
+constweeksPerYear = 52;
+
+#What happens when the code below runs?
+```
+const player = 'Skye';
+player = 'Chase';
+
+console.log(player);
+```
+
+An ```Uncaught TypeError``` is logged to the console
+
+#Please fill in the correct answer in each blank provided below.
+
+Complete the variable declaration by adding the keyword that does not allow the value stored in ```price``` to change:
+
+```
+__price = 9.99;
+```
+
+const
+
+#Which of the following produces an ```Uncaught SyntaxError```?
+
+```
+let numberToGuess = 5;
+let numberToGuess = 20;
+console.log(numberToGuess);
+```
 
 ---
 
@@ -2772,9 +3020,74 @@ Working with strings
 
 Introducing Strings Review
 
+#Please fill in the correct answer in each blank provided below.
+
+Complete this code by adding the string property that returns the number of characters inside the string:
+```
+"Good morning, students!".__;
+```
+
+length
+
+#Please fill in the correct answer in each blank provided below.
+
+In the code below, complete the string stored in the ```message``` variable:
+```
+const message = "You're welcome!__;
+```
+
+```"```
+
+#Which of the following is an example of a string?
+
+"Hello world!"
+
+#Which of the following is a method?
+
+.toUpperCase()
+
+#Which of the following creates the variable ```message``` and stores a string value in it?
+
+```
+let message = "These are not the droids you're looking for";
+```
+
 ---
 
 Combine and Manipulate Strings
+
+#Assign your first name to the variable ```firstName``` and your last name to ```lastName```.
+```
+let firstName;
+let lastName;
+let role = 'developer';
+```
+
+```
+let firstName = "fn";
+let lastName = "ln";
+let role = 'developer';
+```
+
+#Below role, create a new variable named msg that combines the firstName, lastName and role variables to create a string like "Carlos Salgado: developer".
+
+HINT: Pay close attention to the spaces in the string.
+
+```
+let firstName = "fn";
+let lastName = "ln";
+let role = 'developer';
+let msg = firstName + " "+ lastName + ": " + role;
+```
+
+#Finally, convert the string stored in role to uppercase letters. The final msg string should look similar to this: "Carlos Salgado: DEVELOPER".
+
+```
+let firstName = "fn";
+let lastName = "ln";
+let role = 'developer';
+let msg = firstName + " "+ lastName + ": " + role.toUpperCase();
+```
 
 ---
 
