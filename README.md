@@ -10,6 +10,12 @@
 [part-2_week-1](https://himyjan.github.io/assignments/part-2_week1/index.html)
 =
 
+[part-3_week2 Assignments 1](https://himyjan.github.io/assignments/part-3_week2/Assignment%201%20(HTML%20DOM%20and%20Event%20Handling)/index.html)
+=
+
+[part-3_week2 Assignments 2](https://himyjan.github.io/assignments/part-3_week2/Assignment%202%20(HTML%20DOM%20and%20AJAX)/index.html)
+=
+
 [react](https://react-d94x1do5t-himyjan.vercel.app/)
 =
 
