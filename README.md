@@ -22,17 +22,17 @@ AppWorkSchool_FrontEndTraining
 [react](https://react-three-alpha.vercel.app/)
 =
 
-[react%20typescript](https://assignments-nine.vercel.app/)
+[react typescript](https://assignments-nine.vercel.app/)
 =
 
-[next%20typescript](https://nexttypescript.vercel.app/)
+[next typescript](https://nexttypescript.vercel.app/)
 =
 
 ```
-npm%20install%20--save%20styled-components%20tailwindcss%20postcss%20autoprefixer%20@tanstack/react-table%20@tanstack/react-query%20@tanstack/react-virtual@beta%20zustand%20react-redux%20@reduxjs/toolkit;npx%20tailwindcss%20init
+npm install --save styled-components tailwindcss postcss autoprefixer @tanstack/react-table @tanstack/react-query @tanstack/react-virtual@beta zustand react-redux @reduxjs/toolkit;npx tailwindcss init
 ```
 ```
-npm%20install%20@mui/material%20@emotion/react%20@emotion/styled%20@formkit/auto-animate%20--force;npm%20audit%20fix%20--force
+npm install @mui/material @emotion/react @emotion/styled @formkit/auto-animate --force;npm audit fix --force
 ```
 
 ![image](https://user-images.githubusercontent.com/51815522/181876347-644d8b96-d098-41ba-a438-eb949fc737c2.png)
