@@ -1,4 +1,4 @@
-#%20AppWorkSchool_FrontEndTraining
+AppWorkSchool_FrontEndTraining
 ---
 
 [assignments](https://himyjan.github.io/assignments/)
@@ -7,7 +7,7 @@
 [part-1_week1](https://himyjan.github.io/assignments/part-1_week1/Assignment%201%20(RWD%20Page%20Layout%20in%20pure%20HTML%20and%20CSS)/index.html)
 =
 
-[part-1_week-1](https://himyjan.github.io/assignments/part-1_week1/Advanced%20Assignment%201%20(Google%20Developers%20Page)/index.html)
+[part-1_week-1](https://himyjan.github.io/assignments/part-1_week1/Advanced%20As signment%201%20(Google%20Developers%20Page)/index.html)
 =
 
 [part-2_week-1 Assignment 1-5 Advanced Assignment 1-5](https://himyjan.github.io/assignments/part-2_week1/index.html)
