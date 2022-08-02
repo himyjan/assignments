@@ -22,7 +22,7 @@ AppWorkSchool_FrontEndTraining
 [react](https://react-three-alpha.vercel.app/)
 =
 
-[react typescript](https://assignments-nine.vercel.app/)
+[react typescript](https://reacttypescript.vercel.app/)
 =
 
 [next typescript](https://nexttypescript.vercel.app/)
