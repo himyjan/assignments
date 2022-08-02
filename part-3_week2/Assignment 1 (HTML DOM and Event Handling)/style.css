@@ -8,7 +8,7 @@ a {
 
 /* nav bar */
 nav {
-  background: #eee;
+  background: rgb(235, 235, 235);
 }
 
 .header-wrapper {
@@ -49,7 +49,7 @@ label {
 .menu-btn-item::after {
   width: 30px;
   height: 3px;
-  background-color: grey;
+  background-color: rgb(71, 71, 71);
   border-radius: 5px;
   box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
 }
@@ -97,7 +97,7 @@ input:checked ~ .menu {
 
 /* menu */
 .menu {
-  background: #fff;
+  background: white;
   position: fixed;
   top: 0;
   right: 0;
@@ -120,7 +120,7 @@ input:checked ~ .menu {
 }
 .menu li a:hover {
   background: #5d5d5d;
-  color: #fff;
+  color: white;
 }
 
 body {
@@ -130,7 +130,7 @@ body {
 /* section greeting */
 .greeting {
   display: flex;
-  background-color: rgb(199, 223, 241);
+  background-color: rgb(198, 216, 234);
   height: 230px;
 }
 
@@ -162,7 +162,7 @@ section h2 {
 .box {
   padding-top: 1em;
   height: 150px;
-  background-color: rgb(134, 136, 137);
+  background-color: rgb(125, 142, 159);
   margin: 5px;
 }
 
@@ -176,7 +176,7 @@ button {
   padding: 0.7em;
   outline: none;
   border: solid 1px transparent;
-  background-color: rgb(199, 223, 241);
+  background-color: rgb(198, 216, 234);
   font-size: 1em;
 }
 /* media query */
@@ -203,7 +203,7 @@ button {
     width: auto;
     right: 50px;
     max-height: 50px;
-    background: #eee;
+    background: white;
     transform: translateX(0);
   }
   .menu li {
