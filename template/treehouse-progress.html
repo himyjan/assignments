@@ -1,0 +1,1605 @@
+<!DOCTYPE html>
+<html lang="en" class="application-layout progress-show progress-controller show-action logged-in chrome webkit windows loaded scrolling scrolling-down" id="layout" data-featurette="application-layout"><head><script async="" src="https://static.woopra.com/js/w.js"></script><script type="text/javascript" async="" src="https://static.woopra.com/js/w.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtm.js?id=GTM-NMQR7ZV&amp;l=dataLayer"></script><script type="text/javascript" src="https://cdn.segment.com/next-integrations/integrations/vendor/commons.54701049fd6fb8497e9e.js.gz" async="" status="loaded"></script><script type="text/javascript" src="https://cdn.segment.com/next-integrations/integrations/woopra/3.0.0/woopra.dynamic.js.gz" async="" status="loaded"></script><script type="text/javascript" src="https://cdn.segment.com/next-integrations/integrations/google-tag-manager/2.5.1/google-tag-manager.dynamic.js.gz" async="" status="loaded"></script><script src="//d3cxv97fi8q177.cloudfront.net/foundation-A187849-72ad-44c6-83bc-3d4f458b85e71.min.js" type="text/javascript" async="" id="irfOuterTag"></script><script type="text/javascript" async="" src="https://cdn.segment.com/analytics.js/v1/DMUKccVYvuuUIVSJlokCJe0YQyGm9qVb/analytics.min.js"></script><script src="https://js-agent.newrelic.com/nr-1216.min.js"></script><script async="" src="https://www.clarity.ms/tag/uet/4033014"></script><script src="//d3cxv97fi8q177.cloudfront.net/foundation-A187849-72ad-44c6-83bc-3d4f458b85e71.min.js" type="text/javascript" async="" id="irfOuterTag"></script><script type="text/javascript" async="" src="https://bat.bing.com/bat.js"></script><script type="text/javascript" async="" src="https://snap.licdn.com/li.lms-analytics/insight.min.js"></script><script type="text/javascript" async="" src="https://static.hotjar.com/c/hotjar-504173.js?sv=7"></script><script type="text/javascript" async="" src="https://www.google-analytics.com/analytics.js"></script><script type="text/javascript" async="" src="https://www.googleadservices.com/pagead/conversion_async.js"></script><script async="" src="https://static.woopra.com/js/w.js"></script><script type="text/javascript" async="" src="https://www.redditstatic.com/ads/pixel.js"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-0024BJG3Z8&amp;l=dataLayer&amp;cx=c"></script><script type="text/javascript" async="" src="https://www.googletagmanager.com/gtag/js?id=G-ERPNDV8VL6&amp;l=dataLayer&amp;cx=c"></script><script src="https://js.usemessages.com/conversations-embed.js" type="text/javascript" id="hubspot-messages-loader" data-loader="hs-scriptloader" data-hsjs-portal="7320745" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="https://js.hs-banner.com/7320745.js" type="text/javascript" id="cookieBanner-7320745" data-cookieconsent="ignore" data-hs-ignore="true" data-loader="hs-scriptloader" data-hsjs-portal="7320745" data-hsjs-env="prod" data-hsjs-hublet="na1"></script><script src="https://js.hs-analytics.net/analytics/1659408000000/7320745.js" type="text/javascript" id="hs-analytics"></script>
+    <title>Learning Progress</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+<script async="" src="//www.googletagmanager.com/gtm.js?id=GTM-PZ55S7"></script><script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","errorBeacon":"bam.nr-data.net","licenseKey":"d98036d1cc","applicationID":"1824378","transactionName":"cQ5eRRQNCQ8BFhZIRV0GQlQVEUoQDAtO","queueTime":1,"applicationTime":781,"agent":""}</script>
+<script type="text/javascript">(window.NREUM||(NREUM={})).init={ajax:{deny_list:["bam.nr-data.net"]}};(window.NREUM||(NREUM={})).loader_config={xpid:"VwIBVldWGwIIVlVRAAk=",licenseKey:"d98036d1cc",applicationID:"1824378"};window.NREUM||(NREUM={}),__nr_require=function(t,e,n){function r(n){if(!e[n]){var i=e[n]={exports:{}};t[n][0].call(i.exports,function(e){var i=t[n][1][e];return r(i||e)},i,i.exports)}return e[n].exports}if("function"==typeof __nr_require)return __nr_require;for(var i=0;i<n.length;i++)r(n[i]);return r}({1:[function(t,e,n){function r(t){try{s.console&&console.log(t)}catch(e){}}var i,o=t("ee"),a=t(27),s={};try{i=localStorage.getItem("__nr_flags").split(","),console&&"function"==typeof console.log&&(s.console=!0,i.indexOf("dev")!==-1&&(s.dev=!0),i.indexOf("nr_dev")!==-1&&(s.nrDev=!0))}catch(c){}s.nrDev&&o.on("internal-error",function(t){r(t.stack)}),s.dev&&o.on("fn-err",function(t,e,n){r(n.stack)}),s.dev&&(r("NR AGENT IN DEVELOPMENT MODE"),r("flags: "+a(s,function(t,e){return t}).join(", ")))},{}],2:[function(t,e,n){function r(t,e,n,r,s){try{p?p-=1:i(s||new UncaughtException(t,e,n),!0)}catch(f){try{o("ierr",[f,c.now(),!0])}catch(d){}}return"function"==typeof u&&u.apply(this,a(arguments))}function UncaughtException(t,e,n){this.message=t||"Uncaught error with no additional information",this.sourceURL=e,this.line=n}function i(t,e){var n=e?null:c.now();o("err",[t,n])}var o=t("handle"),a=t(28),s=t("ee"),c=t("loader"),f=t("gos"),u=window.onerror,d=!1,l="nr@seenError";if(!c.disabled){var p=0;c.features.err=!0,t(1),window.onerror=r;try{throw new Error}catch(h){"stack"in h&&(t(10),t(9),"addEventListener"in window&&t(6),c.xhrWrappable&&t(11),d=!0)}s.on("fn-start",function(t,e,n){d&&(p+=1)}),s.on("fn-err",function(t,e,n){d&&!n[l]&&(f(n,l,function(){return!0}),this.thrown=!0,i(n))}),s.on("fn-end",function(){d&&!this.thrown&&p>0&&(p-=1)}),s.on("internal-error",function(t){o("ierr",[t,c.now(),!0])})}},{}],3:[function(t,e,n){var r=t("loader");r.disabled||(r.features.ins=!0)},{}],4:[function(t,e,n){function r(){var t=new PerformanceObserver(function(t,e){var n=t.getEntries();s(v,[n])});try{t.observe({entryTypes:["resource"]})}catch(e){}}function i(t){if(s(v,[window.performance.getEntriesByType(w)]),window.performance["c"+l])try{window.performance[h](m,i,!1)}catch(t){}else try{window.performance[h]("webkit"+m,i,!1)}catch(t){}}function o(t){}if(window.performance&&window.performance.timing&&window.performance.getEntriesByType){var a=t("ee"),s=t("handle"),c=t(10),f=t(9),u=t(5),d=t(19),l="learResourceTimings",p="addEventListener",h="removeEventListener",m="resourcetimingbufferfull",v="bstResource",w="resource",g="-start",y="-end",x="fn"+g,b="fn"+y,E="bstTimer",R="pushState",S=t("loader");if(!S.disabled){S.features.stn=!0,t(8),"addEventListener"in window&&t(6);var O=NREUM.o.EV;a.on(x,function(t,e){var n=t[0];n instanceof O&&(this.bstStart=S.now())}),a.on(b,function(t,e){var n=t[0];n instanceof O&&s("bst",[n,e,this.bstStart,S.now()])}),c.on(x,function(t,e,n){this.bstStart=S.now(),this.bstType=n}),c.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),this.bstType])}),f.on(x,function(){this.bstStart=S.now()}),f.on(b,function(t,e){s(E,[e,this.bstStart,S.now(),"requestAnimationFrame"])}),a.on(R+g,function(t){this.time=S.now(),this.startPath=location.pathname+location.hash}),a.on(R+y,function(t){s("bstHist",[location.pathname+location.hash,this.startPath,this.time])}),u()?(s(v,[window.performance.getEntriesByType("resource")]),r()):p in window.performance&&(window.performance["c"+l]?window.performance[p](m,i,d(!1)):window.performance[p]("webkit"+m,i,d(!1))),document[p]("scroll",o,d(!1)),document[p]("keypress",o,d(!1)),document[p]("click",o,d(!1))}}},{}],5:[function(t,e,n){e.exports=function(){return"PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver}},{}],6:[function(t,e,n){function r(t){for(var e=t;e&&!e.hasOwnProperty(u);)e=Object.getPrototypeOf(e);e&&i(e)}function i(t){s.inPlace(t,[u,d],"-",o)}function o(t,e){return t[1]}var a=t("ee").get("events"),s=t("wrap-function")(a,!0),c=t("gos"),f=XMLHttpRequest,u="addEventListener",d="removeEventListener";e.exports=a,"getPrototypeOf"in Object?(r(document),r(window),r(f.prototype)):f.prototype.hasOwnProperty(u)&&(i(window),i(f.prototype)),a.on(u+"-start",function(t,e){var n=t[1];if(null!==n&&("function"==typeof n||"object"==typeof n)){var r=c(n,"nr@wrapped",function(){function t(){if("function"==typeof n.handleEvent)return n.handleEvent.apply(n,arguments)}var e={object:t,"function":n}[typeof n];return e?s(e,"fn-",null,e.name||"anonymous"):n});this.wrapped=t[1]=r}}),a.on(d+"-start",function(t){t[1]=this.wrapped||t[1]})},{}],7:[function(t,e,n){function r(t,e,n){var r=t[e];"function"==typeof r&&(t[e]=function(){var t=o(arguments),e={};i.emit(n+"before-start",[t],e);var a;e[m]&&e[m].dt&&(a=e[m].dt);var s=r.apply(this,t);return i.emit(n+"start",[t,a],s),s.then(function(t){return i.emit(n+"end",[null,t],s),t},function(t){throw i.emit(n+"end",[t],s),t})})}var i=t("ee").get("fetch"),o=t(28),a=t(27);e.exports=i;var s=window,c="fetch-",f=c+"body-",u=["arrayBuffer","blob","json","text","formData"],d=s.Request,l=s.Response,p=s.fetch,h="prototype",m="nr@context";d&&l&&p&&(a(u,function(t,e){r(d[h],e,f),r(l[h],e,f)}),r(s,"fetch",c),i.on(c+"end",function(t,e){var n=this;if(e){var r=e.headers.get("content-length");null!==r&&(n.rxSize=r),i.emit(c+"done",[null,e],n)}else i.emit(c+"done",[t],n)}))},{}],8:[function(t,e,n){var r=t("ee").get("history"),i=t("wrap-function")(r);e.exports=r;var o=window.history&&window.history.constructor&&window.history.constructor.prototype,a=window.history;o&&o.pushState&&o.replaceState&&(a=o),i.inPlace(a,["pushState","replaceState"],"-")},{}],9:[function(t,e,n){var r=t("ee").get("raf"),i=t("wrap-function")(r),o="equestAnimationFrame";e.exports=r,i.inPlace(window,["r"+o,"mozR"+o,"webkitR"+o,"msR"+o],"raf-"),r.on("raf-start",function(t){t[0]=i(t[0],"fn-")})},{}],10:[function(t,e,n){function r(t,e,n){t[0]=a(t[0],"fn-",null,n)}function i(t,e,n){this.method=n,this.timerDuration=isNaN(t[1])?0:+t[1],t[0]=a(t[0],"fn-",this,n)}var o=t("ee").get("timer"),a=t("wrap-function")(o),s="setTimeout",c="setInterval",f="clearTimeout",u="-start",d="-";e.exports=o,a.inPlace(window,[s,"setImmediate"],s+d),a.inPlace(window,[c],c+d),a.inPlace(window,[f,"clearImmediate"],f+d),o.on(c+u,r),o.on(s+u,i)},{}],11:[function(t,e,n){function r(t,e){d.inPlace(e,["onreadystatechange"],"fn-",s)}function i(){var t=this,e=u.context(t);t.readyState>3&&!e.resolved&&(e.resolved=!0,u.emit("xhr-resolved",[],t)),d.inPlace(t,y,"fn-",s)}function o(t){x.push(t),m&&(E?E.then(a):w?w(a):(R=-R,S.data=R))}function a(){for(var t=0;t<x.length;t++)r([],x[t]);x.length&&(x=[])}function s(t,e){return e}function c(t,e){for(var n in t)e[n]=t[n];return e}t(6);var f=t("ee"),u=f.get("xhr"),d=t("wrap-function")(u),l=t(19),p=NREUM.o,h=p.XHR,m=p.MO,v=p.PR,w=p.SI,g="readystatechange",y=["onload","onerror","onabort","onloadstart","onloadend","onprogress","ontimeout"],x=[];e.exports=u;var b=window.XMLHttpRequest=function(t){var e=new h(t);try{u.emit("new-xhr",[e],e),e.addEventListener(g,i,l(!1))}catch(n){try{u.emit("internal-error",[n])}catch(r){}}return e};if(c(h,b),b.prototype=h.prototype,d.inPlace(b.prototype,["open","send"],"-xhr-",s),u.on("send-xhr-start",function(t,e){r(t,e),o(e)}),u.on("open-xhr-start",r),m){var E=v&&v.resolve();if(!w&&!v){var R=1,S=document.createTextNode(R);new m(a).observe(S,{characterData:!0})}}else f.on("fn-end",function(t){t[0]&&t[0].type===g||a()})},{}],12:[function(t,e,n){function r(t){if(!s(t))return null;var e=window.NREUM;if(!e.loader_config)return null;var n=(e.loader_config.accountID||"").toString()||null,r=(e.loader_config.agentID||"").toString()||null,f=(e.loader_config.trustKey||"").toString()||null;if(!n||!r)return null;var h=p.generateSpanId(),m=p.generateTraceId(),v=Date.now(),w={spanId:h,traceId:m,timestamp:v};return(t.sameOrigin||c(t)&&l())&&(w.traceContextParentHeader=i(h,m),w.traceContextStateHeader=o(h,v,n,r,f)),(t.sameOrigin&&!u()||!t.sameOrigin&&c(t)&&d())&&(w.newrelicHeader=a(h,m,v,n,r,f)),w}function i(t,e){return"00-"+e+"-"+t+"-01"}function o(t,e,n,r,i){var o=0,a="",s=1,c="",f="";return i+"@nr="+o+"-"+s+"-"+n+"-"+r+"-"+t+"-"+a+"-"+c+"-"+f+"-"+e}function a(t,e,n,r,i,o){var a="btoa"in window&&"function"==typeof window.btoa;if(!a)return null;var s={v:[0,1],d:{ty:"Browser",ac:r,ap:i,id:t,tr:e,ti:n}};return o&&r!==o&&(s.d.tk=o),btoa(JSON.stringify(s))}function s(t){return f()&&c(t)}function c(t){var e=!1,n={};if("init"in NREUM&&"distributed_tracing"in NREUM.init&&(n=NREUM.init.distributed_tracing),t.sameOrigin)e=!0;else if(n.allowed_origins instanceof Array)for(var r=0;r<n.allowed_origins.length;r++){var i=h(n.allowed_origins[r]);if(t.hostname===i.hostname&&t.protocol===i.protocol&&t.port===i.port){e=!0;break}}return e}function f(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.enabled}function u(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.exclude_newrelic_header}function d(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&NREUM.init.distributed_tracing.cors_use_newrelic_header!==!1}function l(){return"init"in NREUM&&"distributed_tracing"in NREUM.init&&!!NREUM.init.distributed_tracing.cors_use_tracecontext_headers}var p=t(24),h=t(14);e.exports={generateTracePayload:r,shouldGenerateTrace:s}},{}],13:[function(t,e,n){function r(t){var e=this.params,n=this.metrics;if(!this.ended){this.ended=!0;for(var r=0;r<l;r++)t.removeEventListener(d[r],this.listener,!1);return e.protocol&&"data"===e.protocol?void g("Ajax/DataUrl/Excluded"):void(e.aborted||(n.duration=a.now()-this.startTime,this.loadCaptureCalled||4!==t.readyState?null==e.status&&(e.status=0):o(this,t),n.cbTime=this.cbTime,s("xhr",[e,n,this.startTime,this.endTime,"xhr"],this)))}}function i(t,e){var n=c(e),r=t.params;r.hostname=n.hostname,r.port=n.port,r.protocol=n.protocol,r.host=n.hostname+":"+n.port,r.pathname=n.pathname,t.parsedOrigin=n,t.sameOrigin=n.sameOrigin}function o(t,e){t.params.status=e.status;var n=v(e,t.lastSize);if(n&&(t.metrics.rxSize=n),t.sameOrigin){var r=e.getResponseHeader("X-NewRelic-App-Data");r&&(t.params.cat=r.split(", ").pop())}t.loadCaptureCalled=!0}var a=t("loader");if(a.xhrWrappable&&!a.disabled){var s=t("handle"),c=t(14),f=t(12).generateTracePayload,u=t("ee"),d=["load","error","abort","timeout"],l=d.length,p=t("id"),h=t(20),m=t(18),v=t(15),w=t(19),g=t(21).recordSupportability,y=NREUM.o.REQ,x=window.XMLHttpRequest;a.features.xhr=!0,t(11),t(7),u.on("new-xhr",function(t){var e=this;e.totalCbs=0,e.called=0,e.cbTime=0,e.end=r,e.ended=!1,e.xhrGuids={},e.lastSize=null,e.loadCaptureCalled=!1,e.params=this.params||{},e.metrics=this.metrics||{},t.addEventListener("load",function(n){o(e,t)},w(!1)),h&&(h>34||h<10)||t.addEventListener("progress",function(t){e.lastSize=t.loaded},w(!1))}),u.on("open-xhr-start",function(t){this.params={method:t[0]},i(this,t[1]),this.metrics={}}),u.on("open-xhr-end",function(t,e){"loader_config"in NREUM&&"xpid"in NREUM.loader_config&&this.sameOrigin&&e.setRequestHeader("X-NewRelic-ID",NREUM.loader_config.xpid);var n=f(this.parsedOrigin);if(n){var r=!1;n.newrelicHeader&&(e.setRequestHeader("newrelic",n.newrelicHeader),r=!0),n.traceContextParentHeader&&(e.setRequestHeader("traceparent",n.traceContextParentHeader),n.traceContextStateHeader&&e.setRequestHeader("tracestate",n.traceContextStateHeader),r=!0),r&&(this.dt=n)}}),u.on("send-xhr-start",function(t,e){var n=this.metrics,r=t[0],i=this;if(n&&r){var o=m(r);o&&(n.txSize=o)}this.startTime=a.now(),this.listener=function(t){try{"abort"!==t.type||i.loadCaptureCalled||(i.params.aborted=!0),("load"!==t.type||i.called===i.totalCbs&&(i.onloadCalled||"function"!=typeof e.onload))&&i.end(e)}catch(n){try{u.emit("internal-error",[n])}catch(r){}}};for(var s=0;s<l;s++)e.addEventListener(d[s],this.listener,w(!1))}),u.on("xhr-cb-time",function(t,e,n){this.cbTime+=t,e?this.onloadCalled=!0:this.called+=1,this.called!==this.totalCbs||!this.onloadCalled&&"function"==typeof n.onload||this.end(n)}),u.on("xhr-load-added",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&!this.xhrGuids[n]&&(this.xhrGuids[n]=!0,this.totalCbs+=1)}),u.on("xhr-load-removed",function(t,e){var n=""+p(t)+!!e;this.xhrGuids&&this.xhrGuids[n]&&(delete this.xhrGuids[n],this.totalCbs-=1)}),u.on("xhr-resolved",function(){this.endTime=a.now()}),u.on("addEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-added",[t[1],t[2]],e)}),u.on("removeEventListener-end",function(t,e){e instanceof x&&"load"===t[0]&&u.emit("xhr-load-removed",[t[1],t[2]],e)}),u.on("fn-start",function(t,e,n){e instanceof x&&("onload"===n&&(this.onload=!0),("load"===(t[0]&&t[0].type)||this.onload)&&(this.xhrCbStart=a.now()))}),u.on("fn-end",function(t,e){this.xhrCbStart&&u.emit("xhr-cb-time",[a.now()-this.xhrCbStart,this.onload,e],e)}),u.on("fetch-before-start",function(t){function e(t,e){var n=!1;return e.newrelicHeader&&(t.set("newrelic",e.newrelicHeader),n=!0),e.traceContextParentHeader&&(t.set("traceparent",e.traceContextParentHeader),e.traceContextStateHeader&&t.set("tracestate",e.traceContextStateHeader),n=!0),n}var n,r=t[1]||{};"string"==typeof t[0]?n=t[0]:t[0]&&t[0].url?n=t[0].url:window.URL&&t[0]&&t[0]instanceof URL&&(n=t[0].href),n&&(this.parsedOrigin=c(n),this.sameOrigin=this.parsedOrigin.sameOrigin);var i=f(this.parsedOrigin);if(i&&(i.newrelicHeader||i.traceContextParentHeader))if("string"==typeof t[0]||window.URL&&t[0]&&t[0]instanceof URL){var o={};for(var a in r)o[a]=r[a];o.headers=new Headers(r.headers||{}),e(o.headers,i)&&(this.dt=i),t.length>1?t[1]=o:t.push(o)}else t[0]&&t[0].headers&&e(t[0].headers,i)&&(this.dt=i)}),u.on("fetch-start",function(t,e){this.params={},this.metrics={},this.startTime=a.now(),this.dt=e,t.length>=1&&(this.target=t[0]),t.length>=2&&(this.opts=t[1]);var n,r=this.opts||{},o=this.target;if("string"==typeof o?n=o:"object"==typeof o&&o instanceof y?n=o.url:window.URL&&"object"==typeof o&&o instanceof URL&&(n=o.href),i(this,n),"data"!==this.params.protocol){var s=(""+(o&&o instanceof y&&o.method||r.method||"GET")).toUpperCase();this.params.method=s,this.txSize=m(r.body)||0}}),u.on("fetch-done",function(t,e){if(this.endTime=a.now(),this.params||(this.params={}),"data"===this.params.protocol)return void g("Ajax/DataUrl/Excluded");this.params.status=e?e.status:0;var n;"string"==typeof this.rxSize&&this.rxSize.length>0&&(n=+this.rxSize);var r={txSize:this.txSize,rxSize:n,duration:a.now()-this.startTime};s("xhr",[this.params,r,this.startTime,this.endTime,"fetch"],this)})}},{}],14:[function(t,e,n){var r={};e.exports=function(t){if(t in r)return r[t];if(0===(t||"").indexOf("data:"))return{protocol:"data"};var e=document.createElement("a"),n=window.location,i={};e.href=t,i.port=e.port;var o=e.href.split("://");!i.port&&o[1]&&(i.port=o[1].split("/")[0].split("@").pop().split(":")[1]),i.port&&"0"!==i.port||(i.port="https"===o[0]?"443":"80"),i.hostname=e.hostname||n.hostname,i.pathname=e.pathname,i.protocol=o[0],"/"!==i.pathname.charAt(0)&&(i.pathname="/"+i.pathname);var a=!e.protocol||":"===e.protocol||e.protocol===n.protocol,s=e.hostname===document.domain&&e.port===n.port;return i.sameOrigin=a&&(!e.hostname||s),"/"===i.pathname&&(r[t]=i),i}},{}],15:[function(t,e,n){function r(t,e){var n=t.responseType;return"json"===n&&null!==e?e:"arraybuffer"===n||"blob"===n||"json"===n?i(t.response):"text"===n||""===n||void 0===n?i(t.responseText):void 0}var i=t(18);e.exports=r},{}],16:[function(t,e,n){function r(){}function i(t,e,n,r){return function(){return u.recordSupportability("API/"+e+"/called"),o(t+e,[f.now()].concat(s(arguments)),n?null:this,r),n?void 0:this}}var o=t("handle"),a=t(27),s=t(28),c=t("ee").get("tracer"),f=t("loader"),u=t(21),d=NREUM;"undefined"==typeof window.newrelic&&(newrelic=d);var l=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],p="api-",h=p+"ixn-";a(l,function(t,e){d[e]=i(p,e,!0,"api")}),d.addPageAction=i(p,"addPageAction",!0),d.setCurrentRouteName=i(p,"routeName",!0),e.exports=newrelic,d.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(t,e){var n={},r=this,i="function"==typeof e;return o(h+"tracer",[f.now(),t,n],r),function(){if(c.emit((i?"":"no-")+"fn-start",[f.now(),r,i],n),i)try{return e.apply(this,arguments)}catch(t){throw c.emit("fn-err",[arguments,this,t],n),t}finally{c.emit("fn-end",[f.now()],n)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(t,e){m[e]=i(h,e)}),newrelic.noticeError=function(t,e){"string"==typeof t&&(t=new Error(t)),u.recordSupportability("API/noticeError/called"),o("err",[t,f.now(),!1,e])}},{}],17:[function(t,e,n){function r(t){if(NREUM.init){for(var e=NREUM.init,n=t.split("."),r=0;r<n.length-1;r++)if(e=e[n[r]],"object"!=typeof e)return;return e=e[n[n.length-1]]}}e.exports={getConfiguration:r}},{}],18:[function(t,e,n){e.exports=function(t){if("string"==typeof t&&t.length)return t.length;if("object"==typeof t){if("undefined"!=typeof ArrayBuffer&&t instanceof ArrayBuffer&&t.byteLength)return t.byteLength;if("undefined"!=typeof Blob&&t instanceof Blob&&t.size)return t.size;if(!("undefined"!=typeof FormData&&t instanceof FormData))try{return JSON.stringify(t).length}catch(e){return}}}},{}],19:[function(t,e,n){var r=!1;try{var i=Object.defineProperty({},"passive",{get:function(){r=!0}});window.addEventListener("testPassive",null,i),window.removeEventListener("testPassive",null,i)}catch(o){}e.exports=function(t){return r?{passive:!0,capture:!!t}:!!t}},{}],20:[function(t,e,n){var r=0,i=navigator.userAgent.match(/Firefox[\/\s](\d+\.\d+)/);i&&(r=+i[1]),e.exports=r},{}],21:[function(t,e,n){function r(t,e){var n=[a,t,{name:t},e];return o("storeMetric",n,null,"api"),n}function i(t,e){var n=[s,t,{name:t},e];return o("storeEventMetrics",n,null,"api"),n}var o=t("handle"),a="sm",s="cm";e.exports={constants:{SUPPORTABILITY_METRIC:a,CUSTOM_METRIC:s},recordSupportability:r,recordCustom:i}},{}],22:[function(t,e,n){function r(){return s.exists&&performance.now?Math.round(performance.now()):(o=Math.max((new Date).getTime(),o))-a}function i(){return o}var o=(new Date).getTime(),a=o,s=t(29);e.exports=r,e.exports.offset=a,e.exports.getLastTimestamp=i},{}],23:[function(t,e,n){function r(t,e){var n=t.getEntries();n.forEach(function(t){"first-paint"===t.name?p("timing",["fp",Math.floor(t.startTime)]):"first-contentful-paint"===t.name&&p("timing",["fcp",Math.floor(t.startTime)])})}function i(t,e){var n=t.getEntries();if(n.length>0){var r=n[n.length-1];if(f&&f<r.startTime)return;var i=[r],o=a({});o&&i.push(o),p("lcp",i)}}function o(t){t.getEntries().forEach(function(t){t.hadRecentInput||p("cls",[t])})}function a(t){var e=navigator.connection||navigator.mozConnection||navigator.webkitConnection;if(e)return e.type&&(t["net-type"]=e.type),e.effectiveType&&(t["net-etype"]=e.effectiveType),e.rtt&&(t["net-rtt"]=e.rtt),e.downlink&&(t["net-dlink"]=e.downlink),t}function s(t){if(t instanceof w&&!y){var e=Math.round(t.timeStamp),n={type:t.type};a(n),e<=h.now()?n.fid=h.now()-e:e>h.offset&&e<=Date.now()?(e-=h.offset,n.fid=h.now()-e):e=h.now(),y=!0,p("timing",["fi",e,n])}}function c(t){"hidden"===t&&(f=h.now(),p("pageHide",[f]))}if(!("init"in NREUM&&"page_view_timing"in NREUM.init&&"enabled"in NREUM.init.page_view_timing&&NREUM.init.page_view_timing.enabled===!1)){var f,u,d,l,p=t("handle"),h=t("loader"),m=t(26),v=t(19),w=NREUM.o.EV;if("PerformanceObserver"in window&&"function"==typeof window.PerformanceObserver){u=new PerformanceObserver(r);try{u.observe({entryTypes:["paint"]})}catch(g){}d=new PerformanceObserver(i);try{d.observe({entryTypes:["largest-contentful-paint"]})}catch(g){}l=new PerformanceObserver(o);try{l.observe({type:"layout-shift",buffered:!0})}catch(g){}}if("addEventListener"in document){var y=!1,x=["click","keydown","mousedown","pointerdown","touchstart"];x.forEach(function(t){document.addEventListener(t,s,v(!1))})}m(c)}},{}],24:[function(t,e,n){function r(){function t(){return e?15&e[n++]:16*Math.random()|0}var e=null,n=0,r=window.crypto||window.msCrypto;r&&r.getRandomValues&&(e=r.getRandomValues(new Uint8Array(31)));for(var i,o="xxxxxxxx-xxxx-4xxx-yxxx-xxxxxxxxxxxx",a="",s=0;s<o.length;s++)i=o[s],"x"===i?a+=t().toString(16):"y"===i?(i=3&t()|8,a+=i.toString(16)):a+=i;return a}function i(){return a(16)}function o(){return a(32)}function a(t){function e(){return n?15&n[r++]:16*Math.random()|0}var n=null,r=0,i=window.crypto||window.msCrypto;i&&i.getRandomValues&&Uint8Array&&(n=i.getRandomValues(new Uint8Array(t)));for(var o=[],a=0;a<t;a++)o.push(e().toString(16));return o.join("")}e.exports={generateUuid:r,generateSpanId:i,generateTraceId:o}},{}],25:[function(t,e,n){function r(t,e){if(!i)return!1;if(t!==i)return!1;if(!e)return!0;if(!o)return!1;for(var n=o.split("."),r=e.split("."),a=0;a<r.length;a++)if(r[a]!==n[a])return!1;return!0}var i=null,o=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var s=navigator.userAgent,c=s.match(a);c&&s.indexOf("Chrome")===-1&&s.indexOf("Chromium")===-1&&(i="Safari",o=c[1])}e.exports={agent:i,version:o,match:r}},{}],26:[function(t,e,n){function r(t){function e(){t(s&&document[s]?document[s]:document[o]?"hidden":"visible")}"addEventListener"in document&&a&&document.addEventListener(a,e,i(!1))}var i=t(19);e.exports=r;var o,a,s;"undefined"!=typeof document.hidden?(o="hidden",a="visibilitychange",s="visibilityState"):"undefined"!=typeof document.msHidden?(o="msHidden",a="msvisibilitychange"):"undefined"!=typeof document.webkitHidden&&(o="webkitHidden",a="webkitvisibilitychange",s="webkitVisibilityState")},{}],27:[function(t,e,n){function r(t,e){var n=[],r="",o=0;for(r in t)i.call(t,r)&&(n[o]=e(r,t[r]),o+=1);return n}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],28:[function(t,e,n){function r(t,e,n){e||(e=0),"undefined"==typeof n&&(n=t?t.length:0);for(var r=-1,i=n-e||0,o=Array(i<0?0:i);++r<i;)o[r]=t[e+r];return o}e.exports=r},{}],29:[function(t,e,n){e.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(t,e,n){function r(){}function i(t){function e(t){return t&&t instanceof r?t:t?f(t,c,a):a()}function n(n,r,i,o,a){if(a!==!1&&(a=!0),!p.aborted||o){t&&a&&t(n,r,i);for(var s=e(i),c=m(n),f=c.length,u=0;u<f;u++)c[u].apply(s,r);var l=d[y[n]];return l&&l.push([x,n,r,s]),s}}function o(t,e){g[t]=m(t).concat(e)}function h(t,e){var n=g[t];if(n)for(var r=0;r<n.length;r++)n[r]===e&&n.splice(r,1)}function m(t){return g[t]||[]}function v(t){return l[t]=l[t]||i(n)}function w(t,e){p.aborted||u(t,function(t,n){e=e||"feature",y[n]=e,e in d||(d[e]=[])})}var g={},y={},x={on:o,addEventListener:o,removeEventListener:h,emit:n,get:v,listeners:m,context:e,buffer:w,abort:s,aborted:!1};return x}function o(t){return f(t,c,a)}function a(){return new r}function s(){(d.api||d.feature)&&(p.aborted=!0,d=p.backlog={})}var c="nr@context",f=t("gos"),u=t(27),d={},l={},p=e.exports=i();e.exports.getOrSetContext=o,p.backlog=d},{}],gos:[function(t,e,n){function r(t,e,n){if(i.call(t,e))return t[e];var r=n();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(t,e,{value:r,writable:!0,enumerable:!1}),r}catch(o){}return t[e]=r,r}var i=Object.prototype.hasOwnProperty;e.exports=r},{}],handle:[function(t,e,n){function r(t,e,n,r){i.buffer([t],r),i.emit(t,e,n)}var i=t("ee").get("handle");e.exports=r,r.ee=i},{}],id:[function(t,e,n){function r(t){var e=typeof t;return!t||"object"!==e&&"function"!==e?-1:t===window?0:a(t,o,function(){return i++})}var i=1,o="nr@id",a=t("gos");e.exports=r},{}],loader:[function(t,e,n){function r(){if(!O++){var t=S.info=NREUM.info,e=m.getElementsByTagName("script")[0];if(setTimeout(f.abort,3e4),!(t&&t.licenseKey&&t.applicationID&&e))return f.abort();c(E,function(e,n){t[e]||(t[e]=n)});var n=a();s("mark",["onload",n+S.offset],null,"api"),s("timing",["load",n]);var r=m.createElement("script");0===t.agent.indexOf("http://")||0===t.agent.indexOf("https://")?r.src=t.agent:r.src=p+"://"+t.agent,e.parentNode.insertBefore(r,e)}}function i(){"complete"===m.readyState&&o()}function o(){s("mark",["domContent",a()+S.offset],null,"api")}var a=t(22),s=t("handle"),c=t(27),f=t("ee"),u=t(25),d=t(17),l=t(19),p=d.getConfiguration("ssl")===!1?"http":"https",h=window,m=h.document,v="addEventListener",w="attachEvent",g=h.XMLHttpRequest,y=g&&g.prototype,x=!1;NREUM.o={ST:setTimeout,SI:h.setImmediate,CT:clearTimeout,XHR:g,REQ:h.Request,EV:h.Event,PR:h.Promise,MO:h.MutationObserver};var b=""+location,E={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1216.min.js"},R=g&&y&&y[v]&&!/CriOS/.test(navigator.userAgent),S=e.exports={offset:a.getLastTimestamp(),now:a,origin:b,features:{},xhrWrappable:R,userAgent:u,disabled:x};if(!x){t(16),t(23),m[v]?(m[v]("DOMContentLoaded",o,l(!1)),h[v]("load",r,l(!1))):(m[w]("onreadystatechange",i),h[w]("onload",r)),s("mark",["firstbyte",a.getLastTimestamp()],null,"api");var O=0}},{}],"wrap-function":[function(t,e,n){function r(t,e){function n(e,n,r,c,f){function nrWrapper(){var o,a,u,l;try{a=this,o=d(arguments),u="function"==typeof r?r(o,a):r||{}}catch(p){i([p,"",[o,a,c],u],t)}s(n+"start",[o,a,c],u,f);try{return l=e.apply(a,o)}catch(h){throw s(n+"err",[o,a,h],u,f),h}finally{s(n+"end",[o,a,l],u,f)}}return a(e)?e:(n||(n=""),nrWrapper[l]=e,o(e,nrWrapper,t),nrWrapper)}function r(t,e,r,i,o){r||(r="");var s,c,f,u="-"===r.charAt(0);for(f=0;f<e.length;f++)c=e[f],s=t[c],a(s)||(t[c]=n(s,u?c+r:r,i,c,o))}function s(n,r,o,a){if(!h||e){var s=h;h=!0;try{t.emit(n,r,o,e,a)}catch(c){i([c,n,r,o],t)}h=s}}return t||(t=u),n.inPlace=r,n.flag=l,n}function i(t,e){e||(e=u);try{e.emit("internal-error",t)}catch(n){}}function o(t,e,n){if(Object.defineProperty&&Object.keys)try{var r=Object.keys(t);return r.forEach(function(n){Object.defineProperty(e,n,{get:function(){return t[n]},set:function(e){return t[n]=e,e}})}),e}catch(o){i([o],n)}for(var a in t)p.call(t,a)&&(e[a]=t[a]);return e}function a(t){return!(t&&t instanceof Function&&t.apply&&!t[l])}function s(t,e){var n=e(t);return n[l]=t,o(t,n,u),n}function c(t,e,n){var r=t[e];t[e]=s(r,n)}function f(){for(var t=arguments.length,e=new Array(t),n=0;n<t;++n)e[n]=arguments[n];return e}var u=t("ee"),d=t(28),l="nr@original",p=Object.prototype.hasOwnProperty,h=!1;e.exports=r,e.exports.wrapFunction=s,e.exports.wrapInPlace=c,e.exports.argsToArray=f},{}]},{},["loader",2,13,4,3]);</script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, user-scalable=yes">
+    <meta name="google-site-verification" content="4Ga-viQvIZUFNQXu323xpp_24RDlLooxwlpnXhinjPA">
+    <meta name="msvalidate.01" content="F0716E70B7DD3B8C892B48891CA4B541">
+
+    <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="HV5S0wkZGLv8XganUnuEj6b0y/o7BW5nDQrK4SfVlsYgbyOTCpHZeht1U3uE/StfZ5TexEihTolOBur5X0lBBQ==">
+
+
+
+    
+
+
+    <link rel="preload" href="https://static.teamtreehouse.com/assets/application-06c8e4d31e39948fb011a70a034f60948db063564f7622cf2b22ee8466b9af38.css" as="style" type="text/css" crossorigin="anonymous" integrity="true" media="all">
+    <link rel="stylesheet" media="all" href="https://static.teamtreehouse.com/assets/vendor-d4b36850ffac9ce9a61894929eeb4e48b5a9e6ad0c6d970f5f77e47b817a99b4.css" crossorigin="true" integrity="sha256-1LNoUP+snOmmGJSSnutOSLWp5q0MbZcPX3fke4F6mbQ=">
+<link rel="stylesheet" media="all" href="https://static.teamtreehouse.com/assets/application-06c8e4d31e39948fb011a70a034f60948db063564f7622cf2b22ee8466b9af38.css" crossorigin="true" integrity="sha256-Bsjk0x45lI+wEacKA09glI2wY1ZPdiLPKyLuhGa5rzg=">
+    <link rel="stylesheet" onload="this.rel='stylesheet'" as="font" href="https://cloud.typography.com/7055252/762022/css/fonts.css">
+    
+
+    <style media="print">
+      header, footer, .graph, .nav, svg {
+        display: none
+      }
+    </style>
+
+    
+    
+    
+    <link rel="apple-touch-icon-precomposed" sizes="120x120" href="https://static.teamtreehouse.com/assets/apple-touch-icon-120x120-precomposed-dda60d87f49aa928ff86379bb50d9514d4b5f19502ff562b453e3d254730f682.png">
+    
+
+    
+
+    <link rel="preload" href="https://static.teamtreehouse.com/assets/application_vendor-ac990244079b18eccb2bfe5b6c0d0d3a1bbb496bf82e959c1b33f047673ebf41.js" as="script" type="text/javascript" crossorigin="anonymous">
+    <link rel="preload" href="https://static.teamtreehouse.com/assets/application-ca34d8f93449c906459dde9a4325db23e5ebe6dc51bcebc5ef14c3cdcc0d394f.js" as="script" type="text/javascript" crossorigin="anonymous">
+      <link rel="preconnect" href="https://www.googletagmanager.com" crossorigin="">
+      <link rel="dns-prefetch" href="https://www.googletagmanager.com">
+      <link rel="preconnect" href="https://www.google-analytics.com" crossorigin="">
+      <link rel="dns-prefetch" href="https://www.google-analytics.com">
+
+    
+  <link type="text/css" href="https://optanon.blob.core.windows.net/skins/default_flat_bottom_two_button_white/v2/css/optanon.css" rel="stylesheet"><style>#optanon ul#optanon-menu li { background-color: #F9FAFA !important }#optanon ul#optanon-menu li.menu-item-selected { background-color: #EDEFF0 !important }#optanon #optanon-popup-wrapper .optanon-white-button-middle { background-color: #387BAB !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle { background-color: #387BAB !important; border-color: #387BAB !important; }#optanon #optanon-popup-wrapper .optanon-white-button-middle a { color: #ffffff !important }.optanon-alert-box-wrapper .optanon-alert-box-button-middle a { color: #ffffff !important }#optanon #optanon-popup-bottom { background-color: #F9FAFA !important }#optanon.modern #optanon-popup-top, #optanon.modern #optanon-popup-body-left-shading { background-color: #F9FAFA !important }.optanon-alert-box-wrapper { background-color:#F9FAFA !important }.optanon-alert-box-wrapper .optanon-alert-box-bg p { color:#4B5658 !important }</style><style type="text/css">/* Chart.js */
+@-webkit-keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}@keyframes chartjs-render-animation{from{opacity:0.99}to{opacity:1}}.chartjs-render-monitor{-webkit-animation:chartjs-render-animation 0.001s;animation:chartjs-render-animation 0.001s;}</style><style>body.tablesorter-disableSelection { -ms-user-select: none; -moz-user-select: -moz-none;-khtml-user-select: none; -webkit-user-select: none; user-select: none; }.tablesorter-resizable-container { position: relative; height: 1px; }.tablesorter-resizable-handle { position: absolute; display: inline-block; width: 8px;top: 1px; cursor: ew-resize; z-index: 3; user-select: none; -moz-user-select: none; }</style><link type="image/x-icon" rel="icon" href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAB2RJREFUWEetl3uMnUUZh5+Z+S7n7Ha37KUtFxFISFQUMYQgAoaQGBqEBhq5aDCBYETaKpdASzQlFtAAEkNBkEv/EAL+I6U2REGiEYQ1IJSIQS7RQKpiubTbPXt2z/ku8828Zr7TbndDS7uNJznnO8mZeeeZ3/u+v5mjOMjXd8ceEI2fmX336SvUwYSa96RLntk81mfap6U6R+PmrKm0rL/r1JXXzgdkXgDLn3pemvEkzahNaroYVaGQOevNV4kDAjh74+uijSWJMpJkigCRRh0iXWBmpSGQ/F8Bznnon0LikcihdYWJCuIooxG3aaRtYpMR1SocfC3sVYHzb9vqZcAr3+fwqQMtoD1GWUxckMTTNJIpkniKxOQ1gFZ+3rsPis0BuPBCMerY/1S+3+EWelx4NgQxHqUEhcOYijjukCTdGiSJpoh1GSC23/Pl7yzeWwE+/KdVcrTbxqEyzkC303/4sle6u8fNAFy8cpsQA6lDFnjcYEU14HBNwZtQaIJSAcTVqUiivK6HJAoQXR4447K9qnn7cz+Uw/2HHO3fY4nfyQKfE4ln8dIt9fj644Jvv3d2FPOkijwq8dDv8AMOO+ixfR4XCVKPDFILxlhMVBJF06Rxh0fOWrbXxW8Yu1MO8W0Ok+0c5d7nML+DQd+tAQxcOLJ0y8Z64sUr3hOtBaMFnXp00yMDjmqBo+j32FhwuocrAUKHorR1QW4877R9dtLqsfUyIB0O9eMc7bdxhNvOQt8hkVC4sGjpFlVP/saV28RoSCNPHAum6WoVqn5H3i/kiVhriCsNXnlQnsjnx27++klv78t0rh77uRgq+iRjieysFTjSf8CIa5OKRSN7AL65YpskBhrGkyaetGGJmoJrOm699lMH5BWzQa567t6blVY3Bqvu8xmjtPiE+4BPug9Y5Fs0pcTg6jqog1+2cps0laeRCAOxpT/1xE2HpJ7rrvvM/AHG7qvtMZhUUGDETXKE/5Ajqw8ZlQn6JSdWAeDlHsAVq/4rfbEwEFkOiR0DqSNNhWBCl1533AzA5Q+/JdNa8Fo2bbzkuK/tS/6rxu4TJRCJoz8AVJMcUe3gcL+dUd+in56BLfnqSz2AVVe9K4OmYjjxDMUVC0MaIock0I1gMoaJSDFhFB0l2b3fOq7v4w6c65/ZIMGcYm8ZcNOMVi0OsztZ4nZwiJqiX2VEkWXxuX/pAay+ZqssjIXhxDEc9QAS4xEjFFoxFSnaWnHF9/aosb8T75bfbpCGzxiophi2kyyyO+pUDJgpGnGGSS2Lz3uxB3Dz9f+SoaRiKO4B9IVu0L4+56zWnLn6c/OugxD3oUfvkX7bYshOMFRNMChtGmaapJmhmyWLLnqhB7D+++9IkD4osMB4GtphdvnUyWuO/8jij699Q3QJy38yV5Ff3f6CXHTDl2bGP7NuXaQWJrbPTjBYTdBU4fzoYJo5akHBokuf7wE8uu4fMhg7BmNPU0ldobrOIpy4+vNzAH639k1xOfgKlq3f0yGb17wmOrW1tOes/eLMnFdvumN5o9y5qekmSVSbKOpCIwDkjF79xx7A7297Q4LsTd2Tfpf147zi+OtPmAm25YotcWukr7S5wlnFufd8uv7t1yteP9uk6skodkSp5awfnTgHeuu1N0piJzFME+kOpDn0lYzc9FQP4K93vSap8cTB50PmPXgvOKdxTuGdGSsqOb2wmqJQlIVi6Z17dv/EqjdFa4hTTxJbzrz1C3MA3r1yncRVC+OnUWQQFai4ZPjeJ3oA/37wVYkI570gAuLAeXAVVE5jK01ZKQqrKApNXii+8tM9+f/NqrfEGCGOPXFSkuqMU358ah1768q7JS3GMeUkxnZQ5KAKlK4Y+uWmHkDroVekPmvEI2H3Ai5A7AawUFaaotR0S83Jt8wtzKevflNMUDB2xOHqprokrk2zGCfpbifJJ4iKNjoA+BLCW1UMb368B9B9+OULjOaxsLKI1BBBhWqXErZStQq51eSlueOzN56wZrYPPLv676K1JzIVkS6JpUvIeZqNk2Y7iLOdRMU0ynZR1oK3iPjLR57e+IuZXFWPvCT11ne/d32tlXCa0kMZUlBpjlpz0pwcv7T2bxIuKjpc2SiJqmmSokWcBQXGibMWOgCUOcrZWtrhP/SuAnMCyYYXl4iR92uIoETvgXiFlV49lA5GrzllZt7bt21ZmFe0xDuUWJTLMeUUcTZB3B0nynZi8jamCLsvUHn3mKFnN2/9yJVstqR+w5/DsV9fP+qmqBtD4UVRCVivqCqNldApisqH2qnwVQllF1VMEXcnMJ0A0EblbXSZMfLkIx8xtY+1WLl/bOZfR30r3AXiwtOrulNqiNCy1uLLHJ93UNkkugZoobNJRh/72T7XOSCP3w1S0/REqV0yGFW9uHNUVYkrMsimkO4kqtNi0QM/2G/8/Q6YnZrZILUioVsQKufwtqTKO/iszdAtlx5w3AMeuBtE7h97Bzhmlxi9thWHKy2+6BTNG85v7O+onv37vAFmgezOSA1gVpxxULH+B4uj6k4CJsegAAAAAElFTkSuQmCC"><meta http-equiv="origin-trial" content="A9wkrvp9y21k30U9lU7MJMjBj4USjLrGwV+Z8zO3J3ZBH139DOnCv3XLK2Ii40S94HG1SZ/Zeg2GSHOD3wlWngYAAAB7eyJvcmlnaW4iOiJodHRwczovL3d3dy5nb29nbGV0YWdtYW5hZ2VyLmNvbTo0NDMiLCJmZWF0dXJlIjoiUHJpdmFjeVNhbmRib3hBZHNBUElzIiwiZXhwaXJ5IjoxNjYxMjk5MTk5LCJpc1RoaXJkUGFydHkiOnRydWV9"><script src="https://bat.bing.com/p/action/4033014.js" type="text/javascript" async="" data-ueto="ueto_1341dac564"></script><script async="" type="text/javascript" src="https://www.clickcease.com/monitor/stat.js"></script></head>
+  <body class="windows chrome webkit "><style type="text/css">html.hs-messages-widget-open.hs-messages-mobile,html.hs-messages-widget-open.hs-messages-mobile body{overflow:hidden!important;position:relative!important}html.hs-messages-widget-open.hs-messages-mobile body{height:100%!important;margin:0!important}#hubspot-messages-iframe-container{display:initial!important;z-index:2147483647;position:fixed!important;bottom:0!important}#hubspot-messages-iframe-container.widget-align-left{left:0!important}#hubspot-messages-iframe-container.widget-align-right{right:0!important}#hubspot-messages-iframe-container.internal{z-index:1016}#hubspot-messages-iframe-container.internal iframe{min-width:108px}#hubspot-messages-iframe-container .shadow-container{display:initial!important;z-index:-1;position:absolute;width:0;height:0;bottom:0;content:""}#hubspot-messages-iframe-container .shadow-container.internal{display:none!important}#hubspot-messages-iframe-container .shadow-container.active{width:400px;height:400px}#hubspot-messages-iframe-container iframe{display:initial!important;width:100%!important;height:100%!important;border:none!important;position:absolute!important;bottom:0!important;right:0!important;background:transparent!important}</style>
+    <!-- Data Layer -->
+<script>
+  window.dataLayer = window.dataLayer || [];
+  dataLayer.push({"loggedIn":true,"userId":11692424,"userEmail":"beforeyaya@gmail.com","accountState":"active","techdegreeStudent":false});
+</script>
+
+<!-- Google Tag Manager -->
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-PZ55S7"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'//www.googletagmanager.com/gtm.js?id='+i+dl+'';f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-PZ55S7');</script>
+<!-- End Google Tag Manager -->
+
+
+    <script src="https://static.teamtreehouse.com/assets/head_vendor-5b9ebdc4a02e1b2e5ee764c861e9bbb31c76ac261c1825fea64a849cc73d8085.js" crossorigin="true" integrity="sha256-W569xKAuGy5e52TIYem7sxx2rCYcGCX+pkqEnMc9gIU="></script>
+    <script>
+  window.bugsnagClient = bugsnag({
+    apiKey: "8251a8eb6422d59eaf410e7c1b1c7b38",
+    user: { id: 11692424 },
+    releaseStage: "production",
+    beforeSend: function (report) {
+      if (window.location.hostname != "teamtreehouse.com") {
+        report.ignore();
+      }
+    }
+  });
+</script>
+
+    <link rel="preconnect" href="https://optanon.blob.core.windows.net" crossorigin="">
+<link rel="dns-prefetch" href="https://optanon.blob.core.windows.net">
+<script async="" src="https://cdn.cookielaw.org/consent/39d1ae64-085b-42e6-a239-a988d6530b80.js"></script>
+
+<script>
+function OptanonWrapper() { window.dataLayer.push({ event: "OneTrustGroupsUpdated" }) }
+</script>
+
+    
+    <script>
+//<![CDATA[
+window.appData = '{\"controller_name\":\"progress\",\"action_name\":\"show\",\"app_version\":\"edf146ff163c96c045bfb5381c977a165b4f32ea\",\"user\":{\"id\":11692424,\"name\":\"wevtwy5y5 5by54b34\",\"profile_name\":\"wevtwy5y55by54b34\",\"cache_marks\":{\"notifications\":1659407913,\"progress\":1659352835,\"bookmarks\":1657779184}}}'
+//]]>
+</script>
+
+  <header class="header add-top-for-banner" role="banner" data-header="">
+    <nav class="header-nav container" role="navigation" data-nav="">
+        <button class="hamburger-button hamburger-button-inverse" aria-label="Navigation Menu" data-hamburger-button="">
+    <span class="hamburger"></span>
+  </button>
+
+      <ul class="header-nav-list header-nav-item-profile-points-size-4">
+        <li class="header-nav-item  header-nav-item-primary header-nav-item-logo ">
+          <h6 class="header-nav-item-logo-container">
+            <a class="header-nav-link header-nav-item-logo-link" aria_label="Treehouse Home" data-analytics-link="Treehouse Logo" data-analytics-event="application nav link" data-analytics-path="/home" data-analytics-action="clicked" href="/home">
+              <svg class="logo-icon header-nav-item-logo-icon" alt="Treehouse" preserveAspectRatio="xMinYMin meet" viewBox="0 0 30 32"><path d="M26.5 5.9c-1.1-0.6-2.8 0.4-3.9 2.2l-1.9 3.2c-0.7 1.3-0.6 3 0.3 4.2l0.1 0.1c0.9 1.2 2.1 2.4 2.4 2.8 0.2 0.2 0.4 0.5 0.5 0.9 0.3 1.1-0.3 2.3-1.5 2.6 -1.1 0.3-2.3-0.3-2.7-1.5 -0.1-0.3-0.1-0.6-0.1-0.8 0.1-0.5-0.1-1.2-0.8-2 -0.7-0.7-2.1 0.7-2.5 2.1v0.1c-0.4 1.4-0.7 2.7-0.6 2.8 0.1 0.1 0.1 0.1 0.1 0.2 0.6 1.2 0.2 2.6-1 3.2 -1.2 0.6-2.7 0.2-3.3-1s-0.2-2.6 1-3.2c0.1 0 0.1-0.1 0.2-0.1 0.1 0 0.3-0.6 0.6-1.4 0.2-0.7 0.3-1 0.4-1.3 0.1-0.4 0.3-1.4 0.2-1.8 -0.1-0.5-0.6-0.5-1.2-0.2 -0.3 0.2-0.9 0.7-1.1 0.9 -0.5 0.4-0.9 1-1.1 1.5 -0.1 0.2-0.3 0.5-0.5 0.7 -0.9 0.7-2.3 0.6-3-0.3 -0.7-0.9-0.6-2.2 0.3-3 0.3-0.2 0.6-0.4 0.9-0.4 0.5-0.1 2.4-1.2 3.5-2 0.2-0.1 0.5-0.4 0.6-0.5 0.3-0.4 0-0.7-0.3-0.7 -0.9 0.1-1.9 0.2-2.1 0.5 -0.1 0.1-0.2 0.3-0.4 0.4 -0.9 0.6-2.1 0.4-2.7-0.4 -0.6-0.8-0.4-2 0.4-2.6 0.4-0.3 0.8-0.4 1.2-0.4 0.7 0 2.5 0.4 4 0.1l0.4-0.1c1.5-0.3 3.3-1.6 4-2.9 0 0 0.7-1.2 1.6-2.7 0.9-1.5 0.8-3.2-0.1-3.7l-1.7-1c-0.9-0.5-2.3-0.5-3.2 0L1.6 7C0.7 7.5 0 8.6 0 9.6v12.8c0 1 0.7 2.2 1.6 2.7l11.9 6.5c0.9 0.5 2.3 0.5 3.2 0l11.8-6.5c0.9-0.5 1.6-1.7 1.6-2.7V9.6c0-1-0.7-2.2-1.6-2.7C26.5 5.9 28.5 7 26.5 5.9z"></path></svg>
+              <span class="header-nav-item-logo-text header-nav-item-primary">Home</span>
+</a>          </h6>
+</li>
+
+            <li class="header-nav-item header-nav-item-tablet header-nav-item-primary header-nav-item-techdegrees ">
+              <a class="header-nav-link " data-analytics-event="application nav link" data-analytics-link="Techdegree" data-analytics-path="/techdegree" data-analytics-action="clicked" href="/techdegree">Techdegree</a>
+</li>
+          <li class="header-nav-item header-nav-item-tablet header-nav-item-primary header-nav-item-tracks ">
+            <a class="header-nav-link nav-item-tracks" data-analytics-event="application nav link" data-analytics-link="Tracks" data-analytics-path="/tracks" data-analytics-action="clicked" href="/tracks">Tracks</a>
+</li>
+          <li class="header-nav-item header-nav-item-tablet header-nav-item-primary header-nav-item-library ">
+            <a class="header-nav-link nav-item-library" data-analytics-event="application nav link" data-analytics-link="Library" data-analytics-path="/library" data-analytics-action="clicked" href="/library">Library</a>
+</li>
+          <li class="header-nav-item header-nav-item-tablet nav-item-community header-nav-item-primary header-nav-item-community ">
+            <a class="header-nav-link nav-item-community" data-analytics-event="application nav link" data-analytics-link="Community" data-analytics-path="/community" data-analytics-action="clicked" href="/community">Community</a>
+</li>
+        <li class="header-nav-item header-nav-item-tablet header-nav-item-primary header-nav-item-support ">
+          <a class="header-nav-link " data-analytics-event="application nav link" data-analytics-link="Support" data-analytics-path="/support" data-analytics-action="clicked" href="/support">Support</a>
+</li>        <li class="header-nav-item header-nav-item-tablet nav-item-jobs header-nav-item-primary header-nav-item-jobs ">
+            <a class="header-nav-link nav-item-jobs" data-analytics-event="application nav link" data-analytics-link="Jobs" data-analytics-path="/jobs" data-analytics-action="clicked" href="/jobs">Jobs</a>
+</li>
+              <li class="header-nav-item header-nav-item-tablet header-nav-item-secondary header-nav-item-workspaces ">
+                <a class="header-nav-link " data-analytics-event="application nav link" data-analytics-link="Workspaces" data-analytics-path="/workspaces" data-analytics-action="clicked" href="/workspaces">Workspaces</a>
+</li>
+          <li class="header-nav-item header-nav-item-mobile header-nav-item-secondary header-nav-item-profile" data-nav-item="profile">
+            <a data-nav-link-profile="" data-dropdown-toggle="profile" data-analytics-link="Profile" data-analytics-action="clicked:internal" data-analytics-event="application nav link" data-analytics-path="/profiles/wevtwy5y55by54b34" class="header-nav-link " href="/profiles/wevtwy5y55by54b34">
+                <div id="avatar-8f89a3" class="header-nav-item-profile-avatar avatar-deep-blue-bg avatar avatar-small">
+    
+    <div class="points-donut chart avatar-points" data-animate-points="true" data-featurette="points-chart" data-width="36" data-height="36" data-donut-width="9px" data-points="{&quot;front-end&quot;:2042,&quot;design&quot;:0,&quot;back-end&quot;:0,&quot;mobile&quot;:0,&quot;fundamentals&quot;:324,&quot;data&quot;:0,&quot;experimental&quot;:1}" data-points-total="2457" data-padding="1" id="featurette-1"><svg xmlns:ct="http://gionkunz.github.com/chartist-js/ct" width="36" height="36" class="ct-chart-donut" style="width: 36; height: 36;"><g class="ct-series add-front-end-stroke"><path d="M8.505,9.87A12.5,12.5,0,1,0,18,5.5" class="ct-slice-donut" ct:value="2042" style="stroke-width: 9px" stroke-dasharray="67.76012420654297px 67.76012420654297px" stroke-dashoffset="0px"></path></g><g class="ct-series add-design-stroke"><path d="M8.505,9.87A12.5,12.5,0,0,0,8.477,9.903" class="ct-slice-donut" ct:value="0" style="stroke-width: 9px" stroke-dasharray="0.04327678680419922px 0.04327678680419922px" stroke-dashoffset="0px"></path></g><g class="ct-series add-back-end-stroke"><path d="M8.505,9.87A12.5,12.5,0,0,0,8.477,9.903" class="ct-slice-donut" ct:value="0" style="stroke-width: 9px" stroke-dasharray="0.04327678680419922px 0.04327678680419922px" stroke-dashoffset="0px"></path></g><g class="ct-series add-mobile-stroke"><path d="M8.505,9.87A12.5,12.5,0,0,0,8.477,9.903" class="ct-slice-donut" ct:value="0" style="stroke-width: 9px" stroke-dasharray="0.04327678680419922px 0.04327678680419922px" stroke-dashoffset="0px"></path></g><g class="ct-series add-fundamentals-stroke"><path d="M17.967,5.5A12.5,12.5,0,0,0,8.477,9.903" class="ct-slice-donut" ct:value="324" style="stroke-width: 9px" stroke-dasharray="10.793957710266113px 10.793957710266113px" stroke-dashoffset="0px"></path></g><g class="ct-series add-data-stroke"><path d="M17.967,5.5A12.5,12.5,0,0,0,17.923,5.5" class="ct-slice-donut" ct:value="0" style="stroke-width: 9px" stroke-dasharray="0.044000670313835144px 0.044000670313835144px" stroke-dashoffset="0px"></path></g><g class="ct-series add-experimental-stroke"><path d="M18,5.5A12.5,12.5,0,0,0,17.923,5.5" class="ct-slice-donut" ct:value="1" style="stroke-width: 9px" stroke-dasharray="0.07699981331825256px 0.07699981331825256px" stroke-dashoffset="0px"></path></g></svg></div>
+    <div class="avatar-container">
+      <img alt="wevtwy5y5 5by54b34" class="avatar-image" src="https://secure.gravatar.com/avatar/12d4086db918384dcb774bac6b9c95e2?s=72&amp;d=https%3A%2F%2Fstatic.teamtreehouse.com%2Fassets%2Fcontent%2Fdefault_avatar-ea7cf6abde4eec089a4e03cc925d0e893e428b2b6971b12405a9b118c837eaa2.png&amp;r=pg">
+    </div>
+    
+    
+    
+</div>
+<span id="points-counter" class="header-nav-item-profile-points">2,457</span>
+<span class="header-nav-item-profile-text">View Profile</span>
+
+              <svg class="chevron-icon header-nav-item-profile-chevron" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 7.5" aria-labelledby="chevron2397118" role="img">
+
+
+
+   <title id="chevron2397118">Chevron</title>
+<g>
+	<path d="M6,7.5L0.3,1.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0L6,4.6l4.3-4.3c0.4-0.4,1-0.4,1.4,0c0.4,0.4,0.4,1,0,1.4L6,7.5z"></path>
+</g>
+
+</svg>
+</a>            <div class="header-nav-item-profile-dropdown dropdown dropdown-right">
+  <h4 class="dropdown-title">
+    <a href="/profiles/wevtwy5y55by54b34" class="header-nav-item-profile-dropdown-title-link">
+      <strong class="header-nav-item-profile-dropdown-title-name">wevtwy5y5 5by54b34</strong>
+      <span class="header-nav-item-profile-dropdown-title-label">View Profile</span>
+    </a>
+  </h4>
+  <ul>
+    <li><a href="/account">Account Settings</a></li>
+      <li><a href="/account/enrollment">Subscription</a></li>
+      <li><a href="/account/referrals">Referral Discounts</a></li>
+  </ul>
+  <a class="dropdown-secondary" href="/logout">Sign Out</a>
+</div>
+
+</li>
+          <li class="header-nav-item header-nav-item-mobile header-nav-item-secondary header-nav-item-notifications loaded scrolling scrolling-down" data-featurette="notifications" data-nav-item="notifications" id="featurette-2">
+            <a data-notifications-link="" data-dropdown-toggle="notifications" data-analytics-link="Notifications" data-analytics-action="clicked:internal" data-analytics-event="application nav link" data-analytics-path="/notifications" class="header-nav-link " href="/notifications">
+              <svg class="notifications-icon header-nav-item-notifications-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 12">
+  <path d="M11.7,9.4c-0.2-0.3-0.5-0.4-0.9-0.6c0,0,0,0-0.1,0C9.3,7.5,10,6.5,10,5.1c0-1.3-1.3-3.4-3-3.9
+    c0,0,0-0.1,0-0.1C7,0.5,6.6,0,6,0C5.4,0,5,0.5,5,1.1c0,0.1,0,0.1,0,0.2C3.4,1.9,2.2,3.8,2.2,5.1c0,1.3,0.6,2.4-0.7,3.6
+    C1.2,8.9,1,9,0.7,9.1C0.6,9.2,0.4,9.3,0.3,9.4C0.1,9.6,0,9.8,0,10.1c0,0.3,0.1,0.5,0.3,0.7c0.2,0.3,0.5,0.4,0.9,0.6
+    c0.5,0.2,1.2,0.4,2.1,0.5C4.1,11.9,5,12,6,12c1.5,0,2.9-0.1,3.9-0.4c0.5-0.1,1-0.3,1.3-0.5c0.2-0.1,0.3-0.2,0.5-0.4
+    c0.1-0.2,0.3-0.4,0.3-0.7C12,9.8,11.9,9.6,11.7,9.4z M10.4,10.2c-0.4,0.2-1,0.3-1.8,0.4C7.9,10.7,7,10.7,6,10.7
+    c-1.5,0-2.8-0.1-3.7-0.4c-0.4-0.1-0.7-0.2-0.9-0.3c0,0,0.1,0,0.1-0.1c0.4-0.2,1-0.3,1.8-0.4c0.5-0.1,1.1-0.1,1.7-0.1
+    c0.1,0.4,0.5,0.8,0.9,0.8c0.5,0,0.8-0.3,0.9-0.8c1.1,0,2,0.2,2.7,0.3c0.4,0.1,0.7,0.2,0.9,0.3C10.5,10.1,10.5,10.2,10.4,10.2z"></path>
+
+</svg>
+              <span class="header-nav-item-notifications-count header-nav-item-notifications-count-hidden loaded scrolling scrolling-down" data-featurette="notifications-count" id="featurette-3">0</span>
+              <span class="header-nav-item-notifications-text">Notifications</span>
+</a>            <div class="header-nav-item-notifications-dropdown dropdown dropdown-right notifications notification-dropdown" data-notification-dropdown="">
+  <h4 class="dropdown-title"><a href="/notifications">Notifications</a></h4>
+  
+  <ul class="notification-list">
+    <li id="notification-1475258726" class="notification-item  ">
+  
+<a class="notification-anchor topic-front-end" href="/notifications/1475258726?redirect_to=%2Flibrary%2Fdark-mode-in-css">
+  <p class="notification-meta"><strong>New Workshop</strong> • <span class="notification-timestamp">5 hours ago</span></p>
+  <h5 class="notification-title">Dark Mode in CSS</h5>
+  <p class="notification-message"></p>
+  <span class="notification-type">
+    <svg class="workshop-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18">
+  <path d="M18,15l-2.8,2.7C15,17.9,14.7,18,14.5,18l0,0l0,0c-0.3,0-0.5-0.1-0.7-0.3L11,15l0,0l0,0l0,0l0,0V1c0-0.6,0.4-1,1-1h5c0.6,0,1,0.4,1,1V15L18,15L18,15z M16,2h-3v2h3V2z M16,13.8V5h-3v8.8l1.5,1.2l0,0L16,13.8zM6,18H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h5c0.6,0,1,0.4,1,1v16C7,17.6,6.6,18,6,18zM5,2H2v2h1.5C3.8,4,4,4.2,4,4.5S3.8,5,3.5,5H2v2h0.5C2.8,7,3,7.2,3,7.5S2.8,8,2.5,8H2v2h1.5C3.8,10,4,10.2,4,10.5S3.8,11,3.5,11H2v2h0.5C2.8,13,3,13.2,3,13.5S2.8,14,2.5,14H2v2h3V2z"></path>
+</svg>
+  </span>
+</a>
+</li>
+<li id="notification-1474945276" class="notification-item  ">
+  
+<a class="notification-anchor update-profile" href="/account">
+  <p class="notification-meta"><strong>Welcome to Treehouse</strong> • <span class="notification-timestamp">19 days ago</span></p>
+  <h5 class="notification-title">Update Your Profile</h5>
+  <p class="notification-message">Don't forget you can learn how to update your profile name and privacy settings from your Account Settings.</p>
+  <span class="notification-type">
+    <svg class="announcement-icon notification-icon" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18">
+<path id="announcement-icon" d="M17,0C14.2,0.7,7.4,3,7,3c0,0-5.5,0-6,0C0,3,0,4,0,4v6c0,1,1,1,1,1s1.1,0,2.6,0l-1.3,5.5
+	c0,0-0.2,1.1,1,1.4c1.3,0.3,1.6-0.7,1.6-0.7L6.3,11H7c0,0,7.2,2.3,10,3c0.7,0,1-0.3,1-1c0-0.4,0-11.6,0-12C18,0.4,18,0,17,0z
+	 M15.7,11.4C14.4,11,7,9,7,9H2.3C2.3,9,2,9,2,8.6V5.3C2,5.3,2,5,2.3,5C2.5,5,7,5,7,5c0.2,0,7.2-1.9,8.6-2.3c0.3-0.1,0.4-0.1,0.4,0
+	v8.7C16,11.4,16,11.5,15.7,11.4z"></path>
+
+</svg>
+  </span>
+</a>
+</li>
+
+  </ul>
+  <a class="header-nav-item-notifications-dropdown-all dropdown-secondary" href="/notifications">View All Notifications</a>
+</div>
+
+</li>
+          <li class="header-nav-item header-nav-item-mobile header-nav-item-secondary header-nav-item-settings ">
+            <a class="header-nav-link " data-analytics-event="application nav link" data-analytics-link="Settings" data-analytics-path="/account" data-analytics-action="clicked" href="/account">Settings</a>
+</li>
+          <li class="header-nav-item header-nav-item-mobile header-nav-item-secondary header-nav-item-sign-out ">
+            <a class="header-nav-link " data-analytics-event="application nav link" data-analytics-link="Sign Out" data-analytics-path="/logout" data-analytics-action="clicked" href="/logout">Sign Out</a>
+</li>      </ul>
+      
+    </nav>
+  </header>
+
+  <div class="add-top-margin">
+    <main class="content " role="main" data-content="">
+        <div class="container ">
+          
+          
+          
+
+
+
+
+          
+            <div class="col-container ">
+                <aside data-layout-element="sidebar" class="sidebar float-r-xs col col-30-tablet-desktop">
+      <div class="form-element" id="uniform-nav-list-select" style="width: 591px;"><span style="width: 591px; user-select: none;">Learning Progress</span><select id="nav-list-select" data-featurette="nav-list-mobile-select" class="uniform-processed">
+          <option value="/account">Profile Info</option>
+          <option value="/account/notifications">Email Notifications</option>
+          <option value="/account/privacy">Privacy Settings</option>
+          <option value="/account/progress" selected="">Learning Progress</option>
+      </select></div>
+      <ul id="sidebar-nav">
+          <li class=" ">
+              <a href="/account">Profile Info</a>
+          </li>
+          <li class=" ">
+              <a href="/account/notifications">Email Notifications</a>
+          </li>
+          <li class=" ">
+              <a href="/account/privacy">Privacy Settings</a>
+          </li>
+          <li class="current ">
+              <a href="/account/progress">Learning Progress</a>
+          </li>
+      </ul>
+
+      <div class="form-element" id="uniform-nav-list-select" style="width: 591px;"><span style="width: 591px; user-select: none;">Subscription</span><select id="nav-list-select" data-featurette="nav-list-mobile-select" class="uniform-processed">
+          <option value="/account/enrollment">Subscription</option>
+          <option value="/account/billing">Billing History</option>
+          <option value="/account/billing/edit">Payment Information</option>
+          <option value="/account/users">Group Members</option>
+          <option value="/account/referrals">Referrals</option>
+      </select></div>
+      <ul id="sidebar-nav">
+          <li class=" ">
+              <a href="/account/enrollment">Subscription</a>
+          </li>
+          <li class=" ">
+              <a href="/account/billing">Billing History</a>
+          </li>
+          <li class=" ">
+              <a href="/account/billing/edit">Payment Information</a>
+          </li>
+          <li class=" ">
+              <a href="/account/users">Group Members</a>
+          </li>
+          <li class=" ">
+              <a href="/account/referrals">Referrals</a>
+          </li>
+      </ul>
+    
+
+  </aside>
+
+              <div class="col col-70-tablet-desktop">
+                
+
+  <div class="alert-banner warning with-icon" data-featurette="alert" id="featurette-6"><p>
+    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 32 28" class="warning-icon">
+<path d="M31.6,25.2l-14-24.1c-0.9-1.5-2.3-1.5-3.2,0l-14,24.1C-0.5,26.8,0.2,28,2,28h28C31.8,28,32.5,26.8,31.6,25.2z M17.6,22.4
+	c0,0.9-0.7,1.6-1.6,1.6c-0.9,0-1.6-0.7-1.6-1.6v-0.2c0-0.9,0.7-1.6,1.6-1.6c0.9,0,1.6,0.7,1.6,1.6V22.4z M16.8,18.2
+	c0,0.5-0.4,0.8-0.9,0.8c-0.5,0-0.8-0.3-0.8-0.8L14.4,9c0-0.5,0.3-1,0.8-1h1.7c0.5,0,0.9,0.4,0.8,1L16.8,18.2z"></path>
+
+</svg> By resetting your progress, all videos, quizzes, and
+    code challenges will appear as incomplete; however, your points and badges
+    will remain unaffected.
+</p></div>
+
+  <form class="account-progress contained" id="reset-all-activities" data-featurette="reset-progress-table" action="/progress/reset" accept-charset="UTF-8" method="post"><input name="utf8" type="hidden" value="✓" class="placeholder-processed"><input type="hidden" name="_method" value="put" class="placeholder-processed"><input type="hidden" name="authenticity_token" value="HV5S0wkZGLv8XganUnuEj6b0y/o7BW5nDQrK4SfVlsYgbyOTCpHZeht1U3uE/StfZ5TexEihTolOBur5X0lBBQ==" class="placeholder-processed">
+  <div class="grid-100">
+    <div class="secondary-heading"><h2>All Activities</h2></div>
+    <div class="progress-list">
+      <table class="tablesorter tablesorter-default tablesorterfc4f86e22cb7a" role="grid">
+        <thead>
+          <tr role="row" class="tablesorter-headerRow">
+            <th class="progress-select-all tablesorter-header sorter-false tablesorter-headerUnSorted" data-column="0" scope="col" role="columnheader" aria-disabled="true" unselectable="on" aria-sort="none" aria-label=": No sort applied, sorting is disabled" style="user-select: none;"><div class="tablesorter-header-inner">
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="select_all" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </div></th>
+            <th class="progress-title tablesorter-header tablesorter-headerUnSorted" data-column="1" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="none" aria-label="Name
+              
+
+
+
+   Chevron: No sort applied, activate to apply an ascending sort" style="user-select: none;"><div class="tablesorter-header-inner">
+              Name
+              <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 7.5" class="chevron-icon" aria-labelledby="chevron2600640" role="img">
+
+
+
+   <title id="chevron2600640">Chevron</title>
+<g>
+	<path d="M6,7.5L0.3,1.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0L6,4.6l4.3-4.3c0.4-0.4,1-0.4,1.4,0c0.4,0.4,0.4,1,0,1.4L6,7.5z"></path>
+</g>
+
+</svg>
+            </div></th>
+            <th class="progress-date tablesorter-header tablesorter-headerDesc" data-column="2" tabindex="0" scope="col" role="columnheader" aria-disabled="false" unselectable="on" aria-sort="descending" aria-label="Last Progress
+              
+
+
+
+   Chevron: Descending sort applied, activate to apply an ascending sort" data-sortedby="sorton" style="user-select: none;"><div class="tablesorter-header-inner">
+              Last Progress
+              <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 12 7.5" class="chevron-icon" aria-labelledby="chevron7708626" role="img">
+
+
+
+   <title id="chevron7708626">Chevron</title>
+<g>
+	<path d="M6,7.5L0.3,1.7c-0.4-0.4-0.4-1,0-1.4s1-0.4,1.4,0L6,4.6l4.3-4.3c0.4-0.4,1-0.4,1.4,0c0.4,0.4,0.4,1,0,1.4L6,7.5z"></path>
+</g>
+
+</svg>
+            </div></th>
+          </tr>
+        </thead>
+        <tbody aria-live="polite" aria-relevant="all">
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+          
+        <tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4862" value="Syllabus/4862" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/react-hooks">                <svg title="Workshop" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="workshop-icon">
+  <path d="M18,15l-2.8,2.7C15,17.9,14.7,18,14.5,18l0,0l0,0c-0.3,0-0.5-0.1-0.7-0.3L11,15l0,0l0,0l0,0l0,0V1c0-0.6,0.4-1,1-1h5c0.6,0,1,0.4,1,1V15L18,15L18,15z M16,2h-3v2h3V2z M16,13.8V5h-3v8.8l1.5,1.2l0,0L16,13.8zM6,18H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h5c0.6,0,1,0.4,1,1v16C7,17.6,6.6,18,6,18zM5,2H2v2h1.5C3.8,4,4,4.2,4,4.5S3.8,5,3.5,5H2v2h0.5C2.8,7,3,7.2,3,7.5S2.8,8,2.5,8H2v2h1.5C3.8,10,4,10.2,4,10.5S3.8,11,3.5,11H2v2h0.5C2.8,13,3,13.2,3,13.5S2.8,14,2.5,14H2v2h3V2z"></path>
+</svg>
+                React Hooks
+</a>
+
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-08-01T19:10:37+08:00" title="August 1st, 2022 at 7:10pm (CST)">6 hours ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_2062" value="Syllabus/2062" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/react-basics-2">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                React Basics
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-27T21:12:46+08:00" title="July 27th, 2022 at 9:12pm (CST)">10 hours ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4897" value="Syllabus/4897" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/express-basics-2">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Express Basics
+</a>
+
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-27T19:32:30+08:00" title="July 27th, 2022 at 7:32pm (CST)">13 hours ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4894" value="Syllabus/4894" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/npm-basics-2">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                npm Basics
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-27T16:32:20+08:00" title="July 27th, 2022 at 4:32pm (CST)">1 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_3832" value="Syllabus/3832" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/nodejs-basics-3">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Node.js Basics
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-27T06:00:14+08:00" title="July 27th, 2022 at 6:00am (CST)">1 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4222" value="Syllabus/4222" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/working-with-the-fetch-api">                <svg title="Workshop" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="workshop-icon">
+  <path d="M18,15l-2.8,2.7C15,17.9,14.7,18,14.5,18l0,0l0,0c-0.3,0-0.5-0.1-0.7-0.3L11,15l0,0l0,0l0,0l0,0V1c0-0.6,0.4-1,1-1h5c0.6,0,1,0.4,1,1V15L18,15L18,15z M16,2h-3v2h3V2z M16,13.8V5h-3v8.8l1.5,1.2l0,0L16,13.8zM6,18H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h5c0.6,0,1,0.4,1,1v16C7,17.6,6.6,18,6,18zM5,2H2v2h1.5C3.8,4,4,4.2,4,4.5S3.8,5,3.5,5H2v2h0.5C2.8,7,3,7.2,3,7.5S2.8,8,2.5,8H2v2h1.5C3.8,10,4,10.2,4,10.5S3.8,11,3.5,11H2v2h0.5C2.8,13,3,13.2,3,13.5S2.8,14,2.5,14H2v2h3V2z"></path>
+</svg>
+                Working with the Fetch API
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T22:48:39+08:00" title="July 26th, 2022 at 10:48pm (CST)">1 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4542" value="Syllabus/4542" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/asynchronous-programming-with-javascript">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Asynchronous Programming with JavaScript
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T21:19:46+08:00" title="July 26th, 2022 at 9:19pm (CST)">1 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_workshop_3703" value="Workshop/3703" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/ajax-basics-2">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                AJAX Basics
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:52:52+08:00" title="July 26th, 2022 at 7:52pm (CST)">2 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_3642" value="Syllabus/3642" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/interacting-with-the-dom">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Interacting with the DOM 
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:52:16+08:00" title="July 26th, 2022 at 7:52pm (CST)">2 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4826" value="Syllabus/4826" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/javascript-and-the-dom-3">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                JavaScript and the DOM
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:43:05+08:00" title="July 26th, 2022 at 7:43pm (CST)">2 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4918" value="Syllabus/4918" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/nodejs-basics-3">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Node.js Basics
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:41:04+08:00" title="July 26th, 2022 at 7:41pm (CST)">3 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_workshop_3332" value="Workshop/3332" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/working-with-the-fetch-api">                <svg title="Workshop" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="workshop-icon">
+  <path d="M18,15l-2.8,2.7C15,17.9,14.7,18,14.5,18l0,0l0,0c-0.3,0-0.5-0.1-0.7-0.3L11,15l0,0l0,0l0,0l0,0V1c0-0.6,0.4-1,1-1h5c0.6,0,1,0.4,1,1V15L18,15L18,15z M16,2h-3v2h3V2z M16,13.8V5h-3v8.8l1.5,1.2l0,0L16,13.8zM6,18H1c-0.6,0-1-0.4-1-1V1c0-0.6,0.4-1,1-1h5c0.6,0,1,0.4,1,1v16C7,17.6,6.6,18,6,18zM5,2H2v2h1.5C3.8,4,4,4.2,4,4.5S3.8,5,3.5,5H2v2h0.5C2.8,7,3,7.2,3,7.5S2.8,8,2.5,8H2v2h1.5C3.8,10,4,10.2,4,10.5S3.8,11,3.5,11H2v2h0.5C2.8,13,3,13.2,3,13.5S2.8,14,2.5,14H2v2h3V2z"></path>
+</svg>
+                Working with the Fetch API
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:37:39+08:00" title="July 26th, 2022 at 7:37pm (CST)">3 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4825" value="Syllabus/4825" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/asynchronous-programming-with-javascript">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Asynchronous Programming with JavaScript
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:35:35+08:00" title="July 26th, 2022 at 7:35pm (CST)">3 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4844" value="Syllabus/4844" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/ajax-basics-2">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                AJAX Basics
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:29:20+08:00" title="July 26th, 2022 at 7:29pm (CST)">4 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4907" value="Syllabus/4907" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/interacting-with-the-dom">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Interacting with the DOM 
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:25:42+08:00" title="July 26th, 2022 at 7:25pm (CST)">4 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4910" value="Syllabus/4910" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/javascript-and-the-dom-3">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                JavaScript and the DOM
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:23:32+08:00" title="July 26th, 2022 at 7:23pm (CST)">5 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4072" value="Syllabus/4072" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/javascript-array-iteration-methods">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                JavaScript Array Iteration Methods
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:18:15+08:00" title="July 26th, 2022 at 7:18pm (CST)">5 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_3812" value="Syllabus/3812" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/callback-functions-in-javascript">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Callback Functions in JavaScript
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:13:25+08:00" title="July 26th, 2022 at 7:13pm (CST)">5 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4292" value="Syllabus/4292" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/objectoriented-javascript-2">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Object-Oriented JavaScript
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:09:53+08:00" title="July 26th, 2022 at 7:09pm (CST)">5 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4876" value="Syllabus/4876" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/javascript-objects-2">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                JavaScript Objects
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:03:50+08:00" title="July 26th, 2022 at 7:03pm (CST)">6 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4875" value="Syllabus/4875" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/javascript-arrays">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                JavaScript Arrays
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T19:01:12+08:00" title="July 26th, 2022 at 7:01pm (CST)">6 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4874" value="Syllabus/4874" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/javascript-loops">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                JavaScript Loops
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T18:57:05+08:00" title="July 26th, 2022 at 6:57pm (CST)">6 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4863" value="Syllabus/4863" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/javascript-functions">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                JavaScript Functions
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T18:53:10+08:00" title="July 26th, 2022 at 6:53pm (CST)">7 days ago</time>
+            </td>
+          </tr><tr class="progress-row" role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_1422" value="Syllabus/1422" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/javascript-basics">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                JavaScript Basics
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T18:25:38+08:00" title="July 26th, 2022 at 6:25pm (CST)">7 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4901" value="Syllabus/4901" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/css-flexbox-layout">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                CSS Flexbox Layout
+</a>
+
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-26T17:23:42+08:00" title="July 26th, 2022 at 5:23pm (CST)">7 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4851" value="Syllabus/4851" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/responsive-layouts">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Responsive Layouts
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-25T08:23:11+08:00" title="July 25th, 2022 at 8:23am (CST)">8 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_3692" value="Syllabus/3692" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/mobilefirst-css-layout">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Mobile-First CSS Layout
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-24T20:09:56+08:00" title="July 24th, 2022 at 8:09pm (CST)">9 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4562" value="Syllabus/4562" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/css-layout">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                CSS Layout
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-24T18:26:54+08:00" title="July 24th, 2022 at 6:26pm (CST)">9 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4562" value="Syllabus/4562" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/css-basics-5">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                CSS Basics
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-24T18:26:54+08:00" title="July 24th, 2022 at 6:26pm (CST)">9 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4562" value="Syllabus/4562" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/html-basics-2">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                HTML Basics
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-24T18:26:54+08:00" title="July 24th, 2022 at 6:26pm (CST)">9 days ago</time>
+            </td>
+          </tr><tr class="progress-row " role="row">
+            <td>
+              <ul class="checkbox-group">
+                <li class="checkbox">
+                  <label>
+                    <input type="checkbox" name="identifiers[]" id="identifiers_syllabus_4562" value="Syllabus/4562" class="input-checkbox input-checkbox-radio placeholder-processed">
+                    <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+                    <span>&nbsp;</span>
+                  </label>
+                </li>
+              </ul>
+            </td>
+            <td class="progress-title">
+              <a href="/library/introduction-to-git">                <svg title="Course" preserveAspectRatio="xMinYMin meet" viewBox="0 0 18 18" class="course-icon">
+  <path d="M0,1.1v13.3c0,0.6,0.5,1.1,1.1,1.2c1.9,0.2,5.5,0.6,6.8,1.5c0.1,0.1,0.2,0.2,0.3,0.3l0.4,0.4c0.2,0.2,0.6,0.2,0.8,0l0.4-0.4c0.1-0.1,0.2-0.2,0.3-0.3c1.3-1,4.9-1.4,6.8-1.5c0.6-0.1,1.1-0.6,1.1-1.2V1.1C18,0.5,17.5,0,16.9,0C14.9,0.1,11,0.5,9,1.9C7,0.5,3.1,0.1,1.1,0C0.5,0,0,0.5,0,1.1z M8,15c-2-0.9-4.5-1.2-6-1.3V2c1.8,0.1,4.5,0.6,6,1.7V15z M16,13.7c-1.5,0.1-4,0.4-6,1.3V3.7c0.6-0.5,1.5-0.8,2.4-1.1c0.8-0.2,1.6-0.4,2.4-0.5C15.2,2.1,15.6,2,16,2V13.7z"></path>
+</svg>
+                Introduction to Git
+</a>
+              <span class="completion">100%</span>
+            </td>
+            <td>
+              <time datetime="2022-07-24T18:26:54+08:00" title="July 24th, 2022 at 6:26pm (CST)">9 days ago</time>
+            </td>
+          </tr></tbody>
+      </table>
+    </div>
+    <div class="options">
+      <div class="checkbox dangerous">
+        <label>
+          <input type="checkbox" name="workspaces" id="workspaces" value="1" class="input-checkbox input-checkbox-radio placeholder-processed">
+          <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 10 8" class="checkmark-icon">
+<path d="M9.8,1.6L5,7.6c0,0,0,0.1-0.1,0.1C4.7,7.9,4.6,7.9,4.4,8c0,0-0.1,0-0.1,0
+	C4.2,8,4.1,8,4.1,8C4,8,3.9,8,3.8,7.9c0,0,0,0,0,0c-0.1,0-0.2-0.1-0.3-0.1c0,0-0.1-0.1-0.1-0.1l-3.1-3c-0.4-0.4-0.4-1,0-1.4
+	s1-0.4,1.4,0l2.4,2.2l4.1-5.1c0.3-0.4,1-0.5,1.4-0.2C10,0.5,10.1,1.1,9.8,1.6z"></path>
+
+</svg>
+          <span>
+            <svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 22 22" class="workspaces-outline-icon" aria-labelledby="workspacesOutlineIcon7050908" role="img">
+
+
+
+<title id="workspacesOutlineIcon7050908">Workspaces</title>
+<path d="M18,22H4c-2.2,0-4-1.8-4-4V4c0-2.2,1.8-4,4-4h14c2.2,0,4,1.8,4,4v14
+  C22,20.2,20.2,22,18,22z M17,2H5C3.7,2,2.6,2.8,2.2,4h17.6C19.4,2.8,18.3,2,17,2z M20,6H2v11c0,1.7,1.3,3,3,3h12c1.7,0,3-1.3,3-3V6z
+   M13.9,16.6c-0.4,0.4-1,0.4-1.4,0c-0.4-0.4-0.4-1,0-1.4l2.1-2.1l-2.1-2.1c-0.4-0.4-0.4-1,0-1.4c0.4-0.4,1-0.4,1.4,0l2.8,2.8
+  c0.4,0.4,0.4,1,0,1.4L13.9,16.6z M9.5,16.5c-0.4,0.4-1,0.4-1.4,0l-2.8-2.8c-0.4-0.4-0.4-1,0-1.4l2.8-2.8c0.4-0.4,1-0.4,1.4,0
+  c0.4,0.4,0.4,1,0,1.4L7.4,13l2.1,2.1C9.9,15.5,9.9,16.1,9.5,16.5z"></path>
+
+</svg>
+            Delete workspaces?
+          </span>
+        </label>
+      </div>
+    </div>
+    <div class="box-footer">
+      <p>
+        <button class="button alert" type="submit" data-disable-with="Resetting...">Reset Progress</button>
+      </p>
+    </div>
+  </div>
+</form>
+
+</div></div></div></main>  </div>
+
+  <svg xmlns="http://www.w3.org/2000/svg" class="color-bar-footer" width="100%" height="3" viewBox="0 0 1441 3" preserveAspectRatio="none">
+  <g fill="none" fill-rule="evenodd">
+    <rect width="144" height="3" fill="#0B88C3"></rect>
+    <rect width="144" height="3" x="144" fill="#00D377"></rect>
+    <rect width="144" height="3" x="288" fill="#00B950"></rect>
+    <rect width="144" height="3" x="432" fill="#FFD247"></rect>
+    <rect width="144" height="3" x="576" fill="#FF9800"></rect>
+    <rect width="144" height="3" x="720" fill="#FF464F"></rect>
+    <rect width="144" height="3" x="864" fill="#FF82B3"></rect>
+    <rect width="144" height="3" x="1008" fill="#FF4385"></rect>
+    <rect width="144" height="3" x="1152" fill="#A47DCC"></rect>
+    <rect width="145" height="3" x="1296" fill="#875BB5"></rect>
+  </g>
+</svg>
+
+<footer>
+	<div class="footer">
+		<!-- Left -->
+		<div class="footer-left">
+			<ul class="links-2020-footer list-unstyled">
+				<h4>Treehouse</h4>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked About" data-event-label="Source: Footer" href="/about" id="featurette-8">About</a></li>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Blog" data-event-label="Source: Footer" href="https://blog.teamtreehouse.com/" id="featurette-9">Blog</a></li>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Careers" data-event-label="Source: Footer" href="/jobs" id="featurette-10">Careers</a></li>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Community" data-event-label="Source: Footer" href="/community" id="featurette-11">Community</a></li>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Stories" data-event-label="Source: Footer" href="/stories" id="featurette-12">Stories</a></li>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Treehouse Shop" data-event-label="Source: Footer" href="https://teespring.com/stores/teamtreehouse" id="featurette-13">Shop</a></li>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Contact" data-event-label="Source: Footer" href="/support" id="featurette-14">Contact</a></li>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Contact" data-event-label="Source: Footer" href="/giftcard" id="featurette-15">Gift Card</a></li>
+			</ul>
+		</div>
+
+		<!-- Middle -->
+		<div class="footer-middle">
+			<h4 class="catcta"><a href="/library">See Full Catalogue</a></h4>
+			<div class="footer-catalogue">
+				<div class="footer-catalogue-tech">
+					<h4>Techdegree</h4>
+					<ul class="links-2020-footer list-unstyled">
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Web Development" data-event-label="Source: Footer" href="/techdegree/web-development" id="featurette-16">Web Development</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Front End Web Development" data-event-label="Source: Footer" href="/techdegree/front-end-web-development" id="featurette-17">Front End Web Development</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Full Stack JavaScript" data-event-label="Source: Footer" href="/techdegree/full-stack-javascript" id="featurette-18">Full Stack JavaScript</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Python Development" data-event-label="Source: Footer" href="/techdegree/python-development" id="featurette-19">Python Development</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Data Analysis" data-event-label="Source: Footer" href="/techdegree/data-analysis" id="featurette-20">Data Analysis</a></li>
+					</ul>
+				</div>
+				<div class="footer-catalogue-tracks">
+					<h4>Tracks</h4>
+					<ul class="links-2020-footer list-unstyled">
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Learn to Code for Beginners" data-event-label="Source: Footer" href="/tracks/learn-to-code-for-beginners" id="featurette-21">Learn to Code for Beginners</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Beginning Python" data-event-label="Source: Footer" href="/tracks/beginning-python" id="featurette-22">Beginning Python</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Beginning SQL" data-event-label="Source: Footer" href="/tracks/beginning-sql" id="featurette-23">Beginning SQL</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Beginning Java" data-event-label="Source: Footer" href="/tracks/beginning-java" id="featurette-24">Beginning Java</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked See More Tracks" data-event-label="Source: Footer" href="/tracks" id="featurette-25">...see more</a></li>
+					</ul>
+				</div>
+				<div class="footer-catalogue-courses">
+					<h4>Courses</h4>
+					<ul class="links-2020-footer list-unstyled">
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked JavaDcript Basics" data-event-label="Source: Footer" href="/library/javascript-basics" id="featurette-26">JavaScript Basics</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Intro to HTML &amp; CSS" data-event-label="Source: Footer" href="/library/introduction-to-html-and-css" id="featurette-27">Intro to HTML &amp; CSS</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Python Basics" data-event-label="Source: Footer" href="/library/python-basics" id="featurette-28">Python Basics</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked CSS Layout" data-event-label="Source: Footer" href="/library/css-layout" id="featurette-29">CSS Layout</a></li>
+						<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked See more Courses" data-event-label="Source: Footer" href="/library" id="featurette-30">...see more</a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+
+		<!-- Right -->
+		<div class="footer-right">
+			<h4>Explore</h4>
+			<ul class="links-2020-footer list-unstyled">
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Perks" data-event-label="Source: Footer" href="/perks" id="featurette-31">Perks</a></li>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Treehouse for Libraries" data-event-label="Source: Footer" href="https://join.teamtreehouse.com/libraries/" id="featurette-32">Treehouse for Libraries</a></li>
+				<li><a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Treehouse for Teams" data-event-label="Source: Footer" href="/teams" id="featurette-33">Treehouse for Teams</a></li>
+			</ul>
+		</div>
+	</div>
+
+	<div class="footer-tail">
+		<ul class="list-unstyled social">
+			<li><a title="Twitter" target="_blank" rel="noopener" data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Twitter Icon" data-event-label="Source: Footer" href="https://twitter.com/treehouse" id="featurette-34"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="twitter-icon" aria-labelledby="twitterIcon8910232" role="img">
+  <title id="twitterIcon8910232">Twitter</title>
+	<path d="M19,8.3c-0.5,0.2-1,0.4-1.5,0.4c0.6-0.3,1-0.9,1.2-1.5c-0.5,0.3-1.1,0.5-1.7,0.7C16.5,7.3,15.8,7,15,7
+		c-1.5,0-2.7,1.2-2.7,2.8c0,0.2,0,0.4,0.1,0.6c-2.2-0.1-4.2-1.2-5.5-2.9C6.7,7.9,6.5,8.4,6.5,8.9c0,1,0.4,1.8,1.2,2.3
+		c-0.4,0-1.2-0.1-1.2-0.3c0,0,0,0,0,0c0,1.3,0.9,2.5,2.2,2.7c-0.2,0.1-0.4,0.1-0.7,0.1c-0.2,0-0.3,0-0.5-0.1c0.3,1.1,1.3,1.9,2.5,1.9
+		c-0.9,0.7-2.1,1.2-3.3,1.2c-0.2,0-0.4,0-0.6,0c1.2,0.8,2.6,1.2,4.1,1.2c4.9,0,7.6-4.2,7.6-7.9c0-0.1,0-0.2,0-0.4
+		C18.2,9.4,18.6,8.9,19,8.3z"></path>
+
+</svg></a></li>
+			<li><a title="YouTube" target="_blank" rel="noopener" data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked YouTube Icon" data-event-label="Source: Footer" href="https://youtube.com/user/gotreehouse" id="featurette-35"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="youtube-icon" aria-labelledby="youtubeIcon152714" role="img">
+   <title id="youtubeIcon152714">YouTube</title>
+  <path d="M19.5,8.2c-0.2-0.7-0.7-1.2-1.4-1.4C16.9,6.5,12,6.5,12,6.5s-4.9,0-6.1,0.3C5.2,7,4.7,7.6,4.5,8.2C4.2,9.5,4.2,12,4.2,12
+	s0,2.5,0.3,3.8c0.2,0.7,0.7,1.2,1.4,1.4c1.2,0.3,6.1,0.3,6.1,0.3s4.9,0,6.1-0.3c0.7-0.2,1.2-0.7,1.4-1.4c0.3-1.2,0.3-3.8,0.3-3.8
+	S19.8,9.5,19.5,8.2z M9.9,15V9l5.2,3L9.9,15z"></path>
+
+</svg></a></li>
+			<li><a title="Facebook" target="_blank" rel="noopener" data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Facebook Icon" data-event-label="Source: Footer" href="https://facebook.com/teamtreehouse" id="featurette-36"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="facebook-icon" aria-labelledby="facebookIcon8515308" role="img">
+   <title id="facebookIcon8515308">Facebook</title>
+  <path d="M10.3,19.8V13H7.8v-2.8h2.5V8c0-2.4,1.5-3.8,3.7-3.8c1.1,0,2.2,0.2,2.2,0.2v2.4h-1.2c-1.2,0-1.6,0.8-1.6,1.5v1.8h2.7
+	L15.6,13h-2.3v6.8H10.3z"></path>
+
+</svg></a></li>
+			<li><a title="LinkedIn" target="_blank" rel="noopener" data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked LinkedIn Icon" data-event-label="Source: Footer" href="https://linkedin.com/company/treehouse-island-inc-" id="featurette-37"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="linked-in-icon" aria-labelledby="linkedinIcon1797768" role="img">
+   <title id="linkedinIcon1797768">LinkedIn</title>
+  <path d="M17.5,5.5h-11C6,5.5,5.6,6,5.5,6.5v11.1c0,0.5,0.4,0.9,1,0.9h11c0.5,0,0.9-0.4,1-0.9V6.5C18.5,6,18.1,5.5,17.5,5.5z
+	 M9.4,16.6H7.5v-6.2h1.9V16.6z M8.4,9.5C7.8,9.5,7.3,9,7.3,8.4s0.5-1.1,1.1-1.1s1.1,0.5,1.1,1.1S9,9.5,8.4,9.5z M16.6,16.6h-1.9v-3
+	c0-0.7,0-1.7-1-1.7s-1.2,0.8-1.2,1.6v3.1h-1.9v-6.2h1.8v0.9c0.4-0.6,1-1,1.8-1c2,0,2.3,1.3,2.3,3L16.6,16.6z"></path>
+
+</svg></a></li>
+			<li><a title="Instagram" target="_blank" rel="noopener" data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Instagram Icon" data-event-label="Source: Footer" href="https://instagram.com/teamtreehouse" id="featurette-38"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="instagram-icon" aria-labelledby="instagramIcon3883473" role="img">
+   <title id="instagramIcon3883473">Instagram</title>
+  <path d="M16.6,18.5H7.4c-1,0-1.9-0.8-1.9-1.9V7.4c0-1,0.8-1.9,1.9-1.9h9.3c1,0,1.9,0.8,1.9,1.9v9.3C18.5,17.7,17.7,18.5,16.6,18.5z
+	 M12,10.1c-1,0-1.9,0.8-1.9,1.9s0.8,1.9,1.9,1.9s1.9-0.8,1.9-1.9S13,10.1,12,10.1z M15.7,7.4c-0.6,0-0.9,0.4-0.9,0.9
+	s0.4,0.9,0.9,0.9s0.9-0.4,0.9-0.9S16.3,7.4,15.7,7.4z M16.6,12h-0.9c0,2-1.7,3.7-3.7,3.7S8.3,14,8.3,12H7.4v3.7
+	c0,0.6,0.4,0.9,0.9,0.9h7.4c0.6,0,0.9-0.4,0.9-0.9V12z"></path>
+
+</svg></a></li>
+			<li><a title="TikTok" target="_blank" rel="noopener" data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked TikTok Icon" data-event-label="Source: Footer" href="https://tiktok.com/@team.treehouse" id="featurette-39"><svg preserveAspectRatio="xMinYMin meet" viewBox="0 0 24 24" class="tiktok-icon">
+
+
+<g id="BXaky5.tif">
+	<g>
+		<path d="M17.6,8.5C17.6,8.5,17.6,8.5,17.6,8.5c-0.1,0-0.1,0-0.2-0.1c-0.8-0.1-1.5-0.5-2-1.1C15,7,14.7,6.6,14.5,6.1
+			C14.5,6,14.4,6,14.3,6c-0.6,0-1.1,0-1.7,0c-0.2,0-0.2,0-0.2,0.2c0,2.6,0,5.2,0,7.8c0,1.1-0.8,1.9-1.9,1.9c-1,0-1.9-0.8-1.9-1.9
+			c0-1,0.8-1.9,1.9-1.9c0.2,0,0.4,0,0.6,0c0.1,0,0.2,0,0.2-0.2c0-0.6,0-1.2,0-1.8c0,0,0-0.1,0-0.1c-0.4,0-0.8,0-1.2,0
+			c-2.1,0.2-3.6,2.1-3.5,4.2c0.1,2.1,1.8,3.7,3.9,3.8c2.2,0,4.1-1.7,4.1-3.9c0-1.5,0-3.1,0-4.6c0-0.1,0-0.1,0-0.2
+			c0.8,0.8,1.7,1.2,2.8,1.3C17.4,9.8,17.5,9.2,17.6,8.5z"></path>
+	</g>
+</g>
+
+</svg></a></li>
+		</ul>
+
+		<div class="legal-links">
+			<a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Terms &amp; Conditions" data-event-label="Source: Footer" href="/terms" id="featurette-40">Terms &amp; Conditions</a>
+			<span>|</span>
+			<a data-featurette="analytics-click-event" data-event-category="button" data-event-action="M: Clicked Privacy" data-event-label="Source: Footer" href="/privacy" id="featurette-41">Privacy</a>
+		</div>
+		<p class="copyright-message">© 2022 Treehouse Island, Inc.</p>
+	</div>
+
+
+
+</footer>
+
+
+  
+
+
+
+
+<div id="mini-profile-container"></div>
+<div id="tarp" class="modal-tarp" style="display: none;" data-featurette="tarp"></div>
+
+
+    
+    <script src="https://static.teamtreehouse.com/assets/application_vendor-ac990244079b18eccb2bfe5b6c0d0d3a1bbb496bf82e959c1b33f047673ebf41.js" crossorigin="anonymous" integrity="sha256-rJkCRAebGOzLK/5bbA0NOhu7SWv4LpWcGzPwR2c+v0E="></script>
+    
+    <script src="https://static.teamtreehouse.com/assets/application-ca34d8f93449c906459dde9a4325db23e5ebe6dc51bcebc5ef14c3cdcc0d394f.js" crossorigin="anonymous" integrity="sha256-yjTY+TRJyQZFnd6aQyXbI+Xr5txRvOvF7xTDzcwNOU8="></script>
+    
+    
+    <!-- Segment.io Analytics -->
+<script type="text/javascript" class="optanon-category-2">
+  !function(){
+    var analytics=window.analytics=window.analytics||[];if(!analytics.initialize)if(analytics.invoked)window.console&&console.error&&console.error("Segment snippet included twice.");else{analytics.invoked=!0;analytics.methods=["trackSubmit","trackClick","trackLink","trackForm","pageview","identify","reset","group","track","ready","alias","debug","page","once","off","on"];analytics.factory=function(t){return function(){var e=Array.prototype.slice.call(arguments);e.unshift(t);analytics.push(e);return analytics}};for(var t=0;t<analytics.methods.length;t++){var e=analytics.methods[t];analytics[e]=analytics.factory(e)}analytics.load=function(t,e){var n=document.createElement("script");n.type="text/javascript";n.async=!0;n.src="https://cdn.segment.com/analytics.js/v1/"+t+"/analytics.min.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(n,a);analytics._loadOptions=e};analytics.SNIPPET_VERSION="4.1.0";
+    analytics.load("DMUKccVYvuuUIVSJlokCJe0YQyGm9qVb");
+
+    analytics.ready(function(){
+      window.analytics.segmentDebug = window.analytics.debug;
+      window.analytics.debug = function(state) {
+        if (state == null) { state = true; }
+        $.cookie("_treehouse_analytics_debug", state);
+        return state;
+      };
+    })
+
+    window.recordedAnalytics = []
+    function recordAnalyticsCall(callType, event, properties, options) {
+      if ($.cookie("_treehouse_analytics_debug") == "true") {
+        window.recordedAnalytics.push([callType, event, properties, options])
+        console.debug("Analytics: ", callType, ("'" + event + "'"), properties, options);
+      }
+    }
+    analytics.on('alias', function(e, p, o) { recordAnalyticsCall('alias', e, p, o)});
+    analytics.on('identify', function(e, p, o) { recordAnalyticsCall('identify', e, p, o)});
+    analytics.on('group', function(e, p, o) { recordAnalyticsCall('group', e, p, o)});
+    analytics.on('track', function(e, p, o) { recordAnalyticsCall('track', e, p, o)});
+    analytics.on('page', function(e, p, o) { recordAnalyticsCall('page', e, p, o)});
+
+    var request_id = "d0610e03-57d1-44c5-82f6-04b5982ef715";
+
+    function trackIdentity() {
+        window.analytics.identify("11692424", {"id":"11692424","name":"wevtwy5y5 5by54b34","email":"beforeyaya@gmail.com","username":"wevtwy5y55by54b34","avatar":"https://secure.gravatar.com/avatar/12d4086db918384dcb774bac6b9c95e2?s=400\u0026d=https%3A%2F%2Fstatic.teamtreehouse.com%2Fassets%2Fcontent%2Fdefault_avatar-ea7cf6abde4eec089a4e03cc925d0e893e428b2b6971b12405a9b118c837eaa2.png\u0026r=pg","created_at":"2022-07-14T05:57:30Z","organization_id":"","subscription_id":"11196907","plan_id":"1272","plan_name":"Courses","degree_id":"","degree_addon_id":"","track_id":"","user_timezone":"Asia/Taipei","b2b_org_admin":"false","b2b_dept_admin":"false","billing_period":"monthly","subscription_state":"active","subscription_in_trial":"false","profile_company_name":"","profile_job_title":"","visitor_id":"8210246030","session_id":"ffc0de48-e9ad-4121-8afa-b2052b3ec748"});
+
+    }
+
+    function trackPage() {
+      window.analytics.page({
+        visitor_id: "8210246030",
+        session_id: "ffc0de48-e9ad-4121-8afa-b2052b3ec748",
+        request_id: request_id
+      });
+    }
+
+    
+
+    trackIdentity();
+    trackPage();
+
+    $(document).on("pjax:success", function(event, body, status, xhr, options) {
+      request_id = xhr.getResponseHeader("X-Request-Id");
+      trackPage();
+    });
+  }}();
+  //# sourceURL=_analytics_footer.erb
+</script>
+
+
+    <!-- Start of HubSpot Embed Code --> 
+    <script type="text/javascript" id="hs-script-loader" async="" defer="" src="//js.hs-scripts.com/7320745.js"></script>
+    <!-- End of HubSpot Embed Code -->
+
+      <script src="https://static.teamtreehouse.com/packs/js/application-d3359996063a2b43f47d.js"></script>
+
+    
+  
+
+
+
+<script type="text/javascript" id="">!function(){var a,f,b=window,g=document,c=arguments,h="script",k="call cancelAction config identify push track trackClick trackForm update visit".split(" "),n=function(){var d,e=this,m=function(l){e[l]=function(){return e._e.push([l].concat(Array.prototype.slice.call(arguments,0))),e}};e._e=[];for(d=0;d<k.length;d++)m(k[d])};b.__woo=b.__woo||{};for(a=0;a<c.length;a++)b.__woo[c[a]]=b[c[a]]=b[c[a]]||new n;(a=g.createElement(h)).async=1;a.src="https://static.woopra.com/js/w.js";(f=g.getElementsByTagName(h)[0]).parentNode.insertBefore(a,
+f)}("woopra");woopra.config({domain:"teamtreehouse.com",outgoing_tracking:!0,download_tracking:!0,click_tracking:!0});woopra.track();</script>
+<script type="application/ld+json">
+{ 
+  "@context": "http://schema.org", 
+  "@type": "WebSite", 
+  "url": "http://www.teamtreehouse.com/", 
+  "name" : "Treehouse",
+  "potentialAction": { 
+    "@type": "SearchAction", 
+    "target": "http://teamtreehouse.com/library/q:{search_term}", 
+    "query-input": "required name=search_term" } 
+}
+</script><script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+    "@type": "Corporation",
+    "@id": "https://teamtreehouse.com",
+  "legalName": "Treehouse Island, Inc.",
+  "description": "Learn to code, design, and more—all on your own time. Best Online Coding Classes For At-Home Learning. 
+                  Courses: Python, HTML, Javascript, CSS, Ruby, Data Science, SQL.",
+  "url": "https://teamtreehouse.com",
+  "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Oregon",
+        "addressCountry": "US",
+        "postalCode": "97227",
+        "streetAddress": "3514 N. Vancouver Ave Suite 400 Portland"
+     },
+  "logo": "https://upload.wikimedia.org/wikipedia/en/a/a3/Treehouse%27s_logo_%28Jan_2015%29.png",
+  "sameAs" : [
+    "https://twitter.com/treehouse",
+    "https://www.facebook.com/TeamTreehouse",
+    "https://www.linkedin.com/company/treehouse-island-inc-",
+    "https://plus.google.com/+gotreehouse/posts",
+    "http://en.wikipedia.org/wiki/Treehouse_(company)",
+    "https://www.freebase.com/m/0t_cxxw"
+  ]
+}
+</script><script type="text/javascript" id="">/*
+ @preserve
+ jquery.scrolldepth.js | v0.4.1
+ Copyright (c) 2014 Rob Flaherty (@robflaherty)
+ Licensed under the MIT and GPL licenses.
+*/
+(function(c,h,m,u){var n={elements:[],minHeight:0,percentage:!0,testing:!1},k=c(h),f=[];c.scrollDepth=function(d){function l(a,b,e){d.testing?c("#console").html(a+": "+b):"undefined"!==typeof dataLayer?(dataLayer.push({event:"ScrollDistance",eventCategory:"Scroll Depth",eventAction:a,eventLabel:b,eventValue:1,eventNonInteraction:!0}),2<arguments.length&&dataLayer.push({event:"ScrollTiming",eventCategory:"Scroll Depth",eventAction:a,eventLabel:b,eventTiming:e})):("undefined"!==typeof ga&&(ga("send",
+"event","Scroll Depth",a,b,1,{nonInteraction:1}),2<arguments.length&&ga("send","timing","Scroll Depth",a,e,b)),"undefined"!==typeof _gaq&&(_gaq.push(["_trackEvent","Scroll Depth",a,b,1,!0]),2<arguments.length&&_gaq.push(["_trackTiming","Scroll Depth",a,e,b,100])))}function p(a,b,e){c.each(a,function(a,g){-1===c.inArray(a,f)&&b>=g&&(l("Percentage",a,e),f.push(a))})}function q(a,b,e){c.each(a,function(a,g){-1===c.inArray(g,f)&&c(g).length&&b>=c(g).offset().top&&(l("Elements",g,e),f.push(g))})}function r(a,
+b){var e,c,g,d=null,f=0,k=function(){f=new Date;d=null;g=a.apply(e,c)};return function(){var h=new Date;f||(f=h);var l=b-(h-f);e=this;c=arguments;0>=l?(clearTimeout(d),d=null,f=h,g=a.apply(e,c)):d||(d=setTimeout(k,l));return g}}var t=+new Date;d=c.extend({},n,d);c(m).height()<d.minHeight||(l("Percentage","Baseline"),k.on("scroll.scrollDepth",r(function(){var a=c(m).height(),b=h.innerHeight?h.innerHeight:k.height();b=k.scrollTop()+b;a={"25%":parseInt(.25*a,10),"50%":parseInt(.5*a,10),"75%":parseInt(.75*
+a,10),"100%":a-1};var e=+new Date-t;f.length>=4+d.elements.length?k.off("scroll.scrollDepth"):(d.elements&&q(d.elements,b,e),d.percentage&&p(a,b,e))},500)))}})(jQuery,window,document);jQuery.scrollDepth();</script><script type="text/javascript" id="">fbq("trackCustom","LoggedInVisitor");</script>
+<noscript><img height="1" width="1" alt="" style="display:none" src="https://www.facebook.com/tr?id=688952224481965&amp;ev=LoggedInVisitor"></noscript><script type="text/javascript" id="">(function(){var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.src="//d3cxv97fi8q177.cloudfront.net/foundation-A187849-72ad-44c6-83bc-3d4f458b85e71.min.js";a.type="text/javascript";a.async=!0;a.id="irfOuterTag";b.parentNode.insertBefore(a,b)})();</script><div style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon521806972275"><img style="width:0px; height:0px; display:none; visibility:hidden;" id="batBeacon184012986163" width="0" height="0" alt="" src="https://bat.bing.com/action/0?ti=4033014&amp;tm=gtm002&amp;Ver=2&amp;mid=3c6974b3-04c0-420c-957b-23fede381c32&amp;sid=482391d0113111edac42b19745a76149&amp;vid=a6b399000d5111eda4f679ca4a92b818&amp;vids=0&amp;msclkid=N&amp;uach=pv%3D16.0.0&amp;pi=918639831&amp;lg=zh-TW&amp;sw=600&amp;sh=960&amp;sc=24&amp;tl=Learning%20Progress&amp;p=https%3A%2F%2Fteamtreehouse.com%2Faccount%2Fprogress&amp;r=https%3A%2F%2Fteamtreehouse.com%2Fprofiles%2Fwevtwy5y55by54b34&amp;lt=814&amp;evt=pageLoad&amp;sv=1&amp;rn=783842"></div><script type="text/javascript" id="">(function(){var a=document.createElement("script"),b=document.getElementsByTagName("script")[0];a.src="//d3cxv97fi8q177.cloudfront.net/foundation-A187849-72ad-44c6-83bc-3d4f458b85e71.min.js";a.type="text/javascript";a.async=!0;a.id="irfOuterTag";b.parentNode.insertBefore(a,b)})();</script>
+      
+      <script type="text/javascript" id="">var script=document.createElement("script");script.async=!0;script.type="text/javascript";var target="https://www.clickcease.com/monitor/stat.js";script.src=target;var elem=document.head;elem.appendChild(script);</script>
+      <noscript>
+      <a href="https://www.clickcease.com" rel="nofollow"><img src="https://monitor.clickcease.com/stats/stats.aspx" alt="ClickCease"></a>
+      </noscript>
+      
+<script type="text/javascript" id="">!function(){var a,f,b=window,g=document,c=arguments,h="script",k="call cancelAction config identify push track trackClick trackForm update visit".split(" "),n=function(){var d,e=this,m=function(l){e[l]=function(){return e._e.push([l].concat(Array.prototype.slice.call(arguments,0))),e}};e._e=[];for(d=0;d<k.length;d++)m(k[d])};b.__woo=b.__woo||{};for(a=0;a<c.length;a++)b.__woo[c[a]]=b[c[a]]=b[c[a]]||new n;(a=g.createElement(h)).async=1;a.src="https://static.woopra.com/js/w.js";(f=g.getElementsByTagName(h)[0]).parentNode.insertBefore(a,
+f)}("woopra");woopra.config({domain:"teamtreehouse.com",outgoing_tracking:!0,download_tracking:!0,click_tracking:!0});woopra.track();</script>
+<script type="text/javascript" id="">woopra.identify({email:"beforeyaya@gmail.com",techdegreeStudent:"false",userId:"11692424"});woopra.track();</script></body></html>
