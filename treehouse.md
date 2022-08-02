@@ -3093,6 +3093,49 @@ let msg = firstName + " "+ lastName + ": " + role.toUpperCase();
 
 Combine Strings and Template Literals Review
 
+#Which of the following creates the string 'Hello world'?
+
+'Hello' + ' world'
+
+#Please fill in the correct answer in each blank provided below.
+
+Complete the code below to create a template literal:
+
+```
+const headline = __<h1>A Literal Headline</h1>__;
+```
+#Please fill in the correct answer in each blank provided below.
+
+Consider the following code:
+```
+let greeting = 'Hi';
+greeting = greeting + ', Treehouse students!';
+```
+Complete this code by adding the operator that produces the same result as the above code:
+```
+let greeting = 'Hi';
+greeting = __', Treehouse students!';
+```
+
+#The process of combining one or more strings is called:
+
+concatenation
+
+#Please fill in the correct answer in each blank provided below.
+
+Consider the following code:
+
+```
+const name = "Aneesah";
+let message = "Hello " + name + ". How are you?";
+```
+Complete the code below to recreate the above code using template literal interpolation:
+```
+const name = "Aneesah";
+let message = __Hello__. How are you?__;
+```
+#Which of the following code examples logs Total points: 500 to the console?
+
 ---
 
 Write a Template Literal
