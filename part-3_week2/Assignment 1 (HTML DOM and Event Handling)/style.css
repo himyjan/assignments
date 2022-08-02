@@ -203,7 +203,7 @@ button {
     width: auto;
     right: 50px;
     max-height: 50px;
-    background: white;
+    background: rgb(235, 235, 235);
     transform: translateX(0);
   }
   .menu li {
