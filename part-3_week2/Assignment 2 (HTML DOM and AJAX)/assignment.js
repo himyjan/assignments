@@ -9,6 +9,7 @@ function ajax(src, callback) {
 }
 
 function render(data) {
+  console.log(data);
   cardContainer.innerHTML = data
     .map(
       (card) => `
@@ -27,7 +28,7 @@ function render(data) {
 }
 
 ajax(
-  "https://appworks-school.github.io/Remote-Aassigiment-Data/products",
+  "https://appworks-school.github.io/Remote-Assignment-Data/products",
   function (response) {
     render(response);
   }

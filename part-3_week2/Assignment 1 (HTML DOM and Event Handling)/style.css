@@ -166,6 +166,10 @@ section h2 {
   margin: 5px;
 }
 
+.hidden {
+  display: none;
+}
+
 /* bottom button */
 button {
   margin: 2em;
