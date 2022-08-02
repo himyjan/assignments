@@ -19,6 +19,8 @@ AppWorkSchool_FrontEndTraining
 [part-3_week2 Assignments 2](https://himyjan.github.io/assignments/part-3_week2/Assignment%202%20(HTML%20DOM%20and%20AJAX)/index.html)
 =
 
+---
+
 [react](https://react-three-alpha.vercel.app/)
 =
 
@@ -27,6 +29,12 @@ AppWorkSchool_FrontEndTraining
 
 [next typescript](https://nexttypescript.vercel.app/)
 =
+
+[T3 Stack](https://create-t3-app.vercel.app/) 
+=
+↑ Next.js + tRPC + Tailwind CSS + TypeScript + Prisma + NextAuth.js
+
+---
 
 ```
 npm install --save styled-components tailwindcss postcss autoprefixer @tanstack/react-table @tanstack/react-query @tanstack/react-virtual@beta zustand react-redux @reduxjs/toolkit;npx tailwindcss init
