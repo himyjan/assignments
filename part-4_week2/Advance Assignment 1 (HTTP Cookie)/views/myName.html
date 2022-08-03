@@ -1,0 +1,9 @@
+{% extends 'base.html' %} {% block content %}
+<div>
+  {% for myName in myNames %}
+  <p>{{myName|upper}}</p>
+  {% else%}
+  <p>No myNames add some...</p>
+  {% endfor %}
+</div>
+{% endblock %}
