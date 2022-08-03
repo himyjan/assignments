@@ -1,8 +1,15 @@
 {% extends 'base.html' %} {% block content %}
+<form
+  name="myform"
+  action="/myName"
+  method="post"
+  class="grid"
+  onsubmit="clear();"
+>
+  <input type="submit" name="myinput" value="Reset" />
+</form>
 <div>
-  {% for myName in myNames %}
-  <p>{{myName|upper}}</p>
-  {% else%}
+  {% for myName in myNames %}{{myName}}{% else%}
   <p>No myNames add some...</p>
   {% endfor %}
 </div>
