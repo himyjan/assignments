@@ -48,9 +48,9 @@ const server = http.createServer(app);
 server.listen(3000);
 
 // auto close node process
-setTimeout(() => {
-  exit(0);
-}, 10000);
+// setTimeout(() => {
+//   exit(0);
+// }, 10000);
 
 // opens the url in the default browser
 const open = require("open");

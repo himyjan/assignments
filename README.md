@@ -19,6 +19,28 @@ AppWorkSchool_FrontEndTraining
 [part-3_week2 Assignments 2](https://himyjan.github.io/assignments/part-3_week2/Assignment%202%20(HTML%20DOM%20and%20AJAX)/index.html)
 =
 
+[part-4_week2 Assignments 1](https://part4-week2-assignment-1-your-first-web-server.vercel.app/)
+=
+
+[part-4_week2 Assignments 2 /getData](https://part4-week2-assignment-2-build-backend-api-for-front-end.vercel.app/getData)
+=
+
+[part-4_week2 Assignments 2 /getData?number=xyz](https://part4-week2-assignment-2-build-backend-api-for-front-end.vercel.app/getData?number=xyz)
+=
+
+[part-4_week2 Assignments 2 /getData?number=5](https://part4-week2-assignment-2-build-backend-api-for-front-end.vercel.app/getData?number=5)
+=
+
+[part-4_week2 Assignments 2 /getData?number=100](https://part4-week2-assignment-2-build-backend-api-for-front-end.vercel.app/getData?number=100)
+=
+
+[part-4_week2 Assignments 3 /sum.html](https://part4-week2-assignment-3-connect-to-backend-api-by-ajax.vercel.app/sum.html)
+=
+not work
+
+[part-4_week2 Assignments 3 /getData?number=100](https://part4-week2-assignment-3-connect-to-backend-api-by-ajax.vercel.app/getData?number=10)
+=
+
 ---
 
 [react](https://react-three-alpha.vercel.app/)
@@ -30,7 +52,7 @@ AppWorkSchool_FrontEndTraining
 [next typescript](https://nexttypescript.vercel.app/)
 =
 
-[T3 Stack](https://create-t3-app.vercel.app/) 
+[T3 Stack](https://create-t3-app.vercel.app/)
 =
 ↑ Next.js + tRPC + Tailwind CSS + TypeScript + Prisma + NextAuth.js
 
