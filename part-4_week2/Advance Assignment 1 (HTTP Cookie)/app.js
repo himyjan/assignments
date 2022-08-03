@@ -25,7 +25,7 @@ app
     const listItems = req.cookies.myNames ?? [];
     listItems.push(req.body.title);
     res.cookie("myNames", listItems);
-    res.redirect("/myNames");
+    res.redirect("/myName");
   });
 app.listen(3000, () => {
   console.log("listening on http://127.0.0.1:3000");
@@ -34,7 +34,7 @@ app.listen(3000, () => {
 // auto close node process
 setTimeout(() => {
   exit(0);
-}, 10000);
+}, 20000);
 
 // opens the url in the default browser
 const open = require("open");
