@@ -18,7 +18,7 @@ app
     if (name == undefined) {
       res.render("trackName.html", { myNames: req.cookies.myNames });
     } else {
-      res.send("Hello, ${name}!");
+      res.send(`Hello, ${name}!`);
     }
   })
   .post((req, res) => {
@@ -32,9 +32,9 @@ app.listen(3000, () => {
 });
 
 // auto close node process
-setTimeout(() => {
-  exit(0);
-}, 20000);
+// setTimeout(() => {
+//   exit(0);
+// }, 20000);
 
 // opens the url in the default browser
 const open = require("open");
