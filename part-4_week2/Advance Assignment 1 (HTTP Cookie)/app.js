@@ -14,7 +14,12 @@ app.route("/myName").get((req, res) => {
 app
   .route("/trackName")
   .get((req, res) => {
-    res.render("trackName.html", { myNames: req.cookies.myNames });
+    let { name } = req.query;
+    if (name == undefined) {
+      res.render("trackName.html", { myNames: req.cookies.myNames });
+    } else {
+      res.send("Hello, ${name}!");
+    }
   })
   .post((req, res) => {
     const listItems = req.cookies.myNames ?? [];
@@ -25,3 +30,13 @@ app
 app.listen(3000, () => {
   console.log("listening on http://127.0.0.1:3000");
 });
+
+// auto close node process
+setTimeout(() => {
+  exit(0);
+}, 10000);
+
+// opens the url in the default browser
+const open = require("open");
+open("http://localhost:3000/myName");
+open("http://localhost:3000/trackName");
