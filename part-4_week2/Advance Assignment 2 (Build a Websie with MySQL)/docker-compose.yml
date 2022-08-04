@@ -15,7 +15,9 @@ services:
   app:
     depends_on:
       - mysqldb
-    build: .
+    build:
+      context: ./
+      dockerfile: Dockerfile
     restart: unless-stopped
     env_file: ./.env
     ports:

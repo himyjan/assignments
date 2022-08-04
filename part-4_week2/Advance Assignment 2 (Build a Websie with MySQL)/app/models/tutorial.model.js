@@ -1,14 +1,16 @@
 module.exports = (sequelize, Sequelize) => {
-  const Tutorial = sequelize.define("tutorial", {
-    title: {
-      type: Sequelize.STRING
+  const Tutorial = sequelize.define("user", {
+    id: {
+      type: Sequelize.STRING,
+      allowNull: false,
+      primaryKey: true,
     },
-    description: {
-      type: Sequelize.STRING
+    email: {
+      type: Sequelize.STRING,
     },
-    published: {
-      type: Sequelize.BOOLEAN
-    }
+    password: {
+      type: Sequelize.STRING,
+    },
   });
 
   return Tutorial;
