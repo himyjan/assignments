@@ -24,7 +24,7 @@
 
       /* nav bar */
       nav {
-        background-color: #eee;
+        background: rgb(235, 235, 235);
       }
 
       .header-wrapper {
@@ -39,7 +39,7 @@
         line-height: 50px;
       }
 
-      input {
+      #switch {
         display: none;
       }
 
@@ -65,7 +65,7 @@
       .menu-btn-item::after {
         width: 30px;
         height: 3px;
-        background-color: grey;
+        background-color: rgb(71, 71, 71);
         border-radius: 5px;
         box-shadow: 0 2px 5px rgba(255, 101, 47, 0.2);
       }
@@ -113,7 +113,7 @@
 
       /* menu */
       .menu {
-        background: #fff;
+        background: white;
         position: fixed;
         top: 0;
         right: 0;
@@ -136,13 +136,17 @@
       }
       .menu li a:hover {
         background: #5d5d5d;
-        color: #fff;
+        color: white;
+      }
+
+      body {
+        height: 1vh;
       }
 
       /* section greeting */
       .greeting {
         display: flex;
-        background-color: rgb(199, 223, 241);
+        background-color: rgb(198, 216, 234);
         height: 230px;
       }
 
@@ -164,16 +168,22 @@
         text-align: center;
       }
 
-      .content-box {
+      .content-box,
+      .content-box2 {
         margin: 0 auto;
         width: 90%;
+        display: none;
       }
 
       .box {
         padding-top: 1em;
         height: 150px;
-        background-color: rgb(134, 136, 137);
+        background-color: rgb(125, 142, 159);
         margin: 5px;
+      }
+
+      .hidden {
+        display: none;
       }
 
       /* bottom button */
@@ -182,12 +192,14 @@
         padding: 0.7em;
         outline: none;
         border: solid 1px transparent;
-        background-color: rgb(199, 223, 241);
+        background-color: rgb(198, 216, 234);
         font-size: 1em;
       }
       /* media query */
+
       @media screen and (min-width: 500px) {
-        .content-box {
+        .content-box,
+        .content-box2 {
           display: flex;
           flex-wrap: wrap;
         }
@@ -207,7 +219,7 @@
           width: auto;
           right: 50px;
           max-height: 50px;
-          background: #eee;
+          background: rgb(235, 235, 235);
           transform: translateX(0);
         }
         .menu li {
@@ -220,15 +232,16 @@
       }
 
       @media screen and (min-width: 1200px) {
-        .content-box {
+        .content-box,
+        .content-box2 {
           width: 100%;
           max-width: 1200px;
         }
       }
 
       /* http://meyerweb.com/eric/tools/css/reset/
-        v2.0 | 20110126
-        License: none (public domain)
+      v2.0 | 20110126
+      License: none (public domain)
       */
       html,
       body,
@@ -366,6 +379,82 @@
       //   return <h1>Hello, world!</h1>;
       // }
 
+      function Hamburger() {
+        const [style, setStyle] = useState({ position: "absolute" });
+        const [effect, setEffect] = useState("");
+
+        function openSideBar() {
+          if (effect === "open") {
+            setEffect("");
+            setStyle({ position: "absolute" });
+          } else {
+            setEffect("open");
+            setStyle({ position: "fixed" });
+          }
+        }
+
+        return (
+          <label for="switch" onClick={openSideBar} style={style}>
+            <div className={`menu-btn ${effect}`}>
+              <div className="menu-btn-item"></div>
+            </div>
+          </label>
+        );
+      }
+
+      function Sidebar() {
+        const listData = [
+          { name: "Item1", id: 1 },
+          { name: "Item2", id: 2 },
+          { name: "Item3", id: 3 },
+          { name: "Item4", id: 4 },
+        ];
+
+        return (
+          <ul className="menu">
+            {listData.map((item) => (
+              <li>
+                <a href="#" id={item.id}>
+                  {item.name}
+                </a>
+              </li>
+            ))}
+          </ul>
+        );
+      }
+
+      function Nav() {
+        return (
+          <nav className="nav-bar">
+            <div className="header-wrapper">
+              <h1 className="logo">Website Title / Logo</h1>
+              <Hamburger />
+              <input
+                type="checkbox"
+                id="switch"
+                className="hidden"
+                placeholder="switch-label"
+              />
+              <Sidebar />
+            </div>
+          </nav>
+        );
+      }
+
+      function GreetingSection() {
+        const [welcomeMessage, setWelcomeMessage] = useState("Welcome Message");
+        return (
+          <section
+            className="greeting"
+            onClick={() => {
+              setWelcomeMessage("Have a good time!");
+            }}
+          >
+            <h1>{welcomeMessage}</h1>
+          </section>
+        );
+      }
+
       function ContentBox() {
         const contentData = [
           { name: "Content Box 1", id: 1 },
@@ -408,6 +497,8 @@
       const root = ReactDOM.createRoot(document.getElementById("root"));
       root.render(
         <React.StrictMode>
+          <Nav />
+          <GreetingSection />
           <TitleSection />
         </React.StrictMode>
       );
