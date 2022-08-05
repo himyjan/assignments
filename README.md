@@ -36,6 +36,7 @@ AppWorkSchool_FrontEndTraining
 
 [part-4_week2 Assignments 3 /sum.html](https://part4-week2-assignment-3-connect-to-backend-api-by-ajax.vercel.app/sum.html)
 =
+
 not work
 
 [part-4_week2 Assignments 3 /getData?number=100](https://part4-week2-assignment-3-connect-to-backend-api-by-ajax.vercel.app/getData?number=10)
@@ -57,14 +58,16 @@ not work
 
 [T3 Stack](https://create-t3-app.vercel.app/)
 =
+
 ↑ Next.js + tRPC + Tailwind CSS + TypeScript + Prisma + NextAuth.js
 
 ---
 
-```
+```bash
 npm install --save styled-components tailwindcss postcss autoprefixer @tanstack/react-table @tanstack/react-query @tanstack/react-virtual@beta zustand react-redux @reduxjs/toolkit;npx tailwindcss init
 ```
-```
+
+```bash
 npm install @mui/material @emotion/react @emotion/styled @formkit/auto-animate --force;npm audit fix --force
 ```
 
