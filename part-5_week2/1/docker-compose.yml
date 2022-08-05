@@ -1,0 +1,17 @@
+version: "3.8"
+services:
+  react:
+    container_name: react
+    build:
+      context: ./
+      dockerfile: Dockerfile
+    volumes:
+      - ./:/usr/src/app
+      - ./shared:/shared
+      - /usr/src/app/node_modules
+    working_dir: /usr/src/app
+    command: sh -c "bun rebuild esbuild && bun dev"
+    env_file:
+      - "./.env"
+    ports:
+      - 8083:3000
