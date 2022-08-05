@@ -45,7 +45,7 @@ not work
 [part-5_week2 Assignments 1](https://himyjan.github.io/assignments/part-5_week2/Assignment%201%20(Re-Implement%20Layout%20by%20React)/Assignment%201%20(Re-Implement%20Layout%20by%20React).html)
 =
 
-[part-5_week2 Advanced Assignments 1](https://himyjan.github.io/assignments/part-5_week2/Advanced%20Assignment%201%20(Add%20Counter%20Component%20With%20Buttons)/Advanced%20Assignment%201%20(Add%20Counter%20Component%20With%20Buttons).html)
+[part-5_week2 Advanced Assignments 1](https://himyjan.github.io/assignments/part-5_week2/Advanced%20Assignmet%201%20(Add%20Counter%20Component%20With%20Buttons)/Advanced%20Assignmet%201%20(Add%20Counter%20Component%20With%20Buttons).html)
 =
 
 ---
