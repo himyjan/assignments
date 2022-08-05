@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1"
+      charset="UTF-8"
+    />
+    <title>Hello World</title>
+    <script src="https://unpkg.com/react/umd/react.development.js"></script>
+    <script src="https://unpkg.com/react-dom/umd/react-dom.development.js"></script>
+
+    <!-- Don't use this in production: -->
+    <script src="https://unpkg.com/@babel/standalone/babel.min.js"></script>
+    <style>
+      .counterDiv {
+        display: flex;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script type="text/babel">
+      const { useState, useEffect, useContext } = React;
+      // your code here
+
+      // How do I add React component on button click? https://stackoverflow.com/a/59594976
+      const Counter = () => {
+        const [count, setCount] = useState(0);
+        const increment = () => {
+          setCount(() => count++);
+        };
+        return (
+          <div class="counterDiv">
+            <button onClick={() => setCount((count) => count + 1)}>+1</button>
+            <p>{count}</p>
+          </div>
+        );
+      };
+
+      // How to find element by Key in React? https://stackoverflow.com/a/40021296
+      const Form = () => {
+        const [counterList, setCounterList] = useState([]);
+
+        const onAddBtnClick = (event) => {
+          setCounterList(
+            counterList.concat(<Counter keyProp={counterList.length} />)
+          );
+        };
+
+        return (
+          <div>
+            <button onClick={counterList}>All + 1</button>
+            {counterList}
+            <button onClick={onAddBtnClick}>Add a Counter</button>
+          </div>
+        );
+      };
+
+      // const allPlusOneButton = () => {
+      //   return (
+      //     <div class="allPlusOneButtonDiv">
+      //       // <button onClick={() => ()}>+1</button>
+      //       123
+      //     </div>
+      //   );
+      // };
+
+      function App() {
+        return <h1>Hello, world!</h1>;
+      }
+
+      const root = ReactDOM.createRoot(document.getElementById("root"));
+      root.render(
+        <React.StrictMode>
+          <Form />
+        </React.StrictMode>
+      );
+    </script>
+    <!--
+      Note: this page is a great way to try React but it's not suitable for production.
+      It slowly compiles JSX with Babel in the browser and uses a large development build of React.
+
+      Read this section for a production-ready setup with JSX:
+      https://reactjs.org/docs/add-react-to-a-website.html#add-jsx-to-a-project
+
+      In a larger project, you can use an integrated toolchain that includes JSX instead:
+      https://reactjs.org/docs/create-a-new-react-app.html
+
+      You can also use React without JSX, in which case you can remove Babel:
+      https://reactjs.org/docs/react-without-jsx.html
+    -->
+  </body>
+</html>
