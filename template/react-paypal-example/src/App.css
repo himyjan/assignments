@@ -1,0 +1,27 @@
+.App {
+  font-family: "Trebuchet MS", "Lucida Sans Unicode", "Lucida Grande",
+    "Lucida Sans", Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+}
+
+.header {
+  font-size: 30px;
+}
+.skills {
+  margin-top: 50px;
+  width: 500px;
+  height: 700px;
+  border: 1px solid black;
+}
+
+.aboutMe {
+  margin-top: 50px;
+}
+
+.projects {
+  color: red;
+}
