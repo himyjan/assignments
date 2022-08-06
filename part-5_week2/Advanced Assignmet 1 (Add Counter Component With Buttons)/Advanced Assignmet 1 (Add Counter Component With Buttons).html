@@ -27,9 +27,9 @@
       // How do I add React component on button click? https://stackoverflow.com/a/59594976
       const Counter = () => {
         const [count, setCount] = useState(0);
-        const increment = () => {
-          setCount(() => count++);
-        };
+        function increment() {
+          this.setCount(() => count++);
+        }
         return (
           <div class="counterDiv">
             <button onClick={() => setCount((count) => count + 1)}>+1</button>
@@ -39,18 +39,29 @@
       };
 
       // How to find element by Key in React? https://stackoverflow.com/a/40021296
-      const Form = () => {
+      const Form = ({ Counter }) => {
         const [counterList, setCounterList] = useState([]);
 
         const onAddBtnClick = (event) => {
           setCounterList(
-            counterList.concat(<Counter keyProp={counterList.length} />)
+            counterList.concat(
+              <Counter
+                keyProp={counterList.length}
+                ref={(component) => (this._child = component)}
+              />
+            )
           );
+        };
+
+        const onAllAddBtnClick = (event) => {
+          counterList.forEach((element) => {
+            element.setCount((count) => count + 1); // 不會寫
+          });
         };
 
         return (
           <div>
-            <button onClick={counterList}>All + 1</button>
+            <button onClick={onAllAddBtnClick}>All + 1</button>
             {counterList}
             <button onClick={onAddBtnClick}>Add a Counter</button>
           </div>
