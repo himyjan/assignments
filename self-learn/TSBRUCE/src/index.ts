@@ -1,1 +1,1 @@
-https://stackblitz.com/fork/typescript
+// https://stackblitz.com/fork/typescript
