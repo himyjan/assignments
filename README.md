@@ -67,7 +67,7 @@ not work
 ---
 
 ```bash
-npm install --save styled-components tailwindcss postcss autoprefixer @tanstack/react-table @tanstack/react-query @tanstack/react-virtual@beta zustand react-redux @reduxjs/toolkit;npx tailwindcss init
+npm install --save styled-components tailwindcss postcss autoprefixer @tanstack/react-table @tanstack/react-query @tanstack/react-virtual@beta zustand react-redux @reduxjs/toolkit;npm install -D prettier prettier-plugin-tailwindcss --force;npx tailwindcss init
 ```
 
 ```bash
