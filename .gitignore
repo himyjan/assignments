@@ -1,5 +1,5 @@
 **/*.trace
-**/*.zip
+# **/*.zip
 **/*.tar.gz
 **/*.tgz
 **/*.log
